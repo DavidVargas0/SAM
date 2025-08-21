@@ -4,6 +4,7 @@
     <OutputType>Library</OutputType>
 	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	<Configurations>Debug;Release;RH7;RH8</Configurations>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Query\**" />

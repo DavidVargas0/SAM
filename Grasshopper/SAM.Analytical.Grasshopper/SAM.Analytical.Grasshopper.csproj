@@ -12,6 +12,7 @@
     <Deterministic>false</Deterministic>
 	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	  <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	  <Configurations>Debug;Release;RH7;RH8</Configurations>
   </PropertyGroup>
   <PropertyGroup>
     <OutputType>Library</OutputType>
@@ -22,6 +23,12 @@
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\build\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RH7|AnyCPU'">
+    <OutputPath>..\..\build\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RH8|AnyCPU'">
     <OutputPath>..\..\build\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
