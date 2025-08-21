@@ -11,6 +11,7 @@
     <FileVersion>1.0.%2a</FileVersion>
 	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	  <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	  <Configurations>Debug;Release;RH7;RH8</Configurations>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\build\</OutputPath>
@@ -18,6 +19,12 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>..\..\build\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RH7|AnyCPU'">
+    <OutputPath>..\..\build\Rhino 7\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RH8|AnyCPU'">
+    <OutputPath>..\..\build\Rhino 8\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Classes\**" />

@@ -14,10 +14,10 @@
     <OutputPath>..\..\build\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RH7|AnyCPU'">
-    <OutputPath>..\..\build\</OutputPath>
+    <OutputPath>..\..\build\Rhino 7\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RH8|AnyCPU'">
-    <OutputPath>..\..\build\</OutputPath>
+    <OutputPath>..\..\build\Rhino 8\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
