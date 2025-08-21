@@ -40,8 +40,13 @@
     <ProjectReference Include="..\SAM.Core.Grasshopper\SAM.Core.Grasshopper.csproj" />
     <ProjectReference Include="..\SAM.Geometry.Grasshopper\SAM.Geometry.Grasshopper.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Grasshopper" Version="8.10.24228.13001" ExcludeAssets="runtime" />
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'== 'RH8|AnyCPU'">
+		<PackageReference Include="Grasshopper" Version="8.10.24228.13001" ExcludeAssets="runtime" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'== 'RH7|AnyCPU'">
+		<PackageReference Include="Grasshopper" Version="7.37.24107.15001" ExcludeAssets="runtime" />
+	</ItemGroup>
+	<ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="NetTopologySuite" Version="2.6.0" />
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" />

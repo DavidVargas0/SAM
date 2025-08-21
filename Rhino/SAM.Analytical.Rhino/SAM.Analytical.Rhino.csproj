@@ -18,7 +18,13 @@
     <ProjectReference Include="..\SAM.Core.Rhino\SAM.Core.Rhino.csproj" />
     <ProjectReference Include="..\SAM.Geometry.Rhino\SAM.Geometry.Rhino.csproj" />
   </ItemGroup>
-  <ItemGroup>
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'== 'RH8|AnyCPU'">
+		<PackageReference Include="RhinoCommon" Version="8.10.24228.13001" ExcludeAssets="runtime" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'== 'RH7|AnyCPU'">
+		<PackageReference Include="RhinoCommon" Version="7.37.24107.15001" ExcludeAssets="runtime" />
+	</ItemGroup>
+	<ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="NetTopologySuite" Version="2.6.0" />
 	<PackageReference Include="RhinoCommon" Version="8.10.24228.13001" ExcludeAssets="runtime" />
