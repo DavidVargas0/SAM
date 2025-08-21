@@ -1,6 +1,7 @@
 ﻿using Grasshopper;
 using Grasshopper.GUI.Canvas;
 using Grasshopper.Kernel;
+
 //using LibGit2Sharp;
 using Rhino;
 using System;
@@ -20,7 +21,7 @@ namespace SAM.Core.Grasshopper
         {
             List<string> result = new List<string>();
 
-            if(gH_Document == null)
+            if (gH_Document == null)
             {
                 result.Add("Invalid document");
                 return result;
@@ -31,7 +32,7 @@ namespace SAM.Core.Grasshopper
                 targetFolder = "C:\\Temp\\ScriptsHydra";
             }
 
-            if(string.IsNullOrWhiteSpace(Path.GetFileName(targetFolder)))
+            if (string.IsNullOrWhiteSpace(Path.GetFileName(targetFolder)))
             {
                 targetFolder = Directory.GetParent(targetFolder)?.FullName;
             }
@@ -54,7 +55,14 @@ namespace SAM.Core.Grasshopper
             //string path_Repository = Repository.Clone("https://github.com/HoareLea/ScriptsHydra", baseDirectory);
             ExecuteGitCommand(baseDirectory, "clone https://github.com/HoareLea/ScriptsHydra", out messages); //$"clone https://github.com/HoareLea/ScriptsHydra \"{targetFolder}\""));
 
-            RhinoDoc rhinoDoc = gH_Document.RhinoDocument;
+            //RhinoDoc rhinoDoc = gH_Document.RhinoDocument;
+            RhinoDoc rhinoDoc = null;
+            //RhinoDoc d = RhinoDoc.ActiveDoc;
+#if RH7
+            rhinoDoc = RhinoDoc.ActiveDoc;
+#else
+            rhinoDoc = gH_Document.RhinoDocument;
+#endif
 
             string safeFileName = fileName.Replace(" ", "_");
 
@@ -62,7 +70,7 @@ namespace SAM.Core.Grasshopper
 
             targetFolder = Path.Combine(targetFolder, "3-Examples_GH", safeFileName);
 
-            if(!Directory.Exists(targetFolder))
+            if (!Directory.Exists(targetFolder))
             {
                 Directory.CreateDirectory(targetFolder);
             }
@@ -248,7 +256,7 @@ namespace SAM.Core.Grasshopper
             result.Add($"Export and Git push successful: {zipPath}\n\nTo create a pull request, open this link in your browser:\n{repoUrl}");
 
             Core.Query.StartProcess(repoUrl);
-            
+
             return result;
         }
 
@@ -356,7 +364,7 @@ namespace SAM.Core.Grasshopper
             {
                 images.Add(new Dictionary<string, string> { { fileName + "_Rhino.png", "Rhino Viewport Screenshot" } });
             }
-            
+
             metaDataDict["images"] = images;
 
             // Addfiles
