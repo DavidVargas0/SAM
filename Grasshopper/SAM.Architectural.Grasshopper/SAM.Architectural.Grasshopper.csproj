@@ -32,6 +32,9 @@
     <OutputPath>..\..\build\Rhino 8\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Component\SAMArchitecturalCreateLevel.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\Rhino\SAM.Core.Rhino\SAM.Core.Rhino.csproj" />
     <ProjectReference Include="..\..\Rhino\SAM.Geometry.Rhino\SAM.Geometry.Rhino.csproj" />
     <ProjectReference Include="..\..\SAM\SAM.Architectural\SAM.Architectural.csproj" />
@@ -53,6 +56,9 @@
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.2" />
     <PackageReference Include="System.ValueTuple" Version="4.6.1" />
   </ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Component\" />
+	</ItemGroup>
   <PropertyGroup />
   <PropertyGroup>
     <FallbackCulture>en-US</FallbackCulture>

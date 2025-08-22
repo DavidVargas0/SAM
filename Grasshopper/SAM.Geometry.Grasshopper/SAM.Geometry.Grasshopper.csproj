@@ -32,6 +32,56 @@
     <OutputPath>..\..\build\Rhino 8\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Component\CreateSAMTransform3DOriginToPlane.cs" />
+    <Compile Remove="Component\CreateSAMTransform3DPlaneToOrigin.cs" />
+    <Compile Remove="Component\CreateSAMTransform3DPlaneToPlane.cs" />
+    <Compile Remove="Component\GeometryCreatePlane.cs" />
+    <Compile Remove="Component\GeometryCreateShell.cs" />
+    <Compile Remove="Component\GeometryFilterShells.cs" />
+    <Compile Remove="Component\GeometryGetShellsByPoint3D.cs" />
+    <Compile Remove="Component\GeometryGetShellsByPoint3Ds.cs" />
+    <Compile Remove="Component\GeometryMeshClose.cs" />
+    <Compile Remove="Component\GeometryMeshReduce.cs" />
+    <Compile Remove="Component\GeometryModifyDifference.cs" />
+    <Compile Remove="Component\GeometryModifyIntersection.cs" />
+    <Compile Remove="Component\GeometryModifyUnion.cs" />
+    <Compile Remove="Component\GeometryPolycurveLoop2D.cs" />
+    <Compile Remove="Component\GeometrySAMGeometry.cs" />
+    <Compile Remove="Component\GeometrySnapByDistance.cs" />
+    <Compile Remove="Component\GeometrySnapByPoints.cs" />
+    <Compile Remove="Component\GeometryTriangulate.cs" />
+    <Compile Remove="Component\NTSSAMGeometry2D.cs" />
+    <Compile Remove="Component\SAMGeometry2DSAMGeometry.cs" />
+    <Compile Remove="Component\SAMGeometry2DToNTS.cs" />
+    <Compile Remove="Component\SAMGeometryCreateShellsByElevations.cs" />
+    <Compile Remove="Component\SAMGeometryCreateShellsByOffset.cs" />
+    <Compile Remove="Component\SAMGeometryCreateShellsByTopAndBottom.cs" />
+    <Compile Remove="Component\SAMGeometryCutShell.cs" />
+    <Compile Remove="Component\SAMGeometryFace3DSpacing.cs" />
+    <Compile Remove="Component\SAMGeometryFill.cs" />
+    <Compile Remove="Component\SAMGeometryFlipNormal.cs" />
+    <Compile Remove="Component\SAMGeometryGeometry.cs" />
+    <Compile Remove="Component\SAMGeometryIsClosed.cs" />
+    <Compile Remove="Component\SAMGeometryMargeOverlaps.cs" />
+    <Compile Remove="Component\SAMGeometryPlaneIntersection.cs" />
+    <Compile Remove="Component\SAMGeometrySAMGeometry2D.cs" />
+    <Compile Remove="Component\SAMGeometrySectionByFace3D.cs" />
+    <Compile Remove="Component\SAMGeometrySectionByShell.cs" />
+    <Compile Remove="Component\SAMGeometrySegment2DIntersection.cs" />
+    <Compile Remove="Component\SAMGeometryShellContains.cs" />
+    <Compile Remove="Component\SAMGeometryShellDifference.cs" />
+    <Compile Remove="Component\SAMGeometryShellIntersection.cs" />
+    <Compile Remove="Component\SAMGeometryShellNakedSegment3Ds.cs" />
+    <Compile Remove="Component\SAMGeometryShellsSplit.cs" />
+    <Compile Remove="Component\SAMGeometryShellsSplitByFace3Ds.cs" />
+    <Compile Remove="Component\SAMGeometryShellsSplitFace3Ds.cs" />
+    <Compile Remove="Component\SAMGeometryShellsUnion.cs" />
+    <Compile Remove="Component\SAMGeometrySplit.cs" />
+    <Compile Remove="Component\SAMGeometrySplitCoplanarFace3Ds.cs" />
+    <Compile Remove="Component\SAMGeometryThinnessRatio.cs" />
+    <Compile Remove="Component\SAMGeometryTransform.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="System.IO.Compression" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +111,9 @@
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.2" />
     <PackageReference Include="System.ValueTuple" Version="4.6.1" />
   </ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Component\" />
+	</ItemGroup>
   <PropertyGroup />
   <PropertyGroup>
     <FallbackCulture>en-US</FallbackCulture>
