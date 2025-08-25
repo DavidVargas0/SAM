@@ -16,10 +16,10 @@
     <OutputPath>..\..\build\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RH7|AnyCPU'">
-    <OutputPath>..\..\build\Rhino 7\</OutputPath>
+    <OutputPath>..\..\build\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RH8|AnyCPU'">
-    <OutputPath>..\..\build\Rhino 8\</OutputPath>
+    <OutputPath>..\..\build\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="MathNet.Numerics">
