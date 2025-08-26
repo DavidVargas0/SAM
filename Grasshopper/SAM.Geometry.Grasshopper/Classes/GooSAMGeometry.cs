@@ -13,7 +13,8 @@ using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
+
+//using System.Windows.Forms;
 
 namespace SAM.Geometry.Grasshopper
 {
@@ -80,7 +81,7 @@ namespace SAM.Geometry.Grasshopper
                 if (Value is IBoundable2D)
                 {
                     BoundingBox2D boundingBox2D = ((IBoundable2D)Value).GetBoundingBox();
-                    return Rhino.Convert.ToRhino( new BoundingBox3D(new Point3D(boundingBox2D.Min.X, boundingBox2D.Min.Y, -1), new Point3D(boundingBox2D.Max.X, boundingBox2D.Max.Y, 1)));
+                    return Rhino.Convert.ToRhino(new BoundingBox3D(new Point3D(boundingBox2D.Min.X, boundingBox2D.Min.Y, -1), new Point3D(boundingBox2D.Max.X, boundingBox2D.Max.Y, 1)));
                 }
 
                 if (Value is Point2D)
@@ -164,9 +165,9 @@ namespace SAM.Geometry.Grasshopper
                 if (source is SAMGeometry2DObjectCollection)
                 {
                     List<ISAMGeometry2D> sAMGeometry2Ds = new List<ISAMGeometry2D>();
-                    foreach(ISAMGeometry2DObject sAMGeometry2DObject in (SAMGeometry2DObjectCollection)source)
+                    foreach (ISAMGeometry2DObject sAMGeometry2DObject in (SAMGeometry2DObjectCollection)source)
                     {
-                        if(sAMGeometry2DObject is IFace2DObject)
+                        if (sAMGeometry2DObject is IFace2DObject)
                         {
                             sAMGeometry2Ds.Add(((IFace2DObject)sAMGeometry2DObject).Face2D);
                         }
@@ -228,7 +229,7 @@ namespace SAM.Geometry.Grasshopper
                 return true;
             }
 
-            if(source is Rectangle3d)
+            if (source is Rectangle3d)
             {
                 Value = Rhino.Convert.ToSAM((Rectangle3d)source);
                 return true;
@@ -276,7 +277,7 @@ namespace SAM.Geometry.Grasshopper
                 return true;
             }
 
-            if(source is Mesh)
+            if (source is Mesh)
             {
                 Value = Rhino.Convert.ToSAM((Mesh)source);
             }
@@ -289,7 +290,7 @@ namespace SAM.Geometry.Grasshopper
             if (source is Brep)
             {
                 List<ISAMGeometry3D> sAMGeometry3Ds = Rhino.Convert.ToSAM(((Brep)source));
-                if(sAMGeometry3Ds != null && sAMGeometry3Ds.Count != 0)
+                if (sAMGeometry3Ds != null && sAMGeometry3Ds.Count != 0)
                 {
                     Value = sAMGeometry3Ds[0];
                     return true;
@@ -376,9 +377,9 @@ namespace SAM.Geometry.Grasshopper
                 }
             }
 
-            if(typeof(Y) == typeof(Rectangle3d))
+            if (typeof(Y) == typeof(Rectangle3d))
             {
-                if(Value is Rectangle3D)
+                if (Value is Rectangle3D)
                 {
                     target = (Y)(object)Rhino.Convert.ToRhino((Rectangle3D)Value);
                     return true;
@@ -429,14 +430,14 @@ namespace SAM.Geometry.Grasshopper
                 if (Value is Shell)
                 {
                     Mesh mesh = Rhino.Convert.ToRhino_Mesh((Shell)Value);
-                    if(mesh != null)
+                    if (mesh != null)
                     {
                         target = (Y)(object)new GH_Mesh(mesh);
                         return true;
                     }
                 }
 
-                if(Value is Mesh3D)
+                if (Value is Mesh3D)
                 {
                     target = (Y)(object)new GH_Mesh(Rhino.Convert.ToRhino((Mesh3D)Value));
                     return true;
@@ -482,7 +483,7 @@ namespace SAM.Geometry.Grasshopper
     {
         public override Guid ComponentGuid => new Guid("b4f8eee5-8d45-4c52-b966-1be5efa7c1e6");
 
-        protected override System.Drawing.Bitmap Icon => Resources.SAM_Geometry;
+        //protected override System.Drawing.Bitmap Icon => Resources.SAM_Geometry;
 
         bool IGH_PreviewObject.Hidden { get; set; }
 
@@ -526,18 +527,18 @@ namespace SAM.Geometry.Grasshopper
             }
         }
 
-        public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
-        {
-            Menu_AppendItem(menu, "Save As...", Menu_SaveAs, VolatileData.AllData(true).Any());
+        //public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Save As...", Menu_SaveAs, VolatileData.AllData(true).Any());
 
-            //Menu_AppendSeparator(menu);
+        //    //Menu_AppendSeparator(menu);
 
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
-        private void Menu_SaveAs(object sender, EventArgs e)
-        {
-            Core.Grasshopper.Query.SaveAs(VolatileData);
-        }
+        //private void Menu_SaveAs(object sender, EventArgs e)
+        //{
+        //    Core.Grasshopper.Query.SaveAs(VolatileData);
+        //}
     }
 }

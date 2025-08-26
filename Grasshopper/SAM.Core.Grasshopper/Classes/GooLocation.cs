@@ -4,7 +4,8 @@ using SAM.Core.Grasshopper.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
+
+//using System.Windows.Forms;
 
 namespace SAM.Core.Grasshopper
 {
@@ -30,7 +31,7 @@ namespace SAM.Core.Grasshopper
     {
         public override Guid ComponentGuid => new Guid("ce7b8666-f1e6-4931-9e86-1b4da97a5056");
 
-                protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
+        //protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
 
         public GooLocationParam()
             : base(typeof(Location).Name, typeof(Location).Name, typeof(Location).FullName.Replace(".", " "), "Params", "SAM")
@@ -47,14 +48,14 @@ namespace SAM.Core.Grasshopper
             throw new NotImplementedException();
         }
 
-        public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
-        {
-            Menu_AppendItem(menu, "Save As...", Menu_SaveAs, VolatileData.AllData(true).Any());
+        //public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Save As...", Menu_SaveAs, VolatileData.AllData(true).Any());
 
-            //Menu_AppendSeparator(menu);
+        //    //Menu_AppendSeparator(menu);
 
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
         private void Menu_SaveAs(object sender, EventArgs e)
         {

@@ -5,14 +5,15 @@ using Grasshopper.Kernel;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Windows.Forms;
+
+//using System.Windows.Forms;
 
 namespace SAM.Core.Grasshopper
 {
-    public class GH_SAMNullAttributes : IGH_Attributes
+    public class GH_SAMNullAttributes
     {
-        public GH_SAMNullAttributes() 
-        { 
+        public GH_SAMNullAttributes()
+        {
         }
 
         public PointF Pivot { get => PointF.Empty; set => throw new NotImplementedException(); }
@@ -37,29 +38,45 @@ namespace SAM.Core.Grasshopper
 
         public bool TooltipEnabled => false;
 
-        public void AppendToAttributeTree(List<IGH_Attributes> attributes) { }
-        public void ExpireLayout() { }
+        public void AppendToAttributeTree(List<IGH_Attributes> attributes)
+        { }
+
+        public void ExpireLayout()
+        { }
+
         public bool InvalidateCanvas(GH_Canvas canvas, GH_CanvasMouseEvent e) => false;
+
         public bool IsMenuRegion(PointF point) => false;
 
         public bool IsPickRegion(PointF point) => false;
+
         public bool IsPickRegion(RectangleF box, GH_PickBox method) => false;
 
         public bool IsTooltipRegion(PointF canvasPoint) => false;
 
         public void NewInstanceGuid() => throw new NotImplementedException();
+
         public void NewInstanceGuid(Guid newID) => throw new NotImplementedException();
 
         public void PerformLayout() => throw new NotImplementedException();
 
-        public void RenderToCanvas(GH_Canvas canvas, GH_CanvasChannel channel) { }
-        public GH_ObjectResponse RespondToKeyDown(GH_Canvas sender, KeyEventArgs e) => GH_ObjectResponse.Ignore;
-        public GH_ObjectResponse RespondToKeyUp(GH_Canvas sender, KeyEventArgs e) => GH_ObjectResponse.Ignore;
+        public void RenderToCanvas(GH_Canvas canvas, GH_CanvasChannel channel)
+        { }
+
+        //public GH_ObjectResponse RespondToKeyDown(GH_Canvas sender, KeyEventArgs e) => GH_ObjectResponse.Ignore;
+
+        //public GH_ObjectResponse RespondToKeyUp(GH_Canvas sender, KeyEventArgs e) => GH_ObjectResponse.Ignore;
+
         public GH_ObjectResponse RespondToMouseDoubleClick(GH_Canvas sender, GH_CanvasMouseEvent e) => GH_ObjectResponse.Ignore;
+
         public GH_ObjectResponse RespondToMouseDown(GH_Canvas sender, GH_CanvasMouseEvent e) => GH_ObjectResponse.Ignore;
+
         public GH_ObjectResponse RespondToMouseMove(GH_Canvas sender, GH_CanvasMouseEvent e) => GH_ObjectResponse.Ignore;
+
         public GH_ObjectResponse RespondToMouseUp(GH_Canvas sender, GH_CanvasMouseEvent e) => GH_ObjectResponse.Ignore;
-        public void SetupTooltip(PointF canvasPoint, GH_TooltipDisplayEventArgs e) { }
+
+        public void SetupTooltip(PointF canvasPoint, GH_TooltipDisplayEventArgs e)
+        { }
 
         public bool Read(GH_IReader reader) => true;
 

@@ -10,7 +10,8 @@ using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
+
+// using   system.windows.forms;
 
 namespace SAM.Analytical.Grasshopper
 {
@@ -74,7 +75,7 @@ namespace SAM.Analytical.Grasshopper
     {
         public override Guid ComponentGuid => new Guid("bbb45545-17b3-49be-b177-db284b2087f3");
 
-                protected override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
+        // protected    override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
 
         bool IGH_PreviewObject.Hidden { get; set; }
 
@@ -131,7 +132,7 @@ namespace SAM.Analytical.Grasshopper
                     if (!string.IsNullOrWhiteSpace(@string))
                     {
                         spaces = Core.Convert.ToSAM<Space>(@string);
-                        if(spaces != null)
+                        if (spaces != null)
                         {
                             Point3D point3D = Geometry.Rhino.Convert.ToSAM(point);
                             if (point3D != null)
@@ -147,7 +148,6 @@ namespace SAM.Analytical.Grasshopper
 
                 if (spaces == null || spaces.Count == 0)
                 {
-
                     Point3D point3D = Geometry.Rhino.Convert.ToSAM(point);
                     if (point3D == null)
                         continue;
@@ -156,7 +156,7 @@ namespace SAM.Analytical.Grasshopper
                     if (string.IsNullOrWhiteSpace(name))
                         name = "Cell";
 
-                    spaces = new List<Space>() { new Space(name, point3D)};
+                    spaces = new List<Space>() { new Space(name, point3D) };
                 }
 
                 if (spaces == null || spaces.Count == 0)
@@ -244,16 +244,16 @@ namespace SAM.Analytical.Grasshopper
             }
         }
 
-        public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
-        {
-            Menu_AppendItem(menu, "Bake By Internal Condition", Menu_BakeByInternalCondition, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
-            Menu_AppendItem(menu, "Bake By Level", Menu_BakeByLevel, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
-            Menu_AppendItem(menu, "Save As...", Menu_SaveAs, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Bake By Internal Condition", Menu_BakeByInternalCondition, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //    Menu_AppendItem(menu, "Bake By Level", Menu_BakeByLevel, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //    Menu_AppendItem(menu, "Save As...", Menu_SaveAs, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
 
-            //Menu_AppendSeparator(menu);
+        //    //Menu_AppendSeparator(menu);
 
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
         private void Menu_BakeByInternalCondition(object sender, EventArgs e)
         {

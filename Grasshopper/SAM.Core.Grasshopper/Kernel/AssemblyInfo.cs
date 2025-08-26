@@ -14,23 +14,23 @@ namespace SAM.Core.Grasshopper
             }
         }
 
-        public override Bitmap Icon
-        {
-            get
-            {
-                //Return a 24x24 pixel bitmap to represent this GHA library.
-                return Properties.Resources.HL_Logo24; ;
-            }
-        }
+        //public override Bitmap Icon
+        //{
+        //    get
+        //    {
+        //        //Return a 24x24 pixel bitmap to represent this GHA library.
+        //        return Properties.Resources.HL_Logo24; ;
+        //    }
+        //}
 
-        public override Bitmap AssemblyIcon
-        {
-            get
-            {
-                //Return a 24x24 pixel bitmap to represent this GHA library.
-                return Properties.Resources.HL_Logo24; ;
-            }
-        }
+        //public override Bitmap AssemblyIcon
+        //{
+        //    get
+        //    {
+        //        //Return a 24x24 pixel bitmap to represent this GHA library.
+        //        return Properties.Resources.HL_Logo24; ;
+        //    }
+        //}
 
         public override string Description
         {

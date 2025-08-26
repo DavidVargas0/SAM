@@ -38,7 +38,7 @@ namespace SAM.Analytical.Grasshopper
         public bool BakeGeometry(RhinoDoc doc, ObjectAttributes att, out Guid obj_guid)
         {
             obj_guid = Guid.Empty;
-            
+
             if (Value?.AdjacencyCluster == null)
                 return false;
 
@@ -104,7 +104,7 @@ namespace SAM.Analytical.Grasshopper
                 target = (Y)(object)Value;
                 return true;
             }
-            
+
             if (typeof(Y).IsAssignableFrom(typeof(GH_Mesh)))
             {
                 target = (Y)(object)Value.ToGrasshopper_Mesh();
@@ -133,7 +133,7 @@ namespace SAM.Analytical.Grasshopper
     {
         public override Guid ComponentGuid => new Guid("01466a73-e3f3-495d-b794-bd322c9edfa0");
 
-                protected override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
+        // protected    override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
 
         public bool Hidden { get; set; }
 
@@ -197,21 +197,21 @@ namespace SAM.Analytical.Grasshopper
             Modify.BakeGeometry_ByBoundaryType(doc, VolatileData, true, Core.Tolerance.Distance);
         }
 
-        public override void AppendAdditionalMenuItems(System.Windows.Forms.ToolStripDropDown menu)
-        {
-            Menu_AppendItem(menu, "Bake By Type", Menu_BakeByPanelType, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
-            Menu_AppendItem(menu, "Bake By Construction", Menu_BakeByConstruction, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
-            Menu_AppendItem(menu, "Bake By BoundaryType", Menu_BakeByBoundaryType, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
-            Menu_AppendItem(menu, "Bake By Discharge Coefficient", Menu_BakeByDischargeCoefficient, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
-            Menu_AppendItem(menu, "Save As...", Menu_SaveAs, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
-            
-            if(System.IO.File.Exists(Query.AnalyticalUIPath()))
-            {
-                Menu_AppendItem(menu, "Open in UI", Menu_OpenInUI, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
-            }
+        //public override void AppendAdditionalMenuItems(System.Windows.Forms.ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Bake By Type", Menu_BakeByPanelType, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //    Menu_AppendItem(menu, "Bake By Construction", Menu_BakeByConstruction, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //    Menu_AppendItem(menu, "Bake By BoundaryType", Menu_BakeByBoundaryType, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //    Menu_AppendItem(menu, "Bake By Discharge Coefficient", Menu_BakeByDischargeCoefficient, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //    Menu_AppendItem(menu, "Save As...", Menu_SaveAs, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
 
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    if(System.IO.File.Exists(Query.AnalyticalUIPath()))
+        //    {
+        //        Menu_AppendItem(menu, "Open in UI", Menu_OpenInUI, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //    }
+
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
         private void Menu_BakeByPanelType(object sender, EventArgs e)
         {

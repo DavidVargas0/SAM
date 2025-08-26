@@ -7,7 +7,8 @@ using SAM.Core.Grasshopper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
+
+//using System.Windows.Forms;
 
 namespace SAM.Architectural.Grasshopper
 {
@@ -60,7 +61,7 @@ namespace SAM.Architectural.Grasshopper
     {
         public override Guid ComponentGuid => new Guid("6604b8ee-9225-4568-8ce3-f4c60d521be9");
 
-        protected override System.Drawing.Bitmap Icon => Resources.SAM_Architectural;
+        //protected override System.Drawing.Bitmap Icon => Resources.SAM_Architectural;
 
         bool IGH_PreviewObject.Hidden { get; set; }
 
@@ -87,18 +88,18 @@ namespace SAM.Architectural.Grasshopper
             throw new NotImplementedException();
         }
 
-        public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
-        {
-            Menu_AppendItem(menu, "Save As...", Menu_SaveAs, VolatileData.AllData(true).Any());
+        //public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Save As...", Menu_SaveAs, VolatileData.AllData(true).Any());
 
-            //Menu_AppendSeparator(menu);
+        //    //Menu_AppendSeparator(menu);
 
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
-        private void Menu_SaveAs(object sender, EventArgs e)
-        {
-            Core.Grasshopper.Query.SaveAs(VolatileData);
-        }
+        //private void Menu_SaveAs(object sender, EventArgs e)
+        //{
+        //    Core.Grasshopper.Query.SaveAs(VolatileData);
+        //}
     }
 }

@@ -12,7 +12,8 @@ using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
+
+// using   system.windows.forms;
 using SAM.Geometry.Object.Spatial;
 
 namespace SAM.Analytical.Grasshopper
@@ -21,7 +22,7 @@ namespace SAM.Analytical.Grasshopper
     public class GooPartition : GooJSAMObject<IPartition>, IGH_PreviewData, IGH_BakeAwareData
     {
         public bool ShowAll = true;
-        
+
         public GooPartition()
             : base()
         {
@@ -51,7 +52,7 @@ namespace SAM.Analytical.Grasshopper
         public void DrawViewportWires(GH_PreviewWireArgs args)
         {
             Face3D face3D = Value?.Face3D;
-            if(face3D == null)
+            if (face3D == null)
             {
                 return;
             }
@@ -67,7 +68,7 @@ namespace SAM.Analytical.Grasshopper
 
             Geometry.Grasshopper.Modify.DrawViewportWires(face3D, args, color_ExternalEdge, color_InternalEdges);
 
-            if(Value is IHostPartition)
+            if (Value is IHostPartition)
             {
                 List<IOpening> openings = ((IHostPartition)Value).GetOpenings();
                 if (openings != null)
@@ -98,7 +99,7 @@ namespace SAM.Analytical.Grasshopper
             if (face3D == null)
                 return;
 
-            if(!ShowAll)
+            if (!ShowAll)
             {
                 Point3D point3D_CameraLocation = Geometry.Rhino.Convert.ToSAM(RhinoDoc.ActiveDoc.Views.ActiveView.ActiveViewport.CameraLocation);
                 if (point3D_CameraLocation == null)
@@ -119,7 +120,7 @@ namespace SAM.Analytical.Grasshopper
 
             args.Pipeline.DrawBrepShaded(brep, displayMaterial);
 
-            if(Value is IHostPartition)
+            if (Value is IHostPartition)
             {
                 List<IOpening> openings = ((IHostPartition)Value).GetOpenings();
                 if (openings != null)
@@ -202,10 +203,10 @@ namespace SAM.Analytical.Grasshopper
     public class GooPartitionParam : GH_PersistentParam<GooPartition>, IGH_PreviewObject, IGH_BakeAwareObject
     {
         private bool showAll = true;
-        
+
         public override Guid ComponentGuid => new Guid("0091B0F4-8009-4388-8914-A3FE680EF12D");
 
-                protected override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
+        // protected    override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
 
         public override GH_Exposure Exposure => GH_Exposure.hidden;
 
@@ -263,12 +264,12 @@ namespace SAM.Analytical.Grasshopper
             if (getObject.CommandResult() != Result.Success)
                 return GH_GetterResult.cancel;
 
-            if(getObject.ObjectCount == 0)
+            if (getObject.ObjectCount == 0)
                 return GH_GetterResult.cancel;
 
             values = new List<GooPartition>();
 
-            for (int i =0; i < getObject.ObjectCount; i++)
+            for (int i = 0; i < getObject.ObjectCount; i++)
             {
                 ObjRef objRef = getObject.Object(i);
 
@@ -294,10 +295,10 @@ namespace SAM.Analytical.Grasshopper
                 if (geometryBase.HasUserData)
                 {
                     string @string = geometryBase.GetUserString("SAM");
-                    if(!string.IsNullOrWhiteSpace(@string))
+                    if (!string.IsNullOrWhiteSpace(@string))
                     {
                         partitions = Core.Convert.ToSAM<IPartition>(@string);
-                        if(partitions != null)
+                        if (partitions != null)
                         {
                             partitions.RemoveAll(x => x == null);
                         }
@@ -311,13 +312,12 @@ namespace SAM.Analytical.Grasshopper
                                 {
                                     partitions[j] = Create.Partition(partition_Old, partition_Old.Guid, face3Ds[j]);
                                 }
-
                             }
                         }
                     }
                 }
-                
-                if(partitions == null || partitions.Count == 0)
+
+                if (partitions == null || partitions.Count == 0)
                 {
                     partitions = Create.HostPartitions(sAMGeometry3Ds)?.Cast<IPartition>().ToList();
                 }
@@ -391,7 +391,6 @@ namespace SAM.Analytical.Grasshopper
                                 {
                                     partitions[j] = Create.Partition(partition_Old, partition_Old.Guid, face3Ds[j]);
                                 }
-
                             }
                         }
                     }
@@ -406,7 +405,7 @@ namespace SAM.Analytical.Grasshopper
                     continue;
 
                 partitions.RemoveAll(x => x == null || x.Face3D == null);
-                if(partitions.Count != 0)
+                if (partitions.Count != 0)
                 {
                     value = new GooPartition(partitions[0]);
                     return GH_GetterResult.success;
@@ -441,18 +440,17 @@ namespace SAM.Analytical.Grasshopper
             Modify.BakeGeometry_ByCategory(doc, VolatileData, false, Core.Tolerance.Distance);
         }
 
-        public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
-        {
+        //public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Show All", Menu_ShowAll, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any(), showAll).Tag = showAll;
 
-            Menu_AppendItem(menu, "Show All", Menu_ShowAll, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any(), showAll).Tag = showAll;
+        //    Menu_AppendItem(menu, "Bake By Type", Menu_BakeByPanelType, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //    Menu_AppendItem(menu, "Bake By Category", Menu_BakeByCategory, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
 
-            Menu_AppendItem(menu, "Bake By Type", Menu_BakeByPanelType, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
-            Menu_AppendItem(menu, "Bake By Category", Menu_BakeByCategory, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //    //Menu_AppendSeparator(menu);
 
-            //Menu_AppendSeparator(menu);
-
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
         private void Menu_BakeByPanelType(object sender, EventArgs e)
         {
@@ -461,11 +459,11 @@ namespace SAM.Analytical.Grasshopper
 
         private void Menu_ShowAll(object sender, EventArgs e)
         {
-            if (sender is ToolStripMenuItem item && item.Tag is bool)
-            {
-                showAll = !(bool)item.Tag;
-                ExpirePreview(true);
-            }
+            //if (sender is ToolStripMenuItem item && item.Tag is bool)
+            //{
+            //    showAll = !(bool)item.Tag;
+            //    ExpirePreview(true);
+            //}
         }
 
         private void Menu_BakeByCategory(object sender, EventArgs e)
@@ -482,9 +480,9 @@ namespace SAM.Analytical.Grasshopper
 
         public override bool Read(GH_IReader reader)
         {
-            if(reader != null)
+            if (reader != null)
                 reader.TryGetBoolean(GetType().FullName, ref showAll);
-            
+
             return base.Read(reader);
         }
     }

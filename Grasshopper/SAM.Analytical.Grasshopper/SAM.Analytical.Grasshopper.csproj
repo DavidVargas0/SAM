@@ -1,23 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-	  <TargetFramework>net7.0-windows</TargetFramework>
-	  <RhinoDefaultInstallDir>$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\McNeel\Rhinoceros\8.0\Install', 'Path', null, RegistryView.Registry64))</RhinoDefaultInstallDir>
-	  <RhinoDebugInstallDir>$([MSBuild]::GetRegistryValueFromView('HKEY_CURRENT_USER\Software\McNeel\Rhinoceros\8.0-WIP-Developer-Debug-trunk\Install', 'Path', null, RegistryView.Registry64))</RhinoDebugInstallDir>
-	  <RhinoInstallDir>$([MSBuild]::ValueOrDefault('$(RhinoDebugInstallDir)', '$(RhinoDefaultInstallDir)'))</RhinoInstallDir>
-	  <RhinoDefaultPluginsDir>$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\McNeel\Rhinoceros\8.0\Install', 'Default Plug-ins Folder', null, RegistryView.Registry64))</RhinoDefaultPluginsDir>
-	  <RhinoDebugPluginsDir>$([MSBuild]::GetRegistryValueFromView('HKEY_CURRENT_USER\Software\McNeel\Rhinoceros\8.0-WIP-Developer-Debug-trunk\Install', 'Default Plug-ins Folder', null, RegistryView.Registry64))</RhinoDebugPluginsDir>
-	  <RhinoPluginsDir>$([MSBuild]::ValueOrDefault('$(RhinoDebugPluginsDir)', '$(RhinoDefaultPluginsDir)'))</RhinoPluginsDir><GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
-    <Deterministic>false</Deterministic>
-	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-	  <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-	  <Configurations>Debug;Release;RH7;RH8</Configurations>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<OutputType>Library</OutputType>
+		<Deterministic>false</Deterministic>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<Configurations>Debug;Release;RH7;RH8</Configurations>
+	</PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <OutputPath>..\..\build\</OutputPath>
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
@@ -324,6 +313,8 @@
     <Compile Remove="Component\SAMAnalyticalUpdateVentilationProfile.cs" />
     <Compile Remove="Component\SAMAnalyticalUpdateZoneByName.cs" />
     <Compile Remove="Component\SAMAnalyticalZoneType.cs" />
+    <Compile Remove="Kernel\AssemblyInfo.cs" />
+    <Compile Remove="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Rhino\SAM.Analytical.Rhino\SAM.Analytical.Rhino.csproj" />
@@ -372,6 +363,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Component\New\" />
+    <Folder Include="Kernel\" />
   </ItemGroup>
   <PropertyGroup />
   <PropertyGroup>

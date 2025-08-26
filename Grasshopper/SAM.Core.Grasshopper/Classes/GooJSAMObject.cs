@@ -7,7 +7,8 @@ using SAM.Core.Grasshopper.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
+
+//using System.Windows.Forms;
 
 namespace SAM.Core.Grasshopper
 {
@@ -47,7 +48,6 @@ namespace SAM.Core.Grasshopper
             }
         }
 
-
         public override IGH_Goo Duplicate()
         {
             return new GooJSAMObject<T>(Value);
@@ -61,7 +61,7 @@ namespace SAM.Core.Grasshopper
             }
 
             JObject jObject = Value.ToJObject();
-            if(jObject == null)
+            if (jObject == null)
             {
                 return false;
             }
@@ -108,10 +108,10 @@ namespace SAM.Core.Grasshopper
 
             string value = Value.GetType().FullName;
 
-            if(Value is SAMObject)
+            if (Value is SAMObject)
             {
                 SAMObject sAMObject = (SAMObject)(object)Value;
-                
+
                 if (!string.IsNullOrWhiteSpace(sAMObject.Name))
                     value += string.Format(" [{0}]", sAMObject.Name);
             }
@@ -123,7 +123,7 @@ namespace SAM.Core.Grasshopper
         {
             if (source == null)
                 return false;
-            
+
             if (source is T)
             {
                 Value = (T)(object)source;
@@ -131,7 +131,7 @@ namespace SAM.Core.Grasshopper
             }
 
             Type type_Source = source?.GetType();
-            if(type_Source != null)
+            if (type_Source != null)
             {
                 if (typeof(IGooJSAMObject).IsAssignableFrom(type_Source))
                 {
@@ -189,7 +189,7 @@ namespace SAM.Core.Grasshopper
 
             try
             {
-                if(Value != null)
+                if (Value != null)
                 {
                     //target = (Y)Activator.CreateInstance(typeof(Y), Value);
 
@@ -204,15 +204,14 @@ namespace SAM.Core.Grasshopper
             }
             catch
             {
-
             }
-            
+
             return base.CastTo(ref target);
         }
 
         public virtual bool Equals(T t)
         {
-            if(t is SAMObject sAMObject_1)
+            if (t is SAMObject sAMObject_1)
             {
                 if (Value is SAMObject sAMObject_2)
                 {
@@ -227,7 +226,7 @@ namespace SAM.Core.Grasshopper
         {
             if (Value is SAMObject sAMObject)
             {
-                return Core.Query.FullTypeName(sAMObject)?.GetHashCode() ^ sAMObject.Guid.GetHashCode()?? 0;
+                return Core.Query.FullTypeName(sAMObject)?.GetHashCode() ^ sAMObject.Guid.GetHashCode() ?? 0;
             }
 
             return base.GetHashCode();
@@ -250,7 +249,7 @@ namespace SAM.Core.Grasshopper
     public class GooJSAMObjectParam<T> : GH_PersistentParam<GooJSAMObject<T>> where T : IParameterizedSAMObject
     {
         public override Guid ComponentGuid => new Guid("5af7e0dc-8d0c-4d51-8c85-6f2795c2fc37");
-        protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
+        //protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
 
         public GooJSAMObjectParam()
             : base(typeof(T).Name, typeof(T).Name, typeof(T).FullName.Replace(".", " "), "Params", "SAM")
@@ -267,14 +266,14 @@ namespace SAM.Core.Grasshopper
             throw new NotImplementedException();
         }
 
-        public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
-        {
-            Menu_AppendItem(menu, "Save As...", Menu_SaveAs, VolatileData.AllData(true).Any());
+        //public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Save As...", Menu_SaveAs, VolatileData.AllData(true).Any());
 
-            //Menu_AppendSeparator(menu);
+        //    //Menu_AppendSeparator(menu);
 
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
         private void Menu_SaveAs(object sender, EventArgs e)
         {

@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Windows.Forms;
+
+//using System.Windows.Forms;
 using GH_IO.Serialization;
 using Grasshopper.Kernel;
 using SAM.Core.Grasshopper.Properties;
@@ -13,7 +14,6 @@ namespace SAM.Core.Grasshopper
         public GH_SAMEnumComponent(string name, string nickname, string description, string category, string subCategory)
             : base(name, nickname, description, category, subCategory)
         {
-
         }
 
         public override bool Write(GH_IWriter writer)
@@ -33,29 +33,28 @@ namespace SAM.Core.Grasshopper
                 }
                 catch
                 {
-
                 }
             }
 
             return base.Read(reader);
         }
 
-        protected override void AppendAdditionalComponentMenuItems(ToolStripDropDown menu)
-        {
-            foreach (Enum @enum in Enum.GetValues(typeof(T)))
-                Menu_AppendItem(menu, @enum.ToString(), Menu_Changed, true, @enum.Equals(value)).Tag = @enum;
+        //protected override void AppendAdditionalComponentMenuItems(ToolStripDropDown menu)
+        //{
+        //    foreach (Enum @enum in Enum.GetValues(typeof(T)))
+        //        Menu_AppendItem(menu, @enum.ToString(), Menu_Changed, true, @enum.Equals(value)).Tag = @enum;
 
-            base.AppendAdditionalComponentMenuItems(menu);
-        }
+        //    base.AppendAdditionalComponentMenuItems(menu);
+        //}
 
-        private void Menu_Changed(object sender, EventArgs e)
-        {
-            if (sender is ToolStripMenuItem item && item.Tag is T)
-            {
-                value = (T)item.Tag;
-                ExpireSolution(true);
-            }
-        }
+        //private void Menu_Changed(object sender, EventArgs e)
+        //{
+        //    if (sender is ToolStripMenuItem item && item.Tag is T)
+        //    {
+        //        value = (T)item.Tag;
+        //        ExpireSolution(true);
+        //    }
+        //}
 
         /// <summary>
         /// Registers all the input parameters for this component.
@@ -69,7 +68,7 @@ namespace SAM.Core.Grasshopper
         /// </summary>
         protected override void RegisterOutputParams(GH_OutputParamManager outputParamManager)
         {
-            outputParamManager.AddParameter(new GooObjectParam() { Name = typeof(T).Name, NickName = typeof(T).Name, Description = typeof(T).Name, Access = GH_ParamAccess.item});
+            outputParamManager.AddParameter(new GooObjectParam() { Name = typeof(T).Name, NickName = typeof(T).Name, Description = typeof(T).Name, Access = GH_ParamAccess.item });
         }
 
         /// <summary>
@@ -82,6 +81,5 @@ namespace SAM.Core.Grasshopper
         {
             dataAccess.SetData(0, new GooObject(value));
         }
-
     }
 }

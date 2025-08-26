@@ -5,7 +5,8 @@ using SAM.Weather.Grasshopper.Properties;
 using SAM.Core.Grasshopper;
 using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
+
+//using System.Windows.Forms;
 using System.Linq;
 
 namespace SAM.Weather.Grasshopper
@@ -32,7 +33,7 @@ namespace SAM.Weather.Grasshopper
     {
         public override Guid ComponentGuid => new Guid("3778cda9-ca09-4d52-b9fb-ed23780dc0e4");
 
-                protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
+        //protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
 
         bool IGH_PreviewObject.Hidden { get; set; }
 
@@ -59,18 +60,18 @@ namespace SAM.Weather.Grasshopper
             throw new NotImplementedException();
         }
 
-        public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
-        {
-            Menu_AppendItem(menu, "Save As...", Menu_SaveAs, VolatileData.AllData(true).Any());
+        //public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Save As...", Menu_SaveAs, VolatileData.AllData(true).Any());
 
-            //Menu_AppendSeparator(menu);
+        //    //Menu_AppendSeparator(menu);
 
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
-        private void Menu_SaveAs(object sender, EventArgs e)
-        {
-            Core.Grasshopper.Query.SaveAs(VolatileData);
-        }
+        //private void Menu_SaveAs(object sender, EventArgs e)
+        //{
+        //    Core.Grasshopper.Query.SaveAs(VolatileData);
+        //}
     }
 }

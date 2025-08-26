@@ -4,11 +4,12 @@ using SAM.Architectural.Grasshopper.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
+
+//using System.Windows.Forms;
 
 namespace SAM.Architectural.Grasshopper
 {
-    public class GooMaterialLayer: GH_Goo<MaterialLayer>
+    public class GooMaterialLayer : GH_Goo<MaterialLayer>
     {
         public GooMaterialLayer()
             : base()
@@ -73,17 +74,17 @@ namespace SAM.Architectural.Grasshopper
 
         public override bool CastFrom(object source)
         {
-            if(source is IGH_Goo)
+            if (source is IGH_Goo)
             {
                 object value = (source as dynamic).Value;
                 MaterialLayer materialLayer = value as MaterialLayer;
-                if(materialLayer != null)
+                if (materialLayer != null)
                 {
                     Value = materialLayer;
                     return true;
                 }
             }
-            
+
             return base.CastFrom(source);
         }
 
@@ -106,7 +107,7 @@ namespace SAM.Architectural.Grasshopper
     {
         public override Guid ComponentGuid => new Guid("cb6524ab-7111-454a-b6be-5e23007c794c");
 
-                protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
+        //protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
 
         public GooMaterialLayerParam()
             : base(typeof(MaterialLayer).Name, typeof(MaterialLayer).Name, typeof(MaterialLayer).FullName.Replace(".", " "), "Params", "SAM")
@@ -123,18 +124,18 @@ namespace SAM.Architectural.Grasshopper
             throw new NotImplementedException();
         }
 
-        public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
-        {
-            Menu_AppendItem(menu, "Save As...", Menu_SaveAs, VolatileData.AllData(true).Any());
+        //public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Save As...", Menu_SaveAs, VolatileData.AllData(true).Any());
 
-            //Menu_AppendSeparator(menu);
+        //    //Menu_AppendSeparator(menu);
 
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
-        private void Menu_SaveAs(object sender, EventArgs e)
-        {
-            Core.Grasshopper.Query.SaveAs(VolatileData);
-        }
+        //private void Menu_SaveAs(object sender, EventArgs e)
+        //{
+        //    Core.Grasshopper.Query.SaveAs(VolatileData);
+        //}
     }
 }

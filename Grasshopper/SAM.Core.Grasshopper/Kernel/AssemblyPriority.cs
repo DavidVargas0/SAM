@@ -8,7 +8,7 @@ namespace SAM.Core.Grasshopper
     {
         public override GH_LoadingInstruction PriorityLoad()
         {
-            Instances.ComponentServer.AddCategoryIcon("SAM", Resources.SAM_Small);
+            //Instances.ComponentServer.AddCategoryIcon("SAM", Resources.SAM_Small);
             Instances.ComponentServer.AddCategorySymbolName("SAM", 'S');
             return GH_LoadingInstruction.Proceed;
         }

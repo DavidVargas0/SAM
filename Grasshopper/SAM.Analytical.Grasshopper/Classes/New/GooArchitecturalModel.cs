@@ -38,11 +38,11 @@ namespace SAM.Analytical.Grasshopper
         public bool BakeGeometry(RhinoDoc doc, ObjectAttributes att, out Guid obj_guid)
         {
             obj_guid = Guid.Empty;
-            
+
             if (Value == null)
                 return false;
 
-            return Rhino.Modify.BakeGeometry( Value, doc, att, out obj_guid);
+            return Rhino.Modify.BakeGeometry(Value, doc, att, out obj_guid);
         }
 
         public void DrawViewportMeshes(GH_PreviewMeshArgs args)
@@ -119,7 +119,7 @@ namespace SAM.Analytical.Grasshopper
     {
         public override Guid ComponentGuid => new Guid("F11A6C34-3376-4A5D-8C6C-1D5331A7C96A");
 
-                protected override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
+        // protected    override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
 
         public override GH_Exposure Exposure => GH_Exposure.hidden;
 
@@ -180,14 +180,14 @@ namespace SAM.Analytical.Grasshopper
             Modify.BakeGeometry_ByAnalyticalType(doc, VolatileData, true, Core.Tolerance.Distance);
         }
 
-        public override void AppendAdditionalMenuItems(System.Windows.Forms.ToolStripDropDown menu)
-        {
-            Menu_AppendItem(menu, "Bake By Type", Menu_BakeByPanelType, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
-            Menu_AppendItem(menu, "Bake By Category", Menu_BakeByConstruction, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
-            Menu_AppendItem(menu, "Bake By Analytical Type", Menu_BakeByAnalyticalType, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //public override void AppendAdditionalMenuItems(System.Windows.Forms.ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Bake By Type", Menu_BakeByPanelType, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //    Menu_AppendItem(menu, "Bake By Category", Menu_BakeByConstruction, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //    Menu_AppendItem(menu, "Bake By Analytical Type", Menu_BakeByAnalyticalType, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
 
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
         private void Menu_BakeByPanelType(object sender, EventArgs e)
         {

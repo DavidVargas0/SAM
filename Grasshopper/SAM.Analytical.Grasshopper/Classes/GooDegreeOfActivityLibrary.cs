@@ -5,7 +5,8 @@ using SAM.Core.Grasshopper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
+
+// using   system.windows.forms;
 
 namespace SAM.Analytical.Grasshopper
 {
@@ -33,7 +34,7 @@ namespace SAM.Analytical.Grasshopper
 
         public override GH_Exposure Exposure => GH_Exposure.hidden;
 
-                protected override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
+        // protected    override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
 
         public GooDegreeOfActivityLibraryParam()
             : base(typeof(DegreeOfActivityLibrary).Name, typeof(DegreeOfActivityLibrary).Name, typeof(DegreeOfActivityLibrary).FullName.Replace(".", " "), "Params", "SAM")
@@ -50,14 +51,14 @@ namespace SAM.Analytical.Grasshopper
             throw new NotImplementedException();
         }
 
-        public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
-        {
-            Menu_AppendItem(menu, "Save As...", Menu_SaveAs, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Save As...", Menu_SaveAs, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
 
-            //Menu_AppendSeparator(menu);
+        //    //Menu_AppendSeparator(menu);
 
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
         private void Menu_SaveAs(object sender, EventArgs e)
         {

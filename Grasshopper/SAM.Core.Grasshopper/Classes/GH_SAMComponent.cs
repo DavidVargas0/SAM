@@ -1,5 +1,6 @@
 ﻿using Grasshopper.Kernel;
-using System.Windows.Forms;
+
+//using System.Windows.Forms;
 
 namespace SAM.Core.Grasshopper
 {
@@ -20,15 +21,15 @@ namespace SAM.Core.Grasshopper
             }
         }
 
-        public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
-        {
-            base.AppendAdditionalMenuItems(menu);
-            Menu_AppendSeparator(menu);
-            //Menu_AppendItem(menu, "Source code", OnSourceCodeClick, Properties.Resources.SAM_Small);
+        //public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
+        //{
+        //    base.AppendAdditionalMenuItems(menu);
+        //    Menu_AppendSeparator(menu);
+        //    //Menu_AppendItem(menu, "Source code", OnSourceCodeClick, Properties.Resources.SAM_Small);
 
-            Modify.AppendSourceCodeAdditionalMenuItem(this, menu);
-            Modify.AppendNewComponentAdditionalMenuItem(this, menu);
-        }
+        //    Modify.AppendSourceCodeAdditionalMenuItem(this, menu);
+        //    Modify.AppendNewComponentAdditionalMenuItem(this, menu);
+        //}
 
         public string ComponentVersion
         {
@@ -42,7 +43,7 @@ namespace SAM.Core.Grasshopper
         {
             get
             {
-               return GetValue("SAM_SAMVersion", null);
+                return GetValue("SAM_SAMVersion", null);
             }
         }
 

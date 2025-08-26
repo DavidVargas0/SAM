@@ -5,7 +5,8 @@ using SAM.Core.Grasshopper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
+
+// // using   system.windows.forms;
 
 namespace SAM.Analytical.Grasshopper
 {
@@ -31,7 +32,7 @@ namespace SAM.Analytical.Grasshopper
     {
         public override Guid ComponentGuid => new Guid("4a8077a2-7c38-4996-8fbf-9c508c746eea");
 
-                protected override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
+        // protected    override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
 
         public GooApertureConstructionLibraryParam()
             : base(typeof(ApertureConstructionLibrary).Name, typeof(ApertureConstructionLibrary).Name, typeof(ApertureConstructionLibrary).FullName.Replace(".", " "), "Params", "SAM")
@@ -48,14 +49,14 @@ namespace SAM.Analytical.Grasshopper
             throw new NotImplementedException();
         }
 
-        public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
-        {
-            Menu_AppendItem(menu, "Save As...", Menu_SaveAs, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Save As...", Menu_SaveAs, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
 
-            //Menu_AppendSeparator(menu);
+        //    //Menu_AppendSeparator(menu);
 
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
         private void Menu_SaveAs(object sender, EventArgs e)
         {

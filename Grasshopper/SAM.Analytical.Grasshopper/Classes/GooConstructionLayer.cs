@@ -5,11 +5,12 @@ using SAM.Core.Grasshopper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
+
+// // using   system.windows.forms;
 
 namespace SAM.Analytical.Grasshopper
 {
-    public class GooConstructionLayer: GooJSAMObject<ConstructionLayer>
+    public class GooConstructionLayer : GooJSAMObject<ConstructionLayer>
     {
         public GooConstructionLayer()
             : base()
@@ -74,17 +75,17 @@ namespace SAM.Analytical.Grasshopper
 
         public override bool CastFrom(object source)
         {
-            if(source is IGH_Goo)
+            if (source is IGH_Goo)
             {
                 object value = (source as dynamic).Value;
                 ConstructionLayer constructionLayer = value as ConstructionLayer;
-                if(constructionLayer != null)
+                if (constructionLayer != null)
                 {
                     Value = constructionLayer;
                     return true;
                 }
             }
-            
+
             return base.CastFrom(source);
         }
 
@@ -98,7 +99,7 @@ namespace SAM.Analytical.Grasshopper
     {
         public override Guid ComponentGuid => new Guid("8ebc44e2-3c71-401c-acd5-1f9903cb49ee");
 
-                protected override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
+        // protected    override System.Drawing.Bitmap Icon => Core.Convert.ToBitmap(Resources.SAM_Small);
 
         public GooConstructionLayerParam()
             : base(typeof(ConstructionLayer).Name, typeof(ConstructionLayer).Name, typeof(ConstructionLayer).FullName.Replace(".", " "), "Params", "SAM")
@@ -115,14 +116,14 @@ namespace SAM.Analytical.Grasshopper
             throw new NotImplementedException();
         }
 
-        public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
-        {
-            Menu_AppendItem(menu, "Save As...", Menu_SaveAs, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
+        //public override void AppendAdditionalMenuItems(ToolStripDropDown menu)
+        //{
+        //    Menu_AppendItem(menu, "Save As...", Menu_SaveAs, Core.Convert.ToBitmap(Resources.SAM3), VolatileData.AllData(true).Any());
 
-            //Menu_AppendSeparator(menu);
+        //    //Menu_AppendSeparator(menu);
 
-            base.AppendAdditionalMenuItems(menu);
-        }
+        //    base.AppendAdditionalMenuItems(menu);
+        //}
 
         private void Menu_SaveAs(object sender, EventArgs e)
         {

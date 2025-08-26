@@ -10,7 +10,7 @@ namespace SAM.Core.Grasshopper
     public class GooObject : GH_Goo<object>
     {
         public GooObject(object value)
-            :base(value)
+            : base(value)
         {
             Value = value;
         }
@@ -18,7 +18,6 @@ namespace SAM.Core.Grasshopper
         public GooObject()
             : base()
         {
-
         }
 
         public override bool IsValid => true;
@@ -62,7 +61,6 @@ namespace SAM.Core.Grasshopper
             if (Value.GetType().Equals(typeof(string)))
                 return (string)Value;
 
-
             if (Value.GetType().IsPrimitive)
                 return Value.ToString();
 
@@ -94,7 +92,6 @@ namespace SAM.Core.Grasshopper
             //        values.Add(@object?.ToString());
             //    }
 
-
             //    value = string.Join("\r\n", values);
             //}
 
@@ -111,7 +108,7 @@ namespace SAM.Core.Grasshopper
             if (Value == null)
                 return false;
 
-            if(Value is Y)
+            if (Value is Y)
             {
                 target = (Y)Value;
                 return true;
@@ -128,8 +125,8 @@ namespace SAM.Core.Grasshopper
                 target = (Y)Value;
                 return true;
             }
-            
-            if(typeof(Y).IsEnum && Value is string)
+
+            if (typeof(Y).IsEnum && Value is string)
             {
                 try
                 {
@@ -138,12 +135,10 @@ namespace SAM.Core.Grasshopper
                 }
                 catch
                 {
-
                 }
-                
             }
 
-            if(typeof(Y) == typeof(GH_ObjectWrapper))
+            if (typeof(Y) == typeof(GH_ObjectWrapper))
             {
                 target = (Y)(object)(new GH_ObjectWrapper(Value));
                 return true;
@@ -151,12 +146,12 @@ namespace SAM.Core.Grasshopper
 
             if (typeof(Y) == typeof(GH_Boolean))
             {
-                if(Value is bool)
+                if (Value is bool)
                 {
                     target = (Y)(object)(new GH_Boolean((bool)Value));
                     return true;
                 }
-                if(Value is int)
+                if (Value is int)
                 {
                     target = (Y)(object)(new GH_Boolean((int)Value == 1));
                     return true;
@@ -165,7 +160,7 @@ namespace SAM.Core.Grasshopper
 
             if (typeof(Y) == typeof(GH_Number))
             {
-                if(Core.Query.IsNumeric(Value))
+                if (Core.Query.IsNumeric(Value))
                 {
                     target = (Y)(object)(new GH_Number(System.Convert.ToDouble(Value)));
                     return true;
@@ -174,13 +169,11 @@ namespace SAM.Core.Grasshopper
 
             if (typeof(Y) == typeof(GH_String))
             {
-
                 target = (Y)(object)(new GH_String(Value?.ToString()));
                 return true;
-
             }
 
-            if(typeof(IGH_QuickCast).IsAssignableFrom(typeof(Y)))
+            if (typeof(IGH_QuickCast).IsAssignableFrom(typeof(Y)))
             {
                 //target = (Y)(object)(new GH_String(Value?.ToString()));
                 //return true;
@@ -202,7 +195,7 @@ namespace SAM.Core.Grasshopper
                     if (Value != null)
                     {
                         object value_Temp = Value;
-                        if(value_Temp.GetType().IsEnum)
+                        if (value_Temp.GetType().IsEnum)
                         {
                             value_Temp = (int)value_Temp;
                         }
@@ -219,7 +212,6 @@ namespace SAM.Core.Grasshopper
                         }
                     }
                 }
-
             }
 
             return base.CastTo(ref target);
@@ -227,23 +219,21 @@ namespace SAM.Core.Grasshopper
     }
 
     public class GooObjectParam : GH_Param<IGH_Goo>
-    {       
+    {
         public override Guid ComponentGuid => new Guid("a7a5eb79-1834-43db-9aa3-30ca105c3bbb");
 
         public override GH_Exposure Exposure => GH_Exposure.hidden;
 
-                protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
-        
+        //protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
+
         public GooObjectParam(string name)
              : base(name, name, name, "Params", "SAM", GH_ParamAccess.item)
         {
-
         }
 
         public GooObjectParam()
             : base("Object", "Object", "Object", "Params", "SAM", GH_ParamAccess.item)
         {
-
         }
 
         public override int GetHashCode()
@@ -259,7 +249,7 @@ namespace SAM.Core.Grasshopper
             base.Read(reader);
 
             string name = null;
-            
+
             if (!reader.TryGetString(typeof(GooObject).FullName, ref name))
                 return false;
 
