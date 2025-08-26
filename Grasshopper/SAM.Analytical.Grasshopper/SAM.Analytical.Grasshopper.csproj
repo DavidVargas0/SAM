@@ -5,6 +5,7 @@
 		<Deterministic>false</Deterministic>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<NoWarn>NU1605</NoWarn> 
 		<Configurations>Debug;Release;RH7;RH8</Configurations>
 	</PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">

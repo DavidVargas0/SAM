@@ -5,7 +5,7 @@
     <Deterministic>false</Deterministic>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <Configurations>Debug;Release;RH7;RH8</Configurations>
+    <Configurations>Debug;Release;RH8;RH7</Configurations>
   </PropertyGroup>
   <PropertyGroup>
     <Nullable>enable</Nullable>
@@ -21,12 +21,6 @@
     <DocumentationFile>..\..\build\SAM.Core.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\..\build\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RH7|AnyCPU'">
-    <OutputPath>..\..\build\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RH8|AnyCPU'">
     <OutputPath>..\..\build\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
