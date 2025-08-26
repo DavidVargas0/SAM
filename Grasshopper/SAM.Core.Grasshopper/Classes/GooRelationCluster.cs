@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-//using System.Windows.Forms;
+// using    System.Windows.Forms;
 
 namespace SAM.Core.Grasshopper
 {
@@ -43,7 +43,7 @@ namespace SAM.Core.Grasshopper
 
         public override GH_Exposure Exposure => GH_Exposure.hidden;
 
-        //protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
+        // protected override System.Drawing.Bitmap   Icon => Resources.SAM_Small;
 
         //Here we control name, nickname, description, category, sub-category as deafult we use typeofclass name
         public GooRelationClusterParam()

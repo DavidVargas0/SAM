@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-//using System.Windows.Forms;
+// using    System.Windows.Forms;
 
 namespace SAM.Core.Grasshopper
 {
@@ -19,7 +19,7 @@ namespace SAM.Core.Grasshopper
                 return false;
             }
 
-            //string path = null;
+            string path = "";
             //using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             //{
             //    saveFileDialog.Filter = "json files (*.json)|*.json|All files (*.*)|*.*";
@@ -37,7 +37,7 @@ namespace SAM.Core.Grasshopper
             //    return false;
             //}
 
-            return Core.Convert.ToFile(jSAMObjects, "C:");
+            return Core.Convert.ToFile(jSAMObjects, path);
         }
     }
 }

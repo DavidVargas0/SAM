@@ -11,7 +11,8 @@ using System.Drawing;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
-using System.Text.Json;
+
+//using System.Text.Json;
 
 namespace SAM.Core.Grasshopper
 {
@@ -55,14 +56,7 @@ namespace SAM.Core.Grasshopper
             //string path_Repository = Repository.Clone("https://github.com/HoareLea/ScriptsHydra", baseDirectory);
             ExecuteGitCommand(baseDirectory, "clone https://github.com/HoareLea/ScriptsHydra", out messages); //$"clone https://github.com/HoareLea/ScriptsHydra \"{targetFolder}\""));
 
-            //RhinoDoc rhinoDoc = gH_Document.RhinoDocument;
-            RhinoDoc rhinoDoc = null;
-            //RhinoDoc d = RhinoDoc.ActiveDoc;
-#if RH7
-            rhinoDoc = RhinoDoc.ActiveDoc;
-#else
-            rhinoDoc = gH_Document.RhinoDocument;
-#endif
+            RhinoDoc rhinoDoc = gH_Document.RhinoDocument;
 
             string safeFileName = fileName.Replace(" ", "_");
 
@@ -386,13 +380,13 @@ namespace SAM.Core.Grasshopper
         }
 
         // Write metadata as JSON
-        private static void WriteMetadataFile(string fileName, string repoTargetFolder, Dictionary<string, object> metaDataDict)
-        {
-            string jsonFilePath = Path.Combine(repoTargetFolder, "input.json");
-            JsonSerializerOptions options = new JsonSerializerOptions { WriteIndented = true };
-            string json = JsonSerializer.Serialize(metaDataDict, options);
-            File.WriteAllText(jsonFilePath, json);
-        }
+        //private static void WriteMetadataFile(string fileName, string repoTargetFolder, Dictionary<string, object> metaDataDict)
+        //{
+        //    string jsonFilePath = Path.Combine(repoTargetFolder, "input.json");
+        //    JsonSerializerOptions options = new JsonSerializerOptions { WriteIndented = true };
+        //    string json = JsonSerializer.Serialize(metaDataDict, options);
+        //    File.WriteAllText(jsonFilePath, json);
+        //}
 
         // Run git commands (helper)
         //private static void ExecuteGitCommand(string workingDirectory, string command)

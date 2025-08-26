@@ -1,114 +1,51 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<OutputType>Library</OutputType>
 		<Deterministic>false</Deterministic>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<NoWarn>NU1605</NoWarn>
 		<Configurations>Debug;Release;RH7;RH8</Configurations>
 	</PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <OutputPath>..\..\build\</OutputPath>
-    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
-  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>..\..\build\</OutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RH7|AnyCPU'">
-    <OutputPath>..\..\build\Rhino 7\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RH8|AnyCPU'">
-    <OutputPath>..\..\build\Rhino 8\</OutputPath>
-  </PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'RH7|AnyCPU' ">
+		<OutputPath>..\..\build\Rhino 7\</OutputPath>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'RH8|AnyCPU' ">
+		<OutputPath>..\..\build\Rhino 8\</OutputPath>
+	</PropertyGroup>
   <ItemGroup>
-    <Compile Remove="Component\SAMCoreAbout.cs" />
-    <Compile Remove="Component\SAMCoreAddMaterials.cs" />
-    <Compile Remove="Component\SAMCoreARGBToUint.cs" />
-    <Compile Remove="Component\SAMCoreColorToUint.cs" />
-    <Compile Remove="Component\SAMCoreCombineType.cs" />
-    <Compile Remove="Component\SAMCoreCombineValues.cs" />
-    <Compile Remove="Component\SAMCoreConvert.cs" />
-    <Compile Remove="Component\SAMCoreCopyMaterials.cs" />
-    <Compile Remove="Component\SAMCoreCountryCode.cs" />
-    <Compile Remove="Component\SAMCoreCreateAddress.cs" />
-    <Compile Remove="Component\SAMCoreCreateDelimitedFileTableBySAMObjects.cs" />
-    <Compile Remove="Component\SAMCoreCreateGasMaterial_Obsolete.cs" />
-    <Compile Remove="Component\SAMCoreCreateLocation.cs" />
-    <Compile Remove="Component\SAMCoreCreateMaterialLibrary.cs" />
-    <Compile Remove="Component\SAMCoreCreateOpaqueMaterial_Obsolete.cs" />
-    <Compile Remove="Component\SAMCoreCreateTextMap.cs" />
-    <Compile Remove="Component\SAMCoreCreateTransparentMaterial_Obsolete.cs" />
-    <Compile Remove="Component\SAMCoreCsvToDelimitedFileTable.cs" />
-    <Compile Remove="Component\SAMCoreDateTimeToHourOfYear.cs" />
-    <Compile Remove="Component\SAMCoreDayOfYearToHourOfYear.cs" />
-    <Compile Remove="Component\SAMCoreDelimitedFileTableGetValue.cs" />
-    <Compile Remove="Component\SAMCoreDelimitedFileTableMap.cs" />
-    <Compile Remove="Component\SAMCoreDelimitedFileTableSetColumnNames.cs" />
-    <Compile Remove="Component\SAMCoreDelimitedFileTableSetValue.cs" />
-    <Compile Remove="Component\SAMCoreDelimitedFileTableSort.cs" />
-    <Compile Remove="Component\SAMCoreDirection.cs" />
-    <Compile Remove="Component\SAMCoreFilter.cs" />
-    <Compile Remove="Component\SAMCoreFilterByType.cs" />
-    <Compile Remove="Component\SAMCoreFromFile.cs" />
-    <Compile Remove="Component\SAMCoreFromJson.cs" />
-    <Compile Remove="Component\SAMCoreGetNames.cs" />
-    <Compile Remove="Component\SAMCoreGetType.cs" />
-    <Compile Remove="Component\SAMCoreGetValue.cs" />
-    <Compile Remove="Component\SAMCoreInspect.cs" />
-    <Compile Remove="Component\SAMCoreLoadMaterialLibrary.cs" />
-    <Compile Remove="Component\SAMCoreLogToFile.cs" />
-    <Compile Remove="Component\SAMCoreNumberComparisonType.cs" />
-    <Compile Remove="Component\SAMCoreNumberFilter.cs" />
-    <Compile Remove="Component\SAMCoreObjects.cs" />
-    <Compile Remove="Component\SAMCoreParameterByType.cs" />
-    <Compile Remove="Component\SAMCoreParameterType.cs" />
-    <Compile Remove="Component\SAMCorePeriod.cs" />
-    <Compile Remove="Component\SAMCoreRelatedObjects.cs" />
-    <Compile Remove="Component\SAMCoreRelationClusterAddObjects.cs" />
-    <Compile Remove="Component\SAMCoreRemoveValue.cs" />
-    <Compile Remove="Component\SAMCoreReplaceByGuid.cs" />
-    <Compile Remove="Component\SAMCoreRound.cs" />
-    <Compile Remove="Component\SAMCoreSAMLibraryAddObjects.cs" />
-    <Compile Remove="Component\SAMCoreSaveMaterialLibrary.cs" />
-    <Compile Remove="Component\SAMCoreSelectByName.cs" />
-    <Compile Remove="Component\SAMCoreSetValue.cs" />
-    <Compile Remove="Component\SAMCoreSetValues.cs" />
-    <Compile Remove="Component\SAMCoreStringReplace.cs" />
-    <Compile Remove="Component\SAMCoreTableModifier.cs" />
-    <Compile Remove="Component\SAMCoreTextComparisonType.cs" />
-    <Compile Remove="Component\SAMCoreTextMapValues.cs" />
-    <Compile Remove="Component\SAMCoreToCsv.cs" />
-    <Compile Remove="Component\SAMCoreToFile.cs" />
-    <Compile Remove="Component\SAMCoreToJson.cs" />
-    <Compile Remove="Component\SAMCoreToList.cs" />
-    <Compile Remove="Component\SAMCoreUintToARGB.cs" />
-    <Compile Remove="Component\SAMCoreUintToColor.cs" />
-    <Compile Remove="Component\SAMCoreUpdate.cs" />
-    <Compile Remove="Component\SAMHydraExportFile.cs" />
-    <Compile Remove="Component\SAMVersion.cs" />
+    <Compile Remove="Component\**" />
+    <EmbeddedResource Remove="Component\**" />
+    <None Remove="Component\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Kernel\AssemblyInfo.cs" />
+    <Compile Remove="Modify\AppendNewComponentAdditionalMenuItem.cs" />
+    <Compile Remove="Modify\AppendSourceCodeAdditionalMenuItem.cs" />
     <Compile Remove="Modify\ExportHydra.cs" />
     <Compile Remove="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.IO.Compression" />
   </ItemGroup>
-	<ItemGroup Condition="'$(Configuration)|$(Platform)' == 'RH8|AnyCPU'">
-		<PackageReference Include="Grasshopper" Version="8.10.24228.13001" IncludeAssets="compile;build" />
-	</ItemGroup>
-	<ItemGroup Condition="'$(Configuration)|$(Platform)' == 'RH7|AnyCPU'">
-		<PackageReference Include="Grasshopper" Version="7.37.24107.15001" IncludeAssets="compile;build" />
-	</ItemGroup>
-	<ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
   </ItemGroup>
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='RH7|AnyCPU'">
+		<PackageReference Include="Grasshopper" Version="7.37.24107.15001" IncludeAssets="compile;build" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='RH8|AnyCPU'">
+		<PackageReference Include="Grasshopper" Version="8.10.24228.13001" IncludeAssets="compile;build" />
+	</ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\SAM\SAM.Core\SAM.Core.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Component\" />
   </ItemGroup>
   <PropertyGroup />
   <PropertyGroup>

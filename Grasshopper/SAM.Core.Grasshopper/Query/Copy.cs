@@ -17,12 +17,12 @@ namespace SAM.Core.Grasshopper
             if (result == null)
                 return null;
 
-            bool instantiated = Instances.ActiveCanvas.InstantiateNewObject(gH_Component.ComponentGuid, location, true);
+            //bool instantiated = Instances.ActiveCanvas.InstantiateNewObject(gH_Component.ComponentGuid, location, true);
 
-            if (instantiated)
-            {
-                result.ExpireSolution(true);
-            }
+            //if (instantiated)
+            //{
+            //    result.ExpireSolution(true);
+            //}
 
             return result;
         }

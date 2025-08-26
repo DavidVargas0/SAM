@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-//using System.Windows.Forms;
+// using    System.Windows.Forms;
 
 namespace SAM.Core.Grasshopper
 {
@@ -39,7 +39,7 @@ namespace SAM.Core.Grasshopper
     {
         public override Guid ComponentGuid => new Guid("284b34bb-9057-4276-ad5a-591337dd2441");
 
-        //protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
+        // protected override System.Drawing.Bitmap   Icon => Resources.SAM_Small;
 
         public GooResultParam()
             : base("Result", "Result", "SAM Core Result", "Params", "SAM")

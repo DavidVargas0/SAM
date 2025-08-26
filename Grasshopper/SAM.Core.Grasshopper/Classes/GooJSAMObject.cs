@@ -8,11 +8,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-//using System.Windows.Forms;
+// using    System.Windows.Forms;
 
 namespace SAM.Core.Grasshopper
 {
-    public class GooJSAMObject<T> : GH_Goo<T>, IGooJSAMObject, IEquatable<T> where T : IJSAMObject
+    public class GooJSAMObject<T> : GH_Goo<T>, IGooJSAMObject where T : IJSAMObject
     {
         public GooJSAMObject()
             : base()
@@ -208,48 +208,12 @@ namespace SAM.Core.Grasshopper
 
             return base.CastTo(ref target);
         }
-
-        public virtual bool Equals(T t)
-        {
-            if (t is SAMObject sAMObject_1)
-            {
-                if (Value is SAMObject sAMObject_2)
-                {
-                    return sAMObject_1.GetType() == sAMObject_2.GetType() && sAMObject_2.Guid == sAMObject_1.Guid;
-                }
-            }
-
-            return false;
-        }
-
-        public override int GetHashCode()
-        {
-            if (Value is SAMObject sAMObject)
-            {
-                return Core.Query.FullTypeName(sAMObject)?.GetHashCode() ^ sAMObject.Guid.GetHashCode() ?? 0;
-            }
-
-            return base.GetHashCode();
-        }
-
-        public override bool Equals(object @object)
-        {
-            if (@object is GooJSAMObject<T> gooJSAMObject)
-            {
-                return Equals(gooJSAMObject.Value);
-            }
-            if (@object is T t)
-            {
-                return Equals(t);
-            }
-            return false;
-        }
     }
 
     public class GooJSAMObjectParam<T> : GH_PersistentParam<GooJSAMObject<T>> where T : IParameterizedSAMObject
     {
         public override Guid ComponentGuid => new Guid("5af7e0dc-8d0c-4d51-8c85-6f2795c2fc37");
-        //protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
+        // protected override System.Drawing.Bitmap   Icon => Resources.SAM_Small;
 
         public GooJSAMObjectParam()
             : base(typeof(T).Name, typeof(T).Name, typeof(T).FullName.Replace(".", " "), "Params", "SAM")

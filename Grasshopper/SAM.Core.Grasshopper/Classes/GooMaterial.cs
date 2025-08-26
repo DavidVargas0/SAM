@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-//using System.Windows.Forms;
+// using    System.Windows.Forms;
 
 namespace SAM.Core.Grasshopper
 {
@@ -67,24 +67,16 @@ namespace SAM.Core.Grasshopper
         public override string ToString()
         {
             if (Value != null)
-            {
                 return Value.Name;
-            }
 
             return null;
         }
 
         public override bool CastFrom(object source)
         {
-            if (source is IMaterial material_Temp)
+            if (source is IGH_Goo)
             {
-                Value = material_Temp;
-                return true;
-            }
-
-            if (source is IGH_Goo goo)
-            {
-                IMaterial material = (goo as dynamic).Value as IMaterial;
+                IMaterial material = (((IGH_Goo)source) as dynamic).Value as IMaterial;
                 if (material != null)
                 {
                     Value = material;
@@ -117,7 +109,7 @@ namespace SAM.Core.Grasshopper
     {
         public override Guid ComponentGuid => new Guid("8810fd33-f1b7-402e-8c14-78e197a847a8");
 
-        //protected override System.Drawing.Bitmap Icon => Resources.SAM_Small;
+        // protected override System.Drawing.Bitmap   Icon => Resources.SAM_Small;
 
         public GooMaterialParam()
             : base(typeof(Material).Name, typeof(Material).Name, typeof(Material).FullName.Replace(".", " "), "Params", "SAM")

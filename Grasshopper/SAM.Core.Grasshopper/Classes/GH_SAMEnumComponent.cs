@@ -1,6 +1,6 @@
 ﻿using System;
 
-//using System.Windows.Forms;
+//// using    System.Windows.Forms;
 using GH_IO.Serialization;
 using Grasshopper.Kernel;
 using SAM.Core.Grasshopper.Properties;
@@ -47,14 +47,14 @@ namespace SAM.Core.Grasshopper
         //    base.AppendAdditionalComponentMenuItems(menu);
         //}
 
-        //private void Menu_Changed(object sender, EventArgs e)
-        //{
-        //    if (sender is ToolStripMenuItem item && item.Tag is T)
-        //    {
-        //        value = (T)item.Tag;
-        //        ExpireSolution(true);
-        //    }
-        //}
+        private void Menu_Changed(object sender, EventArgs e)
+        {
+            //if (sender is ToolStripMenuItem item && item.Tag is T)
+            //{
+            //    value = (T)item.Tag;
+            //    ExpireSolution(true);
+            //}
+        }
 
         /// <summary>
         /// Registers all the input parameters for this component.

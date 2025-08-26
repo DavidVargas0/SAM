@@ -6,14 +6,14 @@ namespace SAM.Core.Grasshopper
     {
         public static string[] RhinocerosVersions()
         {
-            RegistryKey registryKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\McNeel\Rhinoceros", false);
-            if (registryKey == null)
-                return null;
+            //RegistryKey registryKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\McNeel\Rhinoceros", false);
+            //if (registryKey == null)
+            //    return null;
 
-            string[] result = registryKey.GetSubKeyNames();
-            if (result == null)
-                return null;
-
+            //string[] result = registryKey.GetSubKeyNames();
+            //if (result == null)
+            //    return null;
+            string[] result = null;
             return result;
         }
     }
