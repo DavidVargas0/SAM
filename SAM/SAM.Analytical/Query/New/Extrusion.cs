@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static Extrusion Extrusion(this IHostPartition hostPartition, double tolernace = Core.Tolerance.Distance)
+        public static Extrusion Extrusion(this IHostPartition hostPartition, double tolernace = Tolerance.Distance)
         {
             HostPartitionType hostPartitionType = hostPartition?.Type();
             if (hostPartitionType == null)

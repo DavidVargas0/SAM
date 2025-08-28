@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<IOpening> Split(this IOpening opening, IEnumerable<Face3D> face3Ds, double tolerance_Snap = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static List<IOpening> Split(this IOpening opening, IEnumerable<Face3D> face3Ds, double tolerance_Snap = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             if(opening == null || face3Ds == null)
             {

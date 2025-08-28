@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static Dictionary<Point3D, List<Panel>> SpacingDictionary(this IEnumerable<Panel> panels, double maxTolerance = Core.Tolerance.MacroDistance, double minTolerance = Core.Tolerance.MicroDistance)
+        public static Dictionary<Point3D, List<Panel>> SpacingDictionary(this IEnumerable<Panel> panels, double maxTolerance = Tolerance.MacroDistance, double minTolerance = Tolerance.MicroDistance)
         {
             if(panels == null)
             {

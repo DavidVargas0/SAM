@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static bool Add(this List<Point3D> point3Ds, Point3D point3D, double tolerance = Core.Tolerance.Distance)
+        public static bool Add(this List<Point3D> point3Ds, Point3D point3D, double tolerance = Tolerance.Distance)
         {
             if (point3Ds == null || point3D == null)
                 return false;

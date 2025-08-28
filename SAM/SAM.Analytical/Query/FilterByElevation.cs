@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Query
     { 
-        public static List<Space> FilterByElevation(this IEnumerable<Space> spaces, double elevation, out List<Space> spaces_Lower, out List<Space> spaces_Upper, double tolerance = Core.Tolerance.Distance)
+        public static List<Space> FilterByElevation(this IEnumerable<Space> spaces, double elevation, out List<Space> spaces_Lower, out List<Space> spaces_Upper, double tolerance = Tolerance.Distance)
         {
             spaces_Lower = null;
             spaces_Upper = null;

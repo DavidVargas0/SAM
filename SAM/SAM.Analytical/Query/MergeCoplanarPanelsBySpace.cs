@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static AdjacencyCluster MergeCoplanarPanelsBySpace(this AdjacencyCluster adjacencyCluster, double offset, ref List<Panel> redundantPanels, bool validateConstruction = true, bool validatePanelGroup = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static AdjacencyCluster MergeCoplanarPanelsBySpace(this AdjacencyCluster adjacencyCluster, double offset, ref List<Panel> redundantPanels, bool validateConstruction = true, bool validatePanelGroup = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if(adjacencyCluster == null)
             {
@@ -98,7 +98,7 @@ namespace SAM
             return result;
         }
 
-        public static AnalyticalModel MergeCoplanarPanelsBySpace(this AnalyticalModel analyticalModel, double offset, ref List<Panel> redundantPanels, bool validateConstruction = true, bool validatePanelGroup = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static AnalyticalModel MergeCoplanarPanelsBySpace(this AnalyticalModel analyticalModel, double offset, ref List<Panel> redundantPanels, bool validateConstruction = true, bool validatePanelGroup = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             AdjacencyCluster adjacencyCluster = analyticalModel?.AdjacencyCluster;
             if (adjacencyCluster == null)

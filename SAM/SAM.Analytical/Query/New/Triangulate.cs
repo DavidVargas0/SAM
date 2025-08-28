@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<T> Triangulate<T>(this T partition, double tolerance = Core.Tolerance.Distance) where T : IPartition
+        public static List<T> Triangulate<T>(this T partition, double tolerance = Tolerance.Distance) where T : IPartition
         {
             Face3D face3D = partition?.Face3D;
             if (face3D == null)

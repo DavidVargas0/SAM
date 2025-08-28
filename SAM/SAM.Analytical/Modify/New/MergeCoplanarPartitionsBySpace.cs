@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static void MergeCoplanarPartitionsBySpace(this BuildingModel buildingModel, Space space, bool validateHostPartitionType = true, double tolerance = Core.Tolerance.Distance)
+        public static void MergeCoplanarPartitionsBySpace(this BuildingModel buildingModel, Space space, bool validateHostPartitionType = true, double tolerance = Tolerance.Distance)
         {
             List<IPartition> partitions = buildingModel?.GetPartitions(space);
             if(partitions == null || partitions.Count == 0)

@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using SAM.Units;
 
-namespace SAM 
- // namespace  SAM.Units
+namespace SAM.Units
+//
+// namespace  SAM.Units
 {
     public static partial class Query
     {
@@ -13,16 +15,16 @@ namespace SAM
             {
                 case UnitCategory.Temperature:
 
-                    if(unitStyles == null || unitStyles.Length == 0)
+                    if (unitStyles == null || unitStyles.Length == 0)
                     {
                         result.Add(Units.UnitType.Celsius);
                         result.Add(Units.UnitType.Fahrenheit);
                     }
-                    else if(unitStyles.Contains(UnitStyle.SI))
+                    else if (unitStyles.Contains(UnitStyle.SI))
                     {
                         result.Add(Units.UnitType.Celsius);
                     }
-                    else if(unitStyles.Contains(UnitStyle.Imperial))
+                    else if (unitStyles.Contains(UnitStyle.Imperial))
                     {
                         result.Add(Units.UnitType.Fahrenheit);
                     }
@@ -45,7 +47,6 @@ namespace SAM
                     }
                     else if (unitStyles.Contains(UnitStyle.Imperial))
                     {
-
                     }
 
                     return result;
@@ -62,7 +63,6 @@ namespace SAM
                     }
                     else if (unitStyles.Contains(UnitStyle.Imperial))
                     {
-
                     }
 
                     return result;
@@ -81,7 +81,6 @@ namespace SAM
                     }
                     else if (unitStyles.Contains(UnitStyle.Imperial))
                     {
-
                     }
 
                     return result;
@@ -100,11 +99,9 @@ namespace SAM
                     }
                     else if (unitStyles.Contains(UnitStyle.Imperial))
                     {
-
                     }
 
                     return result;
-
 
                 case UnitCategory.Pressure:
 
@@ -136,7 +133,7 @@ namespace SAM
                     }
                     else if (unitStyles.Contains(UnitStyle.SI))
                     {
-                        result.Add(Units.UnitType.Unitless);
+                        result.Add(UnitType.Unitless);
                         result.Add(Units.UnitType.Percent);
                     }
                     else if (unitStyles.Contains(UnitStyle.Imperial))
@@ -161,7 +158,6 @@ namespace SAM
                     }
                     else if (unitStyles.Contains(UnitStyle.Imperial))
                     {
-
                     }
 
                     return result;
@@ -180,7 +176,6 @@ namespace SAM
                     }
                     else if (unitStyles.Contains(UnitStyle.Imperial))
                     {
-
                     }
 
                     return result;
@@ -199,7 +194,6 @@ namespace SAM
                     }
                     else if (unitStyles.Contains(UnitStyle.Imperial))
                     {
-
                     }
 
                     return result;

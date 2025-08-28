@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static Panel SnapByEnds(this Panel panel, IEnumerable<ISegmentable3D> segmentable3Ds, double maxTolerance = Core.Tolerance.MacroDistance, double minTolerance = Core.Tolerance.MicroDistance)
+        public static Panel SnapByEnds(this Panel panel, IEnumerable<ISegmentable3D> segmentable3Ds, double maxTolerance = Tolerance.MacroDistance, double minTolerance = Tolerance.MicroDistance)
         {
             if(segmentable3Ds == null)
             {

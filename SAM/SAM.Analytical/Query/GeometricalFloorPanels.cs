@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> GeomericalFloorPanels(this AdjacencyCluster adjacencyCluster, Space space, double maxTiltDifference = 20, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> GeomericalFloorPanels(this AdjacencyCluster adjacencyCluster, Space space, double maxTiltDifference = 20, double silverSpacing = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null || space == null)
                 return null;

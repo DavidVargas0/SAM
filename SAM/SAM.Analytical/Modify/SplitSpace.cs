@@ -8,7 +8,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static List<Space> SplitSpace(this AdjacencyCluster adjacencyCluster, Guid spaceGuid, Func<Panel, double> func, double elevationOffset = 0.1, double minSectionOffset = 1, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
+        public static List<Space> SplitSpace(this AdjacencyCluster adjacencyCluster, Guid spaceGuid, Func<Panel, double> func, double elevationOffset = 0.1, double minSectionOffset = 1, double silverSpacing = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance, double tolerance_Snap = Tolerance.MacroDistance)
         {
             if(adjacencyCluster == null || spaceGuid == Guid.Empty)
             {
@@ -374,7 +374,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Space> SplitSpace_2(this AdjacencyCluster adjacencyCluster, Guid spaceGuid, Func<Panel, double> func, double elevationOffset = 0.1, double minSectionOffset = 1, double adjustmentOffset = 1, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
+        public static List<Space> SplitSpace_2(this AdjacencyCluster adjacencyCluster, Guid spaceGuid, Func<Panel, double> func, double elevationOffset = 0.1, double minSectionOffset = 1, double adjustmentOffset = 1, double silverSpacing = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance, double tolerance_Snap = Tolerance.MacroDistance)
         {
             if (adjacencyCluster == null || spaceGuid == Guid.Empty)
             {

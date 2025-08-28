@@ -8,7 +8,7 @@ namespace SAM
 {
     public static partial class Create
     {
-        public static List<Panel> Panels(this List<ISAMGeometry3D> geometry3Ds, PanelType panelType = PanelType.Undefined, Construction construction = null, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> Panels(this List<ISAMGeometry3D> geometry3Ds, PanelType panelType = PanelType.Undefined, Construction construction = null, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             List<Face3D> face3Ds = Geometry.Spatial.Query.Face3Ds(geometry3Ds, tolerance);
             if (face3Ds == null)
@@ -91,7 +91,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Panel> Panels(this IEnumerable<Panel> panels, Plane plane, PanelType panelType = PanelType.Undefined, bool checkIntersection = true, bool union = true, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> Panels(this IEnumerable<Panel> panels, Plane plane, PanelType panelType = PanelType.Undefined, bool checkIntersection = true, bool union = true, double tolerance = Tolerance.Distance)
         {
             if (panels == null || plane == null)
                 return null;
@@ -132,7 +132,7 @@ namespace SAM
             return result;
         }
     
-        public static List<Panel> Panels(this Shell shell, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> Panels(this Shell shell, double silverSpacing = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (shell == null)
                 return null;
@@ -164,12 +164,12 @@ namespace SAM
             return result;
         }
 
-        public static List<Panel> Panels(this AdjacencyCluster adjacencyCluster, Plane plane, IEnumerable<Space> spaces = null, PanelType panelType = PanelType.Air, Construction construction = null, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
+        public static List<Panel> Panels(this AdjacencyCluster adjacencyCluster, Plane plane, IEnumerable<Space> spaces = null, PanelType panelType = PanelType.Air, Construction construction = null, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance, double tolerance_Snap = Tolerance.MacroDistance)
         {
             return Panels(adjacencyCluster, plane, out List<Panel> existingPanels, spaces, panelType, construction, tolerance_Angle, tolerance_Distance, tolerance_Snap);
         }
 
-        public static List<Panel> Panels(this AdjacencyCluster adjacencyCluster, Plane plane, out List<Panel> existingPanels, IEnumerable<Space> spaces = null, PanelType panelType = PanelType.Air, Construction construction = null, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
+        public static List<Panel> Panels(this AdjacencyCluster adjacencyCluster, Plane plane, out List<Panel> existingPanels, IEnumerable<Space> spaces = null, PanelType panelType = PanelType.Air, Construction construction = null, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance, double tolerance_Snap = Tolerance.MacroDistance)
         {
             existingPanels = null;
 
@@ -304,7 +304,7 @@ namespace SAM
 
         }
 
-        public static List<Panel> Panels(this AnalyticalModel analyticalModel, Plane plane, IEnumerable<Space> spaces = null, PanelType panelType = PanelType.Air, Construction construction = null, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
+        public static List<Panel> Panels(this AnalyticalModel analyticalModel, Plane plane, IEnumerable<Space> spaces = null, PanelType panelType = PanelType.Air, Construction construction = null, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance, double tolerance_Snap = Tolerance.MacroDistance)
         {
             return Panels(analyticalModel?.AdjacencyCluster, plane, spaces, panelType, construction, tolerance_Angle, tolerance_Distance, tolerance_Snap);
         }

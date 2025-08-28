@@ -10,7 +10,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> MergeCoplanarPanels(this IEnumerable<Panel> panels, double offset, bool validateConstruction = true, bool validatePanelGroup = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> MergeCoplanarPanels(this IEnumerable<Panel> panels, double offset, bool validateConstruction = true, bool validatePanelGroup = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (panels == null)
                 return null;
@@ -23,7 +23,7 @@ namespace SAM
             return MergeCoplanarPanels(panels?.ToList(), offset, ref redundantPanels, validateConstruction, minArea, tolerance);
         }
 
-        public static List<Panel> MergeCoplanarPanels(this IEnumerable<Panel> panels, double offset, ref List<Panel> redundantPanels, bool validateConstruction = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> MergeCoplanarPanels(this IEnumerable<Panel> panels, double offset, ref List<Panel> redundantPanels, bool validateConstruction = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (panels == null)
                 return null;
@@ -52,7 +52,7 @@ namespace SAM
             return result;
         }
 
-        public static AdjacencyCluster MergeCoplanarPanels(this AdjacencyCluster adjacencyCluster, double offset, ref List<Panel> redundantPanels, bool validateConstruction = true, bool validatePanelGroup = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static AdjacencyCluster MergeCoplanarPanels(this AdjacencyCluster adjacencyCluster, double offset, ref List<Panel> redundantPanels, bool validateConstruction = true, bool validatePanelGroup = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             List<Panel> panels = adjacencyCluster?.GetPanels();
             if (panels == null)
@@ -84,7 +84,7 @@ namespace SAM
             return result;
         }
 
-        public static AnalyticalModel MergeCoplanarPanels(this AnalyticalModel analyticalModel, double offset, ref List<Panel> redundantPanels, bool validateConstruction = true, bool validatePanelGroup = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static AnalyticalModel MergeCoplanarPanels(this AnalyticalModel analyticalModel, double offset, ref List<Panel> redundantPanels, bool validateConstruction = true, bool validatePanelGroup = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             AdjacencyCluster adjacencyCluster = analyticalModel?.AdjacencyCluster;
             if (adjacencyCluster == null)
@@ -95,7 +95,7 @@ namespace SAM
             return new AnalyticalModel(analyticalModel, adjacencyCluster);
         }
 
-        private static List<Panel> MergeCoplanarPanels(this List<Panel> panels, double offset, ref List<Panel> redundantPanels, bool validateConstruction = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        private static List<Panel> MergeCoplanarPanels(this List<Panel> panels, double offset, ref List<Panel> redundantPanels, bool validateConstruction = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (panels == null)
                 return null;
@@ -208,7 +208,7 @@ namespace SAM
                     Polygon polygon_Temp = Geometry.Planar.Query.SimplifyBySnapper(polygon, tolerance);
                     polygon_Temp = Geometry.Planar.Query.SimplifyByTopologyPreservingSimplifier(polygon_Temp, tolerance);
 
-                    Face2D face2D = polygon_Temp.ToSAM(minArea, Core.Tolerance.MicroDistance)?.Snap(point2Ds, tolerance);
+                    Face2D face2D = polygon_Temp.ToSAM(minArea, Tolerance.MicroDistance)?.Snap(point2Ds, tolerance);
                     if (face2D == null)
                         continue;
 

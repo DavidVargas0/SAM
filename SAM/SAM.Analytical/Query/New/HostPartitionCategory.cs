@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static HostPartitionCategory HostPartitionCategory(this Vector3D normal, double tolerance = Core.Tolerance.Angle)
+        public static HostPartitionCategory HostPartitionCategory(this Vector3D normal, double tolerance = Tolerance.Angle)
         {
             if (normal == null)
                 return Analytical.HostPartitionCategory.Undefined;
@@ -20,7 +20,7 @@ namespace SAM
             return Analytical.HostPartitionCategory.Roof;
         }
 
-        public static HostPartitionCategory HostPartitionCategory(this IPartition partition, double tolerance = Core.Tolerance.Angle)
+        public static HostPartitionCategory HostPartitionCategory(this IPartition partition, double tolerance = Tolerance.Angle)
         {
             return HostPartitionCategory(partition?.Face3D?.GetPlane()?.Normal, tolerance);
         }

@@ -14,7 +14,7 @@ namespace SAM
             return ApertureHosts(adjacencyCluster.GetPanels(), closedPlanar3D);
         }
 
-        public static List<Panel> ApertureHosts(this IEnumerable<Panel> panels, IClosedPlanar3D closedPlanar3D, double minArea = Core.Tolerance.MacroDistance, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> ApertureHosts(this IEnumerable<Panel> panels, IClosedPlanar3D closedPlanar3D, double minArea = Tolerance.MacroDistance, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (panels == null || closedPlanar3D == null)
                 return null;

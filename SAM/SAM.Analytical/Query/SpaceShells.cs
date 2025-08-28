@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Shell> SpaceShells(this IEnumerable<Shell> shells, Point3D point3D, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Shell> SpaceShells(this IEnumerable<Shell> shells, Point3D point3D, double silverSpacing = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (shells == null || point3D == null)
                 return null;

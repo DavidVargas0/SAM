@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static Panel Extend(this Panel panel, Plane plane, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static Panel Extend(this Panel panel, Plane plane, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             if (panel == null || plane == null)
                 return null;
@@ -19,7 +19,7 @@ namespace SAM
             return new Panel(panel.Guid, panel, face3D);
         }
 
-        public static void Extend(this List<Panel> panels, double elevation, double maxDistance, out List<Panel> panels_Extended, out List<Segment3D> segment3Ds, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static void Extend(this List<Panel> panels, double elevation, double maxDistance, out List<Panel> panels_Extended, out List<Segment3D> segment3Ds, double snapTolerance = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             panels_Extended = null;
             segment3Ds = null;

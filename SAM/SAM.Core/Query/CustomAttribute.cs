@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Reflection;
 
-namespace SAM 
- // namespace  SAM.Core
+namespace SAM
+// namespace  SAM.Core
 {
     public static partial class Query
     {
-        public static T CustomAttribute<T>(Enum @enum) where T: Attribute
+        public static T CustomAttribute<T>(Enum @enum) where T : Attribute
         {
             if (@enum == null)
                 return default;
@@ -34,7 +34,7 @@ namespace SAM
         {
             if (memberInfo == null)
                 return default;
-            
+
             Attribute[] attributes = Attribute.GetCustomAttributes(memberInfo);
             if (attributes == null || attributes.Length == 0)
                 return default;

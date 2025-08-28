@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static List<ExternalSpace> ChangeExternalSpaces(this AdjacencyCluster adjacencyCluster, IEnumerable<Space> spaces, Construction construction_Wall, Construction construction_Floor, Construction construction_Roof, double silverSpace = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<ExternalSpace> ChangeExternalSpaces(this AdjacencyCluster adjacencyCluster, IEnumerable<Space> spaces, Construction construction_Wall, Construction construction_Floor, Construction construction_Roof, double silverSpace = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null || spaces == null)
             {
@@ -96,7 +96,7 @@ namespace SAM
             return result;
         }
 
-        public static List<ExternalSpace> ChangeExternalSpaces(this AdjacencyCluster adjacencyCluster, IEnumerable<Point3D> point3Ds, Construction construction_Wall, Construction construction_Floor, Construction construction_Roof, double silverSpace = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<ExternalSpace> ChangeExternalSpaces(this AdjacencyCluster adjacencyCluster, IEnumerable<Point3D> point3Ds, Construction construction_Wall, Construction construction_Floor, Construction construction_Roof, double silverSpace = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if(adjacencyCluster == null || point3Ds == null)
             {

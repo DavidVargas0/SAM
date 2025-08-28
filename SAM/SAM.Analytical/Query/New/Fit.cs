@@ -9,7 +9,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static IOpening Fit(this IOpening opening, Face3D face3D, double areaFactor = 0.5, double tolerance = Core.Tolerance.Distance)
+        public static IOpening Fit(this IOpening opening, Face3D face3D, double areaFactor = 0.5, double tolerance = Tolerance.Distance)
         {
             if (opening == null || face3D == null)
             {
@@ -117,7 +117,7 @@ namespace SAM
 
         }
     
-        public static IOpening Fit(this IOpening opening, IEnumerable<IPartition> partitions, double areaFactor = 0.5, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static IOpening Fit(this IOpening opening, IEnumerable<IPartition> partitions, double areaFactor = 0.5, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if(opening == null || partitions == null)
             {
@@ -166,7 +166,7 @@ namespace SAM
             return tuples.FirstOrDefault()?.Item2;
         }
     
-        public static List<IOpening> Fit(this IEnumerable<IOpening> openings, IEnumerable<IPartition> partitions, double areaFactor = 0.5, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<IOpening> Fit(this IEnumerable<IOpening> openings, IEnumerable<IPartition> partitions, double areaFactor = 0.5, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if(openings == null || partitions == null)
             {

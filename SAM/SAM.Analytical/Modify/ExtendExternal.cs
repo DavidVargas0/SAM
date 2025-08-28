@@ -9,12 +9,12 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static void ExtendExternal(this List<Panel> panels, double elevation, double maxDistance, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static void ExtendExternal(this List<Panel> panels, double elevation, double maxDistance, double snapTolerance = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             ExtendExternal(panels, elevation, maxDistance, out List<Panel> externalPanels, out List<Panel> externalPanels_Extended, out List<Polygon3D> externalPolygon3Ds, snapTolerance, tolerance_Angle, tolerance_Distance);
         }
 
-        public static void ExtendExternal(this List<Panel> panels, double elevation, double maxDistance, out List<Panel> externalPanels, out List<Panel> externalPanels_Extended, out List<Polygon3D> externalPolygon3Ds, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static void ExtendExternal(this List<Panel> panels, double elevation, double maxDistance, out List<Panel> externalPanels, out List<Panel> externalPanels_Extended, out List<Polygon3D> externalPolygon3Ds, double snapTolerance = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             externalPanels = null;
             externalPanels_Extended = null;
@@ -262,7 +262,7 @@ namespace SAM
             }
         }
     
-        public static void ExtendExternal(this List<Panel> panels, IEnumerable<double> elevations, double maxDistance, out List<Panel> externalPanels, out List<Panel> externalPanels_Extended, out List<Polygon3D> externalPolygon3Ds, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static void ExtendExternal(this List<Panel> panels, IEnumerable<double> elevations, double maxDistance, out List<Panel> externalPanels, out List<Panel> externalPanels_Extended, out List<Polygon3D> externalPolygon3Ds, double snapTolerance = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             externalPanels = null;
             externalPanels_Extended = null;

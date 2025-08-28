@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Create
     {
-        public static IHostPartition HostPartition(this Face3D face3D, HostPartitionType hostPartitionType = null, double tolerance = Core.Tolerance.Angle)
+        public static IHostPartition HostPartition(this Face3D face3D, HostPartitionType hostPartitionType = null, double tolerance = Tolerance.Angle)
         {
             if(face3D == null || !face3D.IsValid())
             {
@@ -35,7 +35,7 @@ namespace SAM
             return null;
         }
 
-        public static IHostPartition HostPartition(System.Guid guid, Face3D face3D, HostPartitionType hostPartitionType = null, double tolerance = Core.Tolerance.Angle)
+        public static IHostPartition HostPartition(System.Guid guid, Face3D face3D, HostPartitionType hostPartitionType = null, double tolerance = Tolerance.Angle)
         {
             if (face3D == null || !face3D.IsValid())
             {
@@ -65,7 +65,7 @@ namespace SAM
             return null;
         }
 
-        public static IHostPartition HostPartition(System.Guid guid, Face3D face3D, IHostPartition hostPartition, double tolerance = Core.Tolerance.Distance)
+        public static IHostPartition HostPartition(System.Guid guid, Face3D face3D, IHostPartition hostPartition, double tolerance = Tolerance.Distance)
         {
             if (face3D == null || !face3D.IsValid() || hostPartition == null)
             {

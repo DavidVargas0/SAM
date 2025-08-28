@@ -31,7 +31,7 @@ namespace SAM
 
         }
 
-        public Roof(System.Guid guid, Roof roof, Face3D face3D, double tolerance = Core.Tolerance.Distance)
+        public Roof(System.Guid guid, Roof roof, Face3D face3D, double tolerance = Tolerance.Distance)
             : base(guid, roof, face3D, tolerance)
         {
 

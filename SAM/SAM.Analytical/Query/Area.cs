@@ -26,7 +26,7 @@ namespace SAM
             return result;
         }
 
-        public static double Area(this Aperture aperture, out double paneArea, out double frameArea, double tolerance = Core.Tolerance.Distance)
+        public static double Area(this Aperture aperture, out double paneArea, out double frameArea, double tolerance = Tolerance.Distance)
         {
             paneArea = double.NaN;
             frameArea = double.NaN;

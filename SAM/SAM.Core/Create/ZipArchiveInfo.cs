@@ -1,7 +1,7 @@
 ﻿using System.IO.Compression;
 
-namespace SAM 
- // namespace  SAM.Core
+//namespace SAM
+namespace SAM.Core
 {
     public static partial class Create
     {
@@ -10,7 +10,7 @@ namespace SAM
             if (zipArchive == null)
                 return null;
 
-            ZipArchiveEntry zipArchiveEntry = zipArchive.GetEntry(Core.ZipArchiveInfo.EntryName);
+            ZipArchiveEntry zipArchiveEntry = zipArchive.GetEntry(ZipArchiveInfo.EntryName);
             if (zipArchiveEntry == null)
                 return null;
 

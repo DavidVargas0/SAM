@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static List<IOpening> AddOpenings(this BuildingModel buildingModel, IEnumerable<IOpening> openings, double tolerance = Core.Tolerance.Distance)
+        public static List<IOpening> AddOpenings(this BuildingModel buildingModel, IEnumerable<IOpening> openings, double tolerance = Tolerance.Distance)
         {
             if(buildingModel == null || openings == null)
             {

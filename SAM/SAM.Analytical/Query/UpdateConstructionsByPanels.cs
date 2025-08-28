@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static AnalyticalModel UpdateConstructionsByPanels(this AnalyticalModel analyticalModel, IEnumerable<Panel> panels, double areaFactor, double maxDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static AnalyticalModel UpdateConstructionsByPanels(this AnalyticalModel analyticalModel, IEnumerable<Panel> panels, double areaFactor, double maxDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             if(analyticalModel == null)
             {
@@ -23,7 +23,7 @@ namespace SAM
             return new AnalyticalModel(analyticalModel, adjacencyCluster);
         }
 
-        public static AdjacencyCluster UpdateConstructionsByPanels(this AdjacencyCluster adjacencyCluster, IEnumerable<Panel> panels, double areaFactor, double maxDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static AdjacencyCluster UpdateConstructionsByPanels(this AdjacencyCluster adjacencyCluster, IEnumerable<Panel> panels, double areaFactor, double maxDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             if(adjacencyCluster == null)
             {

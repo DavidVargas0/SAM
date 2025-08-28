@@ -17,7 +17,7 @@ namespace SAM
         /// <param name="flippedPartitions">Partitions have been flipped</param>
         /// <param name="tolerance">Distance Tolerance</param>
         /// <param name="external">If external then partitions normal will be pointed out outside space</param>
-        public static List<IPartition> OrientedPartitions(this BuildingModel buildingModel, Space space, bool includeOpenings, out List<IPartition> flippedPartitions, bool external = true, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<IPartition> OrientedPartitions(this BuildingModel buildingModel, Space space, bool includeOpenings, out List<IPartition> flippedPartitions, bool external = true, double silverSpacing = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             flippedPartitions = null;
             
@@ -123,7 +123,7 @@ namespace SAM
         /// <param name="silverSpacing">Sliver Spacing Tolerance</param>
         /// <param name="tolerance">Distance Tolerance</param>
         /// <returns>A list of updated partitions.</returns>
-        public static List<IPartition> OrientedPartitions(this BuildingModel buildingModel, Space space, bool includeOpenings, bool external = true, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<IPartition> OrientedPartitions(this BuildingModel buildingModel, Space space, bool includeOpenings, bool external = true, double silverSpacing = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             return OrientedPartitions(buildingModel, space, includeOpenings, out List <IPartition> flippedPartitions, external, silverSpacing, tolerance);
         }

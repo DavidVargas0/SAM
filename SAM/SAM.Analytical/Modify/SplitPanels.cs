@@ -10,7 +10,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static List<Panel> SplitPanels<T>(this AdjacencyCluster adjacencyCluster, IEnumerable<T> geometry3Ds, IEnumerable<Guid> panelGuids = null, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance) where T : ISAMGeometry3D
+        public static List<Panel> SplitPanels<T>(this AdjacencyCluster adjacencyCluster, IEnumerable<T> geometry3Ds, IEnumerable<Guid> panelGuids = null, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance) where T : ISAMGeometry3D
         {
             if (adjacencyCluster == null || geometry3Ds == null)
             {
@@ -79,7 +79,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Panel> SplitPanels(this AdjacencyCluster adjacencyCluster, IEnumerable<Panel> panels, IEnumerable<Guid> panelGuids = null, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static List<Panel> SplitPanels(this AdjacencyCluster adjacencyCluster, IEnumerable<Panel> panels, IEnumerable<Guid> panelGuids = null, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             if (adjacencyCluster == null || panels == null)
             {

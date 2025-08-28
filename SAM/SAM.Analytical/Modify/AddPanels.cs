@@ -8,7 +8,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static List<Panel> AddPanels(this AdjacencyCluster adjacencyCluster, IEnumerable<Face3D> face3Ds, Construction construction, IEnumerable<Space> spaces = null, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
+        public static List<Panel> AddPanels(this AdjacencyCluster adjacencyCluster, IEnumerable<Face3D> face3Ds, Construction construction, IEnumerable<Space> spaces = null, double silverSpacing = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance, double tolerance_Snap = Tolerance.MacroDistance)
         {
             if(adjacencyCluster == null || face3Ds == null)
             {

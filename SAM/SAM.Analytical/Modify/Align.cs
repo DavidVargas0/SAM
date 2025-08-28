@@ -9,7 +9,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static void Align(this List<Panel> panels, double elevation, double referenceElevation, double maxDistance = 0.2, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static void Align(this List<Panel> panels, double elevation, double referenceElevation, double maxDistance = 0.2, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             if (panels == null || double.IsNaN(elevation) || double.IsNaN(referenceElevation))
             {
@@ -69,7 +69,7 @@ namespace SAM
             }
         }
 
-        public static void Align(this List<Panel> panels, Dictionary<Segment2D, Panel> dictionary_Reference, double maxDistance = 0.2, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static void Align(this List<Panel> panels, Dictionary<Segment2D, Panel> dictionary_Reference, double maxDistance = 0.2, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             if (panels == null || dictionary_Reference == null)
                 return;
@@ -109,14 +109,14 @@ namespace SAM
                 List<Segment2D> segment2Ds_Result = new List<Segment2D>();
                 foreach (Segment2D segment2D_Temp in segment2Ds_Temp)
                 {
-                    double distance = segment2D_Temp.Distance(segment2D, Core.Tolerance.MacroDistance);
+                    double distance = segment2D_Temp.Distance(segment2D, Tolerance.MacroDistance);
                     if(distance < tolerance_Distance)
                     {
                         segment2Ds_Result = null;
                         break;
                     }
 
-                    if (distance > maxDistance + Core.Tolerance.MacroDistance)
+                    if (distance > maxDistance + Tolerance.MacroDistance)
                         continue;
 
                     segment2Ds_Result.Add(segment2D_Temp);

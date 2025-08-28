@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static void Trim(this List<Panel> panels, double elevation, double minLength, out List<Panel> panels_Trimmed, out List<Segment3D> segment3Ds, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static void Trim(this List<Panel> panels, double elevation, double minLength, out List<Panel> panels_Trimmed, out List<Segment3D> segment3Ds, double snapTolerance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             panels_Trimmed = null;
             segment3Ds = null;

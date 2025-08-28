@@ -10,7 +10,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> SnapByElevations(this IEnumerable<Panel> panels, IEnumerable<double> elevations, int maxIterations = 1, double maxTolerance = Core.Tolerance.MacroDistance, double minTolerance = Core.Tolerance.MicroDistance)
+        public static List<Panel> SnapByElevations(this IEnumerable<Panel> panels, IEnumerable<double> elevations, int maxIterations = 1, double maxTolerance = Tolerance.MacroDistance, double minTolerance = Tolerance.MicroDistance)
         {
             if(panels == null)
             {
@@ -219,7 +219,7 @@ namespace SAM
             return result;
         }
 
-        private static List<Panel> SnapByElevations_Ends(this IEnumerable<Panel> panels, IEnumerable<double> elevations, double maxTolerance = Core.Tolerance.MacroDistance, double minTolerance = Core.Tolerance.MicroDistance)
+        private static List<Panel> SnapByElevations_Ends(this IEnumerable<Panel> panels, IEnumerable<double> elevations, double maxTolerance = Tolerance.MacroDistance, double minTolerance = Tolerance.MicroDistance)
         {
             if (panels == null || elevations == null)
             {
@@ -419,7 +419,7 @@ namespace SAM
             return result;
         }
 
-        private static List<Panel> SnapByElevations_Intersections(this IEnumerable<Panel> panels, IEnumerable<double> elevations, double maxTolerance = Core.Tolerance.MacroDistance, double minTolerance = Core.Tolerance.MicroDistance)
+        private static List<Panel> SnapByElevations_Intersections(this IEnumerable<Panel> panels, IEnumerable<double> elevations, double maxTolerance = Tolerance.MacroDistance, double minTolerance = Tolerance.MicroDistance)
         {
             if (panels == null || elevations == null)
             {

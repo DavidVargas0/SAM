@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static bool Inside(this AdjacencyCluster adjacencyCluster, Space space, Point3D point3D, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static bool Inside(this AdjacencyCluster adjacencyCluster, Space space, Point3D point3D, double silverSpacing = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null || space == null || point3D == null)
                 return false;
@@ -18,7 +18,7 @@ namespace SAM
             return shell.Inside(point3D, silverSpacing, tolerance);
         }
 
-        public static List<Space> Inside(IEnumerable<Space> spaces, Shell shell, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Space> Inside(IEnumerable<Space> spaces, Shell shell, double silverSpacing = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if(spaces == null || shell == null)
             {

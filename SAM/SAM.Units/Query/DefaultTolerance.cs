@@ -1,11 +1,14 @@
-﻿namespace SAM 
- // namespace   SAM.Units
+﻿using SAM.Units;
+
+namespace SAM.Units
+//
+// namespace   SAM.Units
 {
     public static partial class Query
     {
         public static double DefaultTolerance(this UnitType unitType)
         {
-            switch(unitType)
+            switch (unitType)
             {
                 case Units.UnitType.Celsius:
                     return 0.01;

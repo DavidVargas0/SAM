@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static Dictionary<IPartition, Vector3D> NormalDictionary(this BuildingModel buildingModel, Space space, out Shell shell, bool external = true, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static Dictionary<IPartition, Vector3D> NormalDictionary(this BuildingModel buildingModel, Space space, out Shell shell, bool external = true, double silverSpacing = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             shell = null;
 

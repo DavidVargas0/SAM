@@ -8,7 +8,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<List<Panel>> OverlapPanels(this IEnumerable<Panel> panels, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static List<List<Panel>> OverlapPanels(this IEnumerable<Panel> panels, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             if (panels == null)
                 return null;

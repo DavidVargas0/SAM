@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Create
     {
-        public static List<IHostPartition> HostPartitions(this List<ISAMGeometry3D> geometry3Ds, double minArea = Core.Tolerance.MacroDistance, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Angle = Core.Tolerance.Angle)
+        public static List<IHostPartition> HostPartitions(this List<ISAMGeometry3D> geometry3Ds, double minArea = Tolerance.MacroDistance, double tolerance_Distance = Tolerance.Distance, double tolerance_Angle = Tolerance.Angle)
         {
             List<Face3D> face3Ds = Geometry.Spatial.Query.Face3Ds(geometry3Ds, tolerance_Distance);
             if (face3Ds == null)
@@ -26,7 +26,7 @@ namespace SAM
             return result;
         }
 
-        public static List<IHostPartition> HostPartitions(this IEnumerable<IHostPartition> hostPartitions, Plane plane, bool checkIntersection = true, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Angle = Core.Tolerance.Angle)
+        public static List<IHostPartition> HostPartitions(this IEnumerable<IHostPartition> hostPartitions, Plane plane, bool checkIntersection = true, double tolerance_Distance = Tolerance.Distance, double tolerance_Angle = Tolerance.Angle)
         {
             if (hostPartitions == null || plane == null)
                 return null;
@@ -71,7 +71,7 @@ namespace SAM
             return result;
         }
     
-        public static List<IHostPartition> HostPartitions(this Shell shell, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Angle = Core.Tolerance.Angle)
+        public static List<IHostPartition> HostPartitions(this Shell shell, double silverSpacing = Tolerance.MacroDistance, double tolerance_Distance = Tolerance.Distance, double tolerance_Angle = Tolerance.Angle)
         {
             if (shell == null)
                 return null;

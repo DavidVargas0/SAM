@@ -26,7 +26,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Panel> Panels(this Point3D point3D, IEnumerable<Panel> panels, bool onEdgeOnly = false, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> Panels(this Point3D point3D, IEnumerable<Panel> panels, bool onEdgeOnly = false, double tolerance = Tolerance.Distance)
         {
             if(point3D == null || panels == null)
             {

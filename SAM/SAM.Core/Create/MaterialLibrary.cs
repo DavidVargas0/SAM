@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace SAM 
- // namespace  SAM.Core
+namespace SAM.Core
+// namespace  SAM.Core
 {
     public static partial class Create
     {

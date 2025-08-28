@@ -8,7 +8,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static AdjacencyCluster FixEdges(this AdjacencyCluster adjacencyCluster, bool cutApertures = false, double tolerance = Core.Tolerance.Distance)
+        public static AdjacencyCluster FixEdges(this AdjacencyCluster adjacencyCluster, bool cutApertures = false, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null)
             {
@@ -62,7 +62,7 @@ namespace SAM
             return result;
         }
         
-        public static List<IPanel> FixEdges(this IPanel panel, bool cutApertures = false, double tolerance = Core.Tolerance.Distance)
+        public static List<IPanel> FixEdges(this IPanel panel, bool cutApertures = false, double tolerance = Tolerance.Distance)
         {
             if(panel == null)
             {

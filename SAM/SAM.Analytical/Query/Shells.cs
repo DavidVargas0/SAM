@@ -19,7 +19,7 @@ namespace SAM
         /// <param name="snapTolerance">Snap Tolerance</param>
         /// <param name="tolerance">Tolerance</param>
         /// <returns>List of Shells</returns>
-        public static List<Shell> Shells(this IEnumerable<Panel> panels, double offset = 0.1, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Shell> Shells(this IEnumerable<Panel> panels, double offset = 0.1, double snapTolerance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (panels == null)
                 return null;
@@ -166,7 +166,7 @@ namespace SAM
             return Geometry.Spatial.Create.Shells_ByTopAndBottom(face3Ds, tolerance);
         }
 
-        public static List<Shell> Shells(this IEnumerable<Panel> panels, IEnumerable<double> elevations, IEnumerable<double> offsets, IEnumerable<double> auxiliaryElevations = null, double snapTolerance = Core.Tolerance.MacroDistance, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static List<Shell> Shells(this IEnumerable<Panel> panels, IEnumerable<double> elevations, IEnumerable<double> offsets, IEnumerable<double> auxiliaryElevations = null, double snapTolerance = Tolerance.MacroDistance, double silverSpacing = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             if (panels == null || elevations == null)
                 return null;
@@ -386,7 +386,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Shell> Shells(this IEnumerable<Panel> panels, IEnumerable<double> elevations, double offset = 0.1, double thinnessRatio = 0.01, double minArea = Core.Tolerance.MacroDistance, double snapTolerance = Core.Tolerance.MacroDistance, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static List<Shell> Shells(this IEnumerable<Panel> panels, IEnumerable<double> elevations, double offset = 0.1, double thinnessRatio = 0.01, double minArea = Tolerance.MacroDistance, double snapTolerance = Tolerance.MacroDistance, double silverSpacing = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             if (panels == null || elevations == null)
             {

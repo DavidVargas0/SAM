@@ -9,7 +9,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static List<Panel> MergePanel(this AdjacencyCluster adjacencyCluster, Guid guid, double maxDistance = 0.1, double minArea = 0.1, double thinnessRatio = 0.1, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> MergePanel(this AdjacencyCluster adjacencyCluster, Guid guid, double maxDistance = 0.1, double minArea = 0.1, double thinnessRatio = 0.1, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null)
             {

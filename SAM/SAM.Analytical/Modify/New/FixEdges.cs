@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static void FixEdges(this BuildingModel buildingModel, double tolerance = Core.Tolerance.Distance)
+        public static void FixEdges(this BuildingModel buildingModel, double tolerance = Tolerance.Distance)
         {
             if (buildingModel == null)
             {

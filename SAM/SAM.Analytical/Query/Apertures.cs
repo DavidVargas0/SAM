@@ -33,7 +33,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Aperture> Apertures(this AdjacencyCluster adjacencyCluster, Point3D point3D, int maxCount = 1, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> Apertures(this AdjacencyCluster adjacencyCluster, Point3D point3D, int maxCount = 1, double tolerance = Tolerance.Distance)
         {
             if(adjacencyCluster == null || point3D == null)
             {

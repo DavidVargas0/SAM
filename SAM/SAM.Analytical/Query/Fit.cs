@@ -9,7 +9,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static Aperture Fit(this Aperture aperture, Face3D face3D, double areaFactor = 0.5, double tolerance = Core.Tolerance.Distance)
+        public static Aperture Fit(this Aperture aperture, Face3D face3D, double areaFactor = 0.5, double tolerance = Tolerance.Distance)
         {
             if (aperture == null || face3D == null)
             {
@@ -117,7 +117,7 @@ namespace SAM
 
         }
     
-        public static Aperture Fit(this Aperture aperture, IEnumerable<Panel> panels, double areaFactor = 0.5, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static Aperture Fit(this Aperture aperture, IEnumerable<Panel> panels, double areaFactor = 0.5, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if(aperture == null || panels == null)
             {
@@ -166,7 +166,7 @@ namespace SAM
             return tuples.FirstOrDefault()?.Item2;
         }
     
-        public static List<Aperture> Fit(this IEnumerable<Aperture> apertures, IEnumerable<Panel> panels, double areaFactor = 0.5, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> Fit(this IEnumerable<Aperture> apertures, IEnumerable<Panel> panels, double areaFactor = 0.5, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if(apertures == null || panels == null)
             {

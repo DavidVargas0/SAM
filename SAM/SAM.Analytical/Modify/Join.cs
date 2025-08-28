@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static void Join(this List<Panel> panels, double elevation, double distance, out List<Panel> panels_Extended, out List<Panel> panels_Trimmed, out List<Segment3D> segment3Ds, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static void Join(this List<Panel> panels, double elevation, double distance, out List<Panel> panels_Extended, out List<Panel> panels_Trimmed, out List<Segment3D> segment3Ds, double snapTolerance = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             panels_Extended = null;
             panels_Trimmed = null;

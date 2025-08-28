@@ -75,7 +75,7 @@ namespace SAM
             return Analytical.PanelType.Undefined;
         }
 
-        public static PanelType PanelType(Geometry.Spatial.Vector3D normal, double tolerance = Core.Tolerance.Angle)
+        public static PanelType PanelType(Geometry.Spatial.Vector3D normal, double tolerance = Tolerance.Angle)
         {
             if (normal == null)
                 return Analytical.PanelType.Undefined;

@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel;
 
-namespace SAM 
- // namespace  SAM.Units
+namespace SAM.Units
+//.Units
+// namespace  SAM.Units
 {
     public enum UnitCategory
     {

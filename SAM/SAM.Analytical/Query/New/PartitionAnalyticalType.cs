@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static PartitionAnalyticalType PartitionAnalyticalType(this BuildingModel buildingModel, IPartition partition, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static PartitionAnalyticalType PartitionAnalyticalType(this BuildingModel buildingModel, IPartition partition, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             if (buildingModel == null || partition == null)
             {

@@ -8,7 +8,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static bool RemoveOverlapApertures(this Panel panel, out List<Aperture> removedApertures, double tolerance = Core.Tolerance.Distance)
+        public static bool RemoveOverlapApertures(this Panel panel, out List<Aperture> removedApertures, double tolerance = Tolerance.Distance)
         {
             removedApertures = null;
             
@@ -90,7 +90,7 @@ namespace SAM
             return false;
         }
 
-        public static bool RemoveOverlapApertures(this List<Panel> panels, out List<Aperture> removedApertures, double tolerance = Core.Tolerance.Distance)
+        public static bool RemoveOverlapApertures(this List<Panel> panels, out List<Aperture> removedApertures, double tolerance = Tolerance.Distance)
         {
             removedApertures = null;
 
@@ -134,7 +134,7 @@ namespace SAM
 
         }
 
-        public static bool RemoveOverlapApertures(this AdjacencyCluster adjacencyCluster, out List<Aperture> removedApertures, double tolerance = Core.Tolerance.Distance)
+        public static bool RemoveOverlapApertures(this AdjacencyCluster adjacencyCluster, out List<Aperture> removedApertures, double tolerance = Tolerance.Distance)
         {
             removedApertures = null;
 

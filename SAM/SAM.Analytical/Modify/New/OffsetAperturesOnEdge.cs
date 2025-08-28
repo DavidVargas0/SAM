@@ -8,7 +8,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static List<IOpening> OffsetAperturesOnEdge(this BuildingModel buildingModel, double distance, double tolerance = Core.Tolerance.Distance)
+        public static List<IOpening> OffsetAperturesOnEdge(this BuildingModel buildingModel, double distance, double tolerance = Tolerance.Distance)
         {
             if (buildingModel == null)
             {
@@ -39,7 +39,7 @@ namespace SAM
             return result;
         }
 
-        public static List<IOpening> OffsetAperturesOnEdge(this IHostPartition hostPartition, double distance, double tolerance = Core.Tolerance.Distance)
+        public static List<IOpening> OffsetAperturesOnEdge(this IHostPartition hostPartition, double distance, double tolerance = Tolerance.Distance)
         {
             List<IOpening> openings = hostPartition?.GetOpenings();
             if (openings == null || openings.Count == 0)

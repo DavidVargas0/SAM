@@ -11,7 +11,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> MergeOverlapPanels(this IEnumerable<Panel> panels, double offset, ref List<Panel> redundantPanels, bool setDefaultConstruction, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> MergeOverlapPanels(this IEnumerable<Panel> panels, double offset, ref List<Panel> redundantPanels, bool setDefaultConstruction, double tolerance = Tolerance.Distance)
         {
             if (panels == null)
                 return null;
@@ -89,7 +89,7 @@ namespace SAM
             return result;
         }
 
-        public static AdjacencyCluster MergeOverlapPanels(this AdjacencyCluster adjacencyCluster, double offset, ref List<Panel> redundantPanels, bool setDefaultConstruction, double tolerance = Core.Tolerance.Distance)
+        public static AdjacencyCluster MergeOverlapPanels(this AdjacencyCluster adjacencyCluster, double offset, ref List<Panel> redundantPanels, bool setDefaultConstruction, double tolerance = Tolerance.Distance)
         {
             List<Panel> panels = adjacencyCluster?.GetPanels();
             if (panels == null)
@@ -107,7 +107,7 @@ namespace SAM
             return result;
         }
 
-        public static AnalyticalModel MergeOverlapPanels(this AnalyticalModel analyticalModel, double offset, ref List<Panel> redundantPanels, bool setDefaultConstruction, double tolerance = Core.Tolerance.Distance)
+        public static AnalyticalModel MergeOverlapPanels(this AnalyticalModel analyticalModel, double offset, ref List<Panel> redundantPanels, bool setDefaultConstruction, double tolerance = Tolerance.Distance)
         {
             AdjacencyCluster adjacencyCluster = analyticalModel?.AdjacencyCluster;
             if (adjacencyCluster == null)
@@ -119,7 +119,7 @@ namespace SAM
         }
 
 
-        private static List<Panel> MergeOverlapPanels_Horizontal(this IEnumerable<Panel> panels, double offset, ref List<Panel> redundantPanels, bool setDefaultConstruction, double tolerance = Core.Tolerance.Distance)
+        private static List<Panel> MergeOverlapPanels_Horizontal(this IEnumerable<Panel> panels, double offset, ref List<Panel> redundantPanels, bool setDefaultConstruction, double tolerance = Tolerance.Distance)
         {
             List<Tuple<double, Panel>> tuples = new List<Tuple<double, Panel>>();
             foreach (Panel panel in panels)
@@ -262,7 +262,7 @@ namespace SAM
                         if (polygon_Temp.IsEmpty || !polygon_Temp.IsValid)
                             continue;
 
-                        Face2D face2D = polygon_Temp.ToSAM(Core.Tolerance.MicroDistance)?.Snap(point2Ds, tolerance);
+                        Face2D face2D = polygon_Temp.ToSAM(Tolerance.MicroDistance)?.Snap(point2Ds, tolerance);
                         if (face2D == null)
                             continue;
 
@@ -309,7 +309,7 @@ namespace SAM
             return result;
         }
 
-        private static List<Panel> MergeOverlapPanels_Vertical(this IEnumerable<Panel> panels, double offset, ref List<Panel> redundantPanels, bool setDefaultConstruction, double tolerance = Core.Tolerance.Distance)
+        private static List<Panel> MergeOverlapPanels_Vertical(this IEnumerable<Panel> panels, double offset, ref List<Panel> redundantPanels, bool setDefaultConstruction, double tolerance = Tolerance.Distance)
         {
             List<Tuple<Face3D, Panel>> tuples = panels?.ToList().ConvertAll(x => new Tuple<Face3D, Panel>(x.GetFace3D(), x));
             if (tuples == null || tuples.Count == 0)

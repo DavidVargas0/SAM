@@ -9,7 +9,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> MergeOverlapApertures(this IEnumerable<Panel> panels, bool validateConstruction = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> MergeOverlapApertures(this IEnumerable<Panel> panels, bool validateConstruction = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if(panels == null)
             {
@@ -19,7 +19,7 @@ namespace SAM
             return panels.ToList().ConvertAll(x => MergeOverlapApertures(x, validateConstruction, minArea, tolerance));
         }
 
-        public static AdjacencyCluster MergeOverlapApertures(this AdjacencyCluster adjacencyCluster, bool validateConstruction = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static AdjacencyCluster MergeOverlapApertures(this AdjacencyCluster adjacencyCluster, bool validateConstruction = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             List<Panel> panels = adjacencyCluster?.GetPanels();
             if (panels == null)
@@ -37,7 +37,7 @@ namespace SAM
             return result;
         }
 
-        public static AnalyticalModel MergeOverlapApertures(this AnalyticalModel analyticalModel, bool validateConstruction = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static AnalyticalModel MergeOverlapApertures(this AnalyticalModel analyticalModel, bool validateConstruction = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             AdjacencyCluster adjacencyCluster = analyticalModel?.AdjacencyCluster;
             if (adjacencyCluster == null)
@@ -48,7 +48,7 @@ namespace SAM
             return new AnalyticalModel(analyticalModel, adjacencyCluster);
         }
 
-        public static Panel MergeOverlapApertures(this Panel panel, bool validateConstruction = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static Panel MergeOverlapApertures(this Panel panel, bool validateConstruction = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (panel == null)
                 return null;
@@ -111,7 +111,7 @@ namespace SAM
 
         }
 
-        public static List<Aperture> MergeOverlapApertures(this IEnumerable<Aperture> apertures, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> MergeOverlapApertures(this IEnumerable<Aperture> apertures, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if(apertures == null)
             {

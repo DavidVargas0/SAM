@@ -8,12 +8,12 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> PanelsByFace3D(this IEnumerable<Panel> panels, Face3D face3D, double areaFactor, double maxDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static List<Panel> PanelsByFace3D(this IEnumerable<Panel> panels, Face3D face3D, double areaFactor, double maxDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             return PanelsByFace3D(panels, face3D, areaFactor, maxDistance, out List<double> intersectionAreas, tolerance_Angle, tolerance_Distance);
         }
 
-        public static List<Panel> PanelsByFace3D(this IEnumerable<Panel> panels, Face3D face3D, double areaFactor, double maxDistance, out List<double> intersectionAreas, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static List<Panel> PanelsByFace3D(this IEnumerable<Panel> panels, Face3D face3D, double areaFactor, double maxDistance, out List<double> intersectionAreas, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             intersectionAreas = null;
             

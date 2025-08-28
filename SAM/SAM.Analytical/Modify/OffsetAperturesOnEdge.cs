@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static void OffsetAperturesOnEdge(this AdjacencyCluster adjacencyCluster, double distance, double tolerance = Core.Tolerance.Distance)
+        public static void OffsetAperturesOnEdge(this AdjacencyCluster adjacencyCluster, double distance, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null)
                 return;

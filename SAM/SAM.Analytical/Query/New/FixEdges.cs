@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<T> FixEdges<T>(this T buildingElement, double tolerance = Core.Tolerance.Distance) where T : IBuildingElement
+        public static List<T> FixEdges<T>(this T buildingElement, double tolerance = Tolerance.Distance) where T : IBuildingElement
         {
             if(buildingElement == null)
             {
@@ -61,7 +61,7 @@ namespace SAM
             return result;
         }
 
-        public static List<T> FixEdges<T>(this T hostPartition, bool cutOpenings, double tolerance = Core.Tolerance.Distance) where T : IHostPartition
+        public static List<T> FixEdges<T>(this T hostPartition, bool cutOpenings, double tolerance = Tolerance.Distance) where T : IHostPartition
         {
             if (hostPartition == null)
             {

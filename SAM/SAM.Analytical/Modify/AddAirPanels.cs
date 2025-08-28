@@ -10,7 +10,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static List<Panel> AddAirPanels(this AdjacencyCluster adjacencyCluster, IEnumerable<Plane> planes, IEnumerable<Space> spaces = null, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
+        public static List<Panel> AddAirPanels(this AdjacencyCluster adjacencyCluster, IEnumerable<Plane> planes, IEnumerable<Space> spaces = null, double silverSpacing = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance, double tolerance_Snap = Tolerance.MacroDistance)
         {
             if (adjacencyCluster == null || planes == null)
             {
@@ -35,7 +35,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Panel> AddAirPanels(this AdjacencyCluster adjacencyCluster, Plane plane, IEnumerable<Space> spaces = null, double silverSpacing = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
+        public static List<Panel> AddAirPanels(this AdjacencyCluster adjacencyCluster, Plane plane, IEnumerable<Space> spaces = null, double silverSpacing = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance, double tolerance_Snap = Tolerance.MacroDistance)
         {
             if (adjacencyCluster == null || plane == null)
             {

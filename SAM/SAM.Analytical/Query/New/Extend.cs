@@ -8,7 +8,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static IPartition Extend(this IPartition partition, IEnumerable<IPartition> partitions, double tolerance = Core.Tolerance.Distance)
+        public static IPartition Extend(this IPartition partition, IEnumerable<IPartition> partitions, double tolerance = Tolerance.Distance)
         {
             if (partitions == null || partitions.Count() == 0)
                 return null;
@@ -119,7 +119,7 @@ namespace SAM
             return Create.Partition(partition, partition.Guid, face3D, tolerance);
         }
 
-        public static List<IPartition> Extend(this IEnumerable<IPartition> partitions_ToBeExtended, IEnumerable<IPartition> partitions, double tolerance = Core.Tolerance.Distance)
+        public static List<IPartition> Extend(this IEnumerable<IPartition> partitions_ToBeExtended, IEnumerable<IPartition> partitions, double tolerance = Tolerance.Distance)
         {
             if (partitions_ToBeExtended == null || partitions == null || partitions_ToBeExtended.Count() == 0 || partitions.Count() == 0)
                 return null;
@@ -186,7 +186,7 @@ namespace SAM
             return result;
         }
     
-        public static IPartition Extend(this IPartition partition, Plane plane, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static IPartition Extend(this IPartition partition, Plane plane, double snapTolerance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (plane == null)
                 return null;

@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Create
     {
-        public static List<Architectural.Level> Levels(this AdjacencyCluster adjacencyCluster, bool includeOtherPanels = false, double tolerance = Core.Tolerance.MacroDistance)
+        public static List<Architectural.Level> Levels(this AdjacencyCluster adjacencyCluster, bool includeOtherPanels = false, double tolerance = Tolerance.MacroDistance)
         {
             List<Panel> panels = adjacencyCluster?.GetPanels();
             if(panels == null)

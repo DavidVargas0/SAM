@@ -8,7 +8,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static Dictionary<Panel, List<T>> SectionDictionary<T>(this IEnumerable<Panel> panels, Plane plane, double tolerance = Core.Tolerance.Distance) where T: Geometry.ISAMGeometry
+        public static Dictionary<Panel, List<T>> SectionDictionary<T>(this IEnumerable<Panel> panels, Plane plane, double tolerance = Tolerance.Distance) where T: Geometry.ISAMGeometry
         {
             if (plane == null || panels == null)
                 return null;

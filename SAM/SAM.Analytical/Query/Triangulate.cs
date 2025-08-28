@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> Triangulate(this Panel panel, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> Triangulate(this Panel panel, double tolerance = Tolerance.Distance)
         {
             if (panel == null)
                 return null;
@@ -36,7 +36,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Aperture> Triangulate(this Aperture aperture, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> Triangulate(this Aperture aperture, double tolerance = Tolerance.Distance)
         {
             if (aperture == null)
                 return null;
@@ -74,7 +74,7 @@ namespace SAM
         /// <param name="internalEdgesOnly">Triangule only the panels which have Internal Edges</param>
         /// <param name="tolerance">Tolerance</param>
         /// <returns>AdjacencyCluster</returns>
-        public static AdjacencyCluster Triangulate(this AdjacencyCluster adjacencyCluster, bool includePanels = true, bool includeApertures = false, bool internalEdgesOnly = true, double tolerance = Core.Tolerance.Distance)
+        public static AdjacencyCluster Triangulate(this AdjacencyCluster adjacencyCluster, bool includePanels = true, bool includeApertures = false, bool internalEdgesOnly = true, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null)
                 return null;

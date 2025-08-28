@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Space> InRange(this IEnumerable<Space> spaces, Shell shell, double tolerance = Core.Tolerance.Distance)
+        public static List<Space> InRange(this IEnumerable<Space> spaces, Shell shell, double tolerance = Tolerance.Distance)
         {
             if (shell == null || spaces == null)
             {

@@ -12,7 +12,7 @@ namespace SAM
                 return false;
             }
 
-            return Geometry.Spatial.Query.Above(plane, face3DObject.Face3D, tolerance);
+            return Query.Above(plane, face3DObject.Face3D, tolerance);
         }
     }
 }

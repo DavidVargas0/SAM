@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static bool ApertureHost(this Panel panel, IClosedPlanar3D closedPlanar3D, double minArea = Core.Tolerance.MacroDistance, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static bool ApertureHost(this Panel panel, IClosedPlanar3D closedPlanar3D, double minArea = Tolerance.MacroDistance, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (closedPlanar3D == null)
             {

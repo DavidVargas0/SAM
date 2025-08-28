@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Create
     {
-        public static List<Aperture> Apertures(this List<ISAMGeometry3D> geometry3Ds, ApertureType apertureType = ApertureType.Window, ApertureConstruction apertureConstruction = null, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> Apertures(this List<ISAMGeometry3D> geometry3Ds, ApertureType apertureType = ApertureType.Window, ApertureConstruction apertureConstruction = null, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             List<Face3D> face3Ds = Geometry.Spatial.Query.Face3Ds(geometry3Ds, tolerance);
             if (face3Ds == null)

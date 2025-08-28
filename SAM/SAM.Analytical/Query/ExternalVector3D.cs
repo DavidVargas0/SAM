@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static Vector3D ExternalVector3D(this AdjacencyCluster adjacencyCluster, Space space, Panel panel, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static Vector3D ExternalVector3D(this AdjacencyCluster adjacencyCluster, Space space, Panel panel, double silverSpacing = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null || panel == null || space == null)
                 return null;

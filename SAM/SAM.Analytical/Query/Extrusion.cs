@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static Extrusion Extrusion(this Panel panel, double tolernace = Core.Tolerance.Distance)
+        public static Extrusion Extrusion(this Panel panel, double tolernace = Tolerance.Distance)
         {
             if (panel == null)
             {

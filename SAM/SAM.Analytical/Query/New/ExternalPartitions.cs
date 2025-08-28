@@ -9,13 +9,13 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<IPartition> ExternalPartitions(this IEnumerable<IPartition> partitions, double elevation, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance_Distance = Core.Tolerance.Distance)
+        public static List<IPartition> ExternalPartitions(this IEnumerable<IPartition> partitions, double elevation, double snapTolerance = Tolerance.MacroDistance, double tolerance_Distance = Tolerance.Distance)
         {
             return ExternalPartitions(partitions, elevation, out List<IPartition> internalPartitions, out List<IPartition> shadePartitions, out List<Polygon3D> externalPolygon3Ds, snapTolerance, tolerance_Distance);
         }
 
 
-        public static List<IPartition> ExternalPartitions(this IEnumerable<IPartition> partitions, double elevation, out List<IPartition> internalPartitions, out List<IPartition> shadePartitions, out List<Polygon3D> externalPolygon3Ds, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance_Distance = Core.Tolerance.Distance)
+        public static List<IPartition> ExternalPartitions(this IEnumerable<IPartition> partitions, double elevation, out List<IPartition> internalPartitions, out List<IPartition> shadePartitions, out List<Polygon3D> externalPolygon3Ds, double snapTolerance = Tolerance.MacroDistance, double tolerance_Distance = Tolerance.Distance)
         {
             internalPartitions = null;
             shadePartitions = null;

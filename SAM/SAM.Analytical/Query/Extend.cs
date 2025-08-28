@@ -8,7 +8,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static Panel Extend(this Panel panel, IEnumerable<Panel> panels, double tolerance = Core.Tolerance.Distance)
+        public static Panel Extend(this Panel panel, IEnumerable<Panel> panels, double tolerance = Tolerance.Distance)
         {
             if (panels == null || panels.Count() == 0)
                 return null;
@@ -121,7 +121,7 @@ namespace SAM
             return new Panel(panel.Guid, panel, face3D, null, true, 0, double.MaxValue);
         }
 
-        public static List<Panel> Extend(this IEnumerable<Panel> panels_ToBeExtended, IEnumerable<Panel> panels, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> Extend(this IEnumerable<Panel> panels_ToBeExtended, IEnumerable<Panel> panels, double tolerance = Tolerance.Distance)
         {
             if (panels_ToBeExtended == null || panels == null || panels_ToBeExtended.Count() == 0 || panels.Count() == 0)
                 return null;
@@ -188,7 +188,7 @@ namespace SAM
             return result;
         }
     
-        public static Panel Extend(this Panel panel, Plane plane, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static Panel Extend(this Panel panel, Plane plane, double snapTolerance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (plane == null)
                 return null;

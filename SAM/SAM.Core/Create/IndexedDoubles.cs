@@ -1,12 +1,11 @@
-﻿
-namespace SAM 
- // namespace  SAM.Core
+﻿//namespace SAM
+namespace SAM.Core
 {
     public static partial class Create
     {
         public static IndexedDoubles IndexedDoubles(this IndexedDoubles indexedDoubles, int start, int end)
         {
-            if(indexedDoubles == null)
+            if (indexedDoubles == null)
             {
                 return null;
             }
@@ -14,7 +13,7 @@ namespace SAM
             IndexedDoubles result = new IndexedDoubles();
             for (int i = start; i < end; i++)
             {
-                if(!indexedDoubles.ContainsIndex(i))
+                if (!indexedDoubles.ContainsIndex(i))
                 {
                     continue;
                 }

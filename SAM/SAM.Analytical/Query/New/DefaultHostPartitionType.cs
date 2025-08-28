@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static HostPartitionType DefaultHostPartitionType(Vector3D normal, double tolerance = Core.Tolerance.Angle)
+        public static HostPartitionType DefaultHostPartitionType(Vector3D normal, double tolerance = Tolerance.Angle)
         {
             if (normal == null)
             {
@@ -36,7 +36,7 @@ namespace SAM
             }
         }
 
-        public static HostPartitionType DefaultHostPartitionType(Face3D face3D, double tolerance = Core.Tolerance.Angle)
+        public static HostPartitionType DefaultHostPartitionType(Face3D face3D, double tolerance = Tolerance.Angle)
         {
             return DefaultHostPartitionType(face3D?.GetPlane()?.Normal, tolerance);
         }

@@ -9,7 +9,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> FillFloorsAndRoofs(this IEnumerable<Panel> panels, double areaFactor = 0.4, double offset = 0.1, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> FillFloorsAndRoofs(this IEnumerable<Panel> panels, double areaFactor = 0.4, double offset = 0.1, double snapTolerance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (panels == null)
             {
@@ -28,7 +28,7 @@ namespace SAM
                 if (panel.PanelGroup == Analytical.PanelGroup.Floor || panel.PanelGroup == Analytical.PanelGroup.Roof)
                 {
                     double elevation = panel.MinElevation();
-                    elevation = Core.Query.Round(elevation, Core.Tolerance.MacroDistance);
+                    elevation = Core.Query.Round(elevation, Tolerance.MacroDistance);
                     Tuple<double, List<Panel>> tuple_Elevation = tuples_Elevation.Find(x => x.Item1.Equals(elevation));
                     if (tuple_Elevation == null)
                     {

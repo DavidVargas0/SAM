@@ -8,7 +8,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static IOpening AddOpening(this IHostPartition hostPartition, OpeningType openingType, double ratio, double tolerance_Area = Core.Tolerance.MacroDistance, double tolerance_Distance = Core.Tolerance.Distance)
+        public static IOpening AddOpening(this IHostPartition hostPartition, OpeningType openingType, double ratio, double tolerance_Area = Tolerance.MacroDistance, double tolerance_Distance = Tolerance.Distance)
         {
             if(hostPartition == null || openingType == null || ratio == 0)
             {
@@ -106,7 +106,7 @@ namespace SAM
             return openings?.FirstOrDefault();
         }
 
-        public static IOpening AddOpening(this BuildingModel buildingModel, IOpening opening, double tolerance = Core.Tolerance.Distance)
+        public static IOpening AddOpening(this BuildingModel buildingModel, IOpening opening, double tolerance = Tolerance.Distance)
         {
             if(TryAddOpening(buildingModel, opening, tolerance))
             {

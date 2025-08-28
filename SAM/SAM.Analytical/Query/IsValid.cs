@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static bool IsValid(this Panel panel, Aperture aperture, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static bool IsValid(this Panel panel, Aperture aperture, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             if (panel == null || aperture == null)
                 return false;

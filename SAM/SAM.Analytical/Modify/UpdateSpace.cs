@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static bool UpdateSpace(this AdjacencyCluster adjacencyCluster, Space space, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static bool UpdateSpace(this AdjacencyCluster adjacencyCluster, Space space, double silverSpacing = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null || space == null)
                 return false;

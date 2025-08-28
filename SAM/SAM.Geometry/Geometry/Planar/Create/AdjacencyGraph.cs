@@ -1,8 +1,8 @@
 ﻿using QuickGraph;
 using System.Collections.Generic;
 
-namespace SAM 
- // namespace  SAM.Geometry.Planar
+namespace SAM
+// namespace  SAM.Geometry.Planar
 {
     public static partial class Create
     {
@@ -14,17 +14,17 @@ namespace SAM
             AdjacencyGraph<Point2D, Edge<Point2D>> result = new AdjacencyGraph<Point2D, Edge<Point2D>>();
 
             HashSet<Point2D> point2Ds = new HashSet<Point2D>();
-            foreach(ISegmentable2D segmentable2D in segmentable2Ds)
+            foreach (ISegmentable2D segmentable2D in segmentable2Ds)
             {
                 List<Segment2D> segment2Ds = segmentable2D?.GetSegments();
                 if (segment2Ds == null)
                     continue;
 
-                foreach(Segment2D segment2D in segment2Ds)
+                foreach (Segment2D segment2D in segment2Ds)
                 {
                     Point2D point2D_1 = segment2D[0];
                     point2D_1.Round(tolerance);
-                    if(!point2Ds.Contains(point2D_1))
+                    if (!point2Ds.Contains(point2D_1))
                     {
                         point2Ds.Add(point2D_1);
                         result.AddVertex(point2D_1);

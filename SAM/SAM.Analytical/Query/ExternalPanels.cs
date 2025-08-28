@@ -8,13 +8,13 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> ExternalPanels(this IEnumerable<Panel> panels, double elevation, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance_Distance = Core.Tolerance.Distance)
+        public static List<Panel> ExternalPanels(this IEnumerable<Panel> panels, double elevation, double snapTolerance = Tolerance.MacroDistance, double tolerance_Distance = Tolerance.Distance)
         {
             return ExternalPanels(panels, elevation, out List<Panel> internalPanels, out List<Panel> shadePanels, out List<Polygon3D> externalPolygon3Ds, snapTolerance, tolerance_Distance);
         }
 
 
-        public static List<Panel> ExternalPanels(this IEnumerable<Panel> panels, double elevation, out List<Panel> internalPanels, out List<Panel> shadePanels, out List<Polygon3D> externalPolygon3Ds, double snapTolerance = Core.Tolerance.MacroDistance, double tolerance_Distance = Core.Tolerance.Distance)
+        public static List<Panel> ExternalPanels(this IEnumerable<Panel> panels, double elevation, out List<Panel> internalPanels, out List<Panel> shadePanels, out List<Polygon3D> externalPolygon3Ds, double snapTolerance = Tolerance.MacroDistance, double tolerance_Distance = Tolerance.Distance)
         {
             internalPanels = null;
             shadePanels = null;

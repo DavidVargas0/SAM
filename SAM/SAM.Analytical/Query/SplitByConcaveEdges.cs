@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> SplitByConcaveEdges(this Panel panel, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> SplitByConcaveEdges(this Panel panel, double tolerance = Tolerance.Distance)
         {
             if (panel == null)
                 return null;
@@ -37,7 +37,7 @@ namespace SAM
             return result;
         }
 
-        public static AdjacencyCluster SplitByConcaveEdges(this AdjacencyCluster adjacencyCluster, double tolerance = Core.Tolerance.Distance)
+        public static AdjacencyCluster SplitByConcaveEdges(this AdjacencyCluster adjacencyCluster, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null)
                 return null;

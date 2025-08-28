@@ -10,7 +10,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<IPartition> MergeCoplanar(this IEnumerable<IPartition> partitions, double offset, bool validateHostPartitionType = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<IPartition> MergeCoplanar(this IEnumerable<IPartition> partitions, double offset, bool validateHostPartitionType = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (partitions == null)
                 return null;
@@ -18,7 +18,7 @@ namespace SAM
             return MergeCoplanar(partitions?.ToList(), offset, out List<IPartition> redundantPartitions, validateHostPartitionType, minArea, tolerance);
         }
 
-        public static List<IPartition> MergeCoplanar(this IEnumerable<IPartition> partitions, double offset, out List<IPartition> redundantPartitions, bool validateHostPartitionType = true, double minArea = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<IPartition> MergeCoplanar(this IEnumerable<IPartition> partitions, double offset, out List<IPartition> redundantPartitions, bool validateHostPartitionType = true, double minArea = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             redundantPartitions = null;
 
@@ -137,7 +137,7 @@ namespace SAM
                     Polygon polygon_Temp = Geometry.Planar.Query.SimplifyBySnapper(polygon, tolerance);
                     polygon_Temp = Geometry.Planar.Query.SimplifyByTopologyPreservingSimplifier(polygon_Temp, tolerance);
 
-                    Face2D face2D = polygon_Temp.ToSAM(minArea, Core.Tolerance.MicroDistance)?.Snap(point2Ds, tolerance);
+                    Face2D face2D = polygon_Temp.ToSAM(minArea, Tolerance.MicroDistance)?.Snap(point2Ds, tolerance);
                     if (face2D == null)
                         continue;
 

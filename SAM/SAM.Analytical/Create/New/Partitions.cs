@@ -9,7 +9,7 @@ namespace SAM
 {
     public static partial class Create
     {
-        public static List<IPartition> Partitions(this BuildingModel buildingModel, Plane plane, out List<IPartition> existingPartitions, IEnumerable<Space> spaces = null, HostPartitionType hostPartitionType = null, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
+        public static List<IPartition> Partitions(this BuildingModel buildingModel, Plane plane, out List<IPartition> existingPartitions, IEnumerable<Space> spaces = null, HostPartitionType hostPartitionType = null, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance, double tolerance_Snap = Tolerance.MacroDistance)
         {
             existingPartitions = null;
 

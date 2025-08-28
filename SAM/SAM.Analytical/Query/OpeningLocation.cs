@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static Point3D OpeningLocation(this IClosedPlanar3D closedPlanar3D, double tolerance = Core.Tolerance.Distance)
+        public static Point3D OpeningLocation(this IClosedPlanar3D closedPlanar3D, double tolerance = Tolerance.Distance)
         {
             if(closedPlanar3D == null)
             {

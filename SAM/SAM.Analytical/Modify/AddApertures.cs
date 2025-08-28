@@ -9,7 +9,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static List<Aperture> AddApertures(this AdjacencyCluster adjacencyCluster, ApertureConstruction apertureConstruction, IEnumerable<IClosedPlanar3D> closedPlanar3Ds, bool trimGeometry = true, double minArea = Core.Tolerance.MacroDistance, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> AddApertures(this AdjacencyCluster adjacencyCluster, ApertureConstruction apertureConstruction, IEnumerable<IClosedPlanar3D> closedPlanar3Ds, bool trimGeometry = true, double minArea = Tolerance.MacroDistance, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null || closedPlanar3Ds == null)
                 return null;
@@ -30,7 +30,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Aperture> AddApertures(this IEnumerable<Panel> panels, ApertureConstruction apertureConstruction, IEnumerable<IClosedPlanar3D> closedPlanar3Ds, bool trimGeometry = true, double minArea = Core.Tolerance.MacroDistance, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> AddApertures(this IEnumerable<Panel> panels, ApertureConstruction apertureConstruction, IEnumerable<IClosedPlanar3D> closedPlanar3Ds, bool trimGeometry = true, double minArea = Tolerance.MacroDistance, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (closedPlanar3Ds == null)
                 return null;
@@ -79,7 +79,7 @@ namespace SAM
             return tuples_Result.ConvertAll(x => x.Item2);
         }
 
-        public static List<Aperture> AddApertures(this Panel panel, IEnumerable<Aperture> apertures, bool trimGeometry = true, double minArea = Core.Tolerance.MacroDistance, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> AddApertures(this Panel panel, IEnumerable<Aperture> apertures, bool trimGeometry = true, double minArea = Tolerance.MacroDistance, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (panel == null || apertures == null)
             {
@@ -99,7 +99,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Aperture> AddApertures(this IEnumerable<Panel> panels, IEnumerable<Aperture> apertures, bool trimGeometry = true, double minArea = Core.Tolerance.MacroDistance, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> AddApertures(this IEnumerable<Panel> panels, IEnumerable<Aperture> apertures, bool trimGeometry = true, double minArea = Tolerance.MacroDistance, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (apertures == null)
                 return null;
@@ -148,7 +148,7 @@ namespace SAM
             return tuples_Result.ConvertAll(x => x.Item2);
         }
 
-        public static List<Aperture> AddApertures(this AdjacencyCluster adjacencyCluster, IEnumerable<Aperture> apertures, bool trimGeometry = true, double minArea = Core.Tolerance.MacroDistance, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> AddApertures(this AdjacencyCluster adjacencyCluster, IEnumerable<Aperture> apertures, bool trimGeometry = true, double minArea = Tolerance.MacroDistance, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null || apertures == null)
                 return null;
@@ -220,7 +220,7 @@ namespace SAM
             //return result;
         }
 
-        public static List<Aperture> AddApertures(this IEnumerable<Panel> panels, ApertureConstruction apertureConstruction, double ratio, double azimuth_Start, double azimuth_End, double tolerance_Area = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> AddApertures(this IEnumerable<Panel> panels, ApertureConstruction apertureConstruction, double ratio, double azimuth_Start, double azimuth_End, double tolerance_Area = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (panels == null || apertureConstruction == null)
                 return null;
@@ -237,7 +237,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Aperture> AddApertures(this Panel panel, ApertureConstruction apertureConstruction, double ratio, double tolerance_Area = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> AddApertures(this Panel panel, ApertureConstruction apertureConstruction, double ratio, double tolerance_Area = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (panel == null || apertureConstruction == null)
                 return null;
@@ -330,7 +330,7 @@ namespace SAM
             //return null;
         }
 
-        public static List<Aperture> AddApertures(this Panel panel, ApertureConstruction apertureConstruction, double ratio, bool subdivide, double height, double sillHeight, double separation, double offset = 0.01, bool keepSeparationDistance = false, double tolerance_Area = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> AddApertures(this Panel panel, ApertureConstruction apertureConstruction, double ratio, bool subdivide, double height, double sillHeight, double separation, double offset = 0.01, bool keepSeparationDistance = false, double tolerance_Area = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (panel == null || apertureConstruction == null)
                 return null;
@@ -601,7 +601,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Aperture> AddApertures(this Panel panel, ApertureConstruction apertureConstruction, double ratio, double azimuth_Start, double azimuth_End, double tolerance_Area = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> AddApertures(this Panel panel, ApertureConstruction apertureConstruction, double ratio, double azimuth_Start, double azimuth_End, double tolerance_Area = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (panel == null || apertureConstruction == null || ratio > 1 || ratio <= 0)
                 return null;
@@ -617,7 +617,7 @@ namespace SAM
 
         }
 
-        public static List<Aperture> AddApertures(this Panel panel, ApertureConstruction apertureConstruction, IClosedPlanar3D closedPlanar3D, bool trimGeometry = true, double minArea = Core.Tolerance.MacroDistance, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> AddApertures(this Panel panel, ApertureConstruction apertureConstruction, IClosedPlanar3D closedPlanar3D, bool trimGeometry = true, double minArea = Tolerance.MacroDistance, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (apertureConstruction == null || closedPlanar3D == null || panel == null)
                 return null;
@@ -685,7 +685,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Aperture> AddApertures(this Panel panel, Aperture aperture, bool trimGeometry = true, double minArea = Core.Tolerance.MacroDistance, double maxDistance = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> AddApertures(this Panel panel, Aperture aperture, bool trimGeometry = true, double minArea = Tolerance.MacroDistance, double maxDistance = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (aperture == null || panel == null)
                 return null;

@@ -31,7 +31,7 @@ namespace SAM
 
         }
 
-        public Wall(System.Guid guid, Wall wall, Face3D face3D, double tolerance = Core.Tolerance.Distance)
+        public Wall(System.Guid guid, Wall wall, Face3D face3D, double tolerance = Tolerance.Distance)
             : base(guid, wall, face3D, tolerance)
         {
 

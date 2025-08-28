@@ -18,7 +18,7 @@ namespace SAM
         /// <param name="silverSpacing">Silver Spacing Tolerance</param>
         /// <param name="tolerance">Distance tolerance</param>
         /// <returns></returns>
-        public static AdjacencyCluster UpdateNormals(this AdjacencyCluster adjacencyCluster, bool includeApertures, bool external = true, bool flipX = false, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance= Core.Tolerance.Distance)
+        public static AdjacencyCluster UpdateNormals(this AdjacencyCluster adjacencyCluster, bool includeApertures, bool external = true, bool flipX = false, double silverSpacing = Tolerance.MacroDistance, double tolerance= Tolerance.Distance)
         {
             if (adjacencyCluster == null)
                 return null;
@@ -144,7 +144,7 @@ namespace SAM
         /// <param name="silverSpacing">SilverSpacing Tolerance</param>
         /// <param name="tolerance">Distance Tolerance</param>
         /// <returns>Copy of panels which enclose given space</returns>
-        public static List<IPanel> UpdateNormals(this AdjacencyCluster adjacencyCluster, ISpace space, bool includeApertures, bool external = true, bool flipX = false, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<IPanel> UpdateNormals(this AdjacencyCluster adjacencyCluster, ISpace space, bool includeApertures, bool external = true, bool flipX = false, double silverSpacing = Tolerance.MacroDistance, double tolerance = Tolerance.Distance)
         {
             if (adjacencyCluster == null || space == null)
                 return null;

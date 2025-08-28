@@ -10,7 +10,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> AdjustPanels(this Face3D face3D, IEnumerable<Panel> panels, double maxDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> AdjustPanels(this Face3D face3D, IEnumerable<Panel> panels, double maxDistance, double tolerance = Tolerance.Distance)
         {
             if (face3D == null || panels == null)
             {

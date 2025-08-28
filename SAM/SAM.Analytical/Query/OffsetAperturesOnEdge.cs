@@ -9,7 +9,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Aperture> OffsetAperturesOnEdge(this Panel panel, double distance, double tolerance = Core.Tolerance.Distance)
+        public static List<Aperture> OffsetAperturesOnEdge(this Panel panel, double distance, double tolerance = Tolerance.Distance)
         {
             List<Aperture> apertures = panel?.Apertures;
             if (apertures == null || apertures.Count == 0)

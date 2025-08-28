@@ -3,7 +3,7 @@
 {
     public static partial class Query
     {
-        public static double CalculatedArea(this Space space, BuildingModel buildingModel = null, double offset = 0.1, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
+        public static double CalculatedArea(this Space space, BuildingModel buildingModel = null, double offset = 0.1, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance, double tolerance_Snap = Tolerance.MacroDistance)
         {
             if (space.TryGetValue(SpaceParameter.Area, out double result) && !double.IsNaN(result))
                 return result;

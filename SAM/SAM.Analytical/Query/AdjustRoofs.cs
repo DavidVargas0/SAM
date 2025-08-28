@@ -9,7 +9,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> AdjustRoofs(this IEnumerable<Panel> roofs, IEnumerable<Shell> shells, double offset = 0.1, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
+        public static List<Panel> AdjustRoofs(this IEnumerable<Panel> roofs, IEnumerable<Shell> shells, double offset = 0.1, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance, double tolerance_Snap = Tolerance.MacroDistance)
         {
             if (roofs == null || shells == null)
                 return null;

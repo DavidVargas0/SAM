@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<Panel> Fill(this Face3D face3D, IEnumerable<Panel> panels, double offset = 0.1, double tolerance_Area = Core.Tolerance.MacroDistance, double tolerance_Distance = Core.Tolerance.Distance)
+        public static List<Panel> Fill(this Face3D face3D, IEnumerable<Panel> panels, double offset = 0.1, double tolerance_Area = Tolerance.MacroDistance, double tolerance_Distance = Tolerance.Distance)
         {
             if(face3D == null || panels == null)
             {

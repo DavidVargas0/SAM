@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace SAM 
- // namespace  SAM.Core
+//namespace SAM
+namespace SAM.Core
 {
     public static partial class Create
     {
@@ -39,7 +39,7 @@ namespace SAM
         {
             if (@object == null || typeMap == null)
                 return null;
-            
+
             return ParameterSet(@object, @object.GetType().Assembly, type_destination, typeMap);
         }
 

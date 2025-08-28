@@ -8,7 +8,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static AnalyticalModel MergeCoplanarApertures(this AnalyticalModel analyticalModel, out List<Aperture> mergedApertures, out List<Aperture> redundantApertures, bool validateApertureConstruction, double tolerance = Core.Tolerance.Distance)
+        public static AnalyticalModel MergeCoplanarApertures(this AnalyticalModel analyticalModel, out List<Aperture> mergedApertures, out List<Aperture> redundantApertures, bool validateApertureConstruction, double tolerance = Tolerance.Distance)
         {
             redundantApertures = null;
             mergedApertures = null;
@@ -27,7 +27,7 @@ namespace SAM
             return new AnalyticalModel(analyticalModel);
         }
 
-        public static AdjacencyCluster MergeCoplanarApertures(this AdjacencyCluster adjacencyCluster, out List<Aperture> mergedApertures, out List<Aperture> redundantApertures, bool validateApertureConstruction, double tolerance = Core.Tolerance.Distance)
+        public static AdjacencyCluster MergeCoplanarApertures(this AdjacencyCluster adjacencyCluster, out List<Aperture> mergedApertures, out List<Aperture> redundantApertures, bool validateApertureConstruction, double tolerance = Tolerance.Distance)
         {
             redundantApertures = null;
             mergedApertures = null;
@@ -59,7 +59,7 @@ namespace SAM
 
         }
 
-        public static List<Panel> MergeCoplanarApertures(this IEnumerable<Panel> panels, out List<Aperture> mergedApertures, out List<Aperture> redundantApertures, bool validateApertureConstruction, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> MergeCoplanarApertures(this IEnumerable<Panel> panels, out List<Aperture> mergedApertures, out List<Aperture> redundantApertures, bool validateApertureConstruction, double tolerance = Tolerance.Distance)
         {
             mergedApertures = null;
             redundantApertures = null;
@@ -103,7 +103,7 @@ namespace SAM
 
         }
 
-        public static Panel MergeCoplanarApertures(this Panel panel, out List<Aperture> mergedApertures, out List<Aperture> redundantApertures, bool validateApertureConstruction, double tolerance = Core.Tolerance.Distance)
+        public static Panel MergeCoplanarApertures(this Panel panel, out List<Aperture> mergedApertures, out List<Aperture> redundantApertures, bool validateApertureConstruction, double tolerance = Tolerance.Distance)
         {
             mergedApertures = null;
             redundantApertures = null;

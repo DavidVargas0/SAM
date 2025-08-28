@@ -5,12 +5,12 @@ namespace SAM
 {
     public static partial class Create
     {
-        public static IPartition Partition(this IPartition partition, System.Guid guid, Face3D face3D, double tolerance = Core.Tolerance.Distance)
+        public static IPartition Partition(this IPartition partition, System.Guid guid, Face3D face3D, double tolerance = Tolerance.Distance)
         {
             return Partition<IPartition>(partition, guid, face3D, tolerance);
         }
 
-        public static T Partition<T>(this T partition, System.Guid guid, Face3D face3D, double tolerance = Core.Tolerance.Distance) where T : IPartition
+        public static T Partition<T>(this T partition, System.Guid guid, Face3D face3D, double tolerance = Tolerance.Distance) where T : IPartition
         {
             if (partition == null || face3D == null)
             {

@@ -5,7 +5,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<IPartition> SplitByInternalEdges(this BuildingModel buildingModel, double tolerance = Core.Tolerance.Distance)
+        public static List<IPartition> SplitByInternalEdges(this BuildingModel buildingModel, double tolerance = Tolerance.Distance)
         {
             if (buildingModel == null)
                 return null;

@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static void SimplifyByAngle(this AdjacencyCluster adjacencyCluster, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance)
+        public static void SimplifyByAngle(this AdjacencyCluster adjacencyCluster, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance)
         {
             List<Panel> panels = adjacencyCluster?.GetPanels();
             if(panels == null)

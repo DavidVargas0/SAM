@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Modify
     {
-        public static bool TryAddOpening(this BuildingModel buildingModel, IOpening opening, out IHostPartition hostPartition, double tolerance = Core.Tolerance.Distance)
+        public static bool TryAddOpening(this BuildingModel buildingModel, IOpening opening, out IHostPartition hostPartition, double tolerance = Tolerance.Distance)
         {
             hostPartition = null;
             
@@ -68,7 +68,7 @@ namespace SAM
             return false;
         }
 
-        public static bool TryAddOpening(this IHostPartition hostPartition, IOpening opening, double tolerance = Core.Tolerance.Distance)
+        public static bool TryAddOpening(this IHostPartition hostPartition, IOpening opening, double tolerance = Tolerance.Distance)
         {
             if(hostPartition == null || opening == null)
             {
@@ -85,7 +85,7 @@ namespace SAM
             return openings != null && openings.Count != 0;
         }
 
-        public static bool TryAddOpening(this BuildingModel buildingModel, IOpening opening, double tolerance = Core.Tolerance.Distance)
+        public static bool TryAddOpening(this BuildingModel buildingModel, IOpening opening, double tolerance = Tolerance.Distance)
         {
             return TryAddOpening(buildingModel, opening, out IHostPartition hostPartition, tolerance);
         }

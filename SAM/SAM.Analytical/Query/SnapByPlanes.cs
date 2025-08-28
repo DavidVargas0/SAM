@@ -7,7 +7,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static Panel SnapByPlanes(this Panel panel, IEnumerable<Plane> planes, double maxDistance, double tolerance = Core.Tolerance.Distance)
+        public static Panel SnapByPlanes(this Panel panel, IEnumerable<Plane> planes, double maxDistance, double tolerance = Tolerance.Distance)
         {
             Panel panel_New = new Panel(panel);
             panel_New.Snap(planes, maxDistance);
@@ -15,7 +15,7 @@ namespace SAM
             return panel_New;
         }
 
-        public static List<Panel> SnapByPlanes(this IEnumerable<Panel> panels, IEnumerable<Plane> planes, double maxDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> SnapByPlanes(this IEnumerable<Panel> panels, IEnumerable<Plane> planes, double maxDistance, double tolerance = Tolerance.Distance)
         {
             if (panels == null)
             {
@@ -31,7 +31,7 @@ namespace SAM
             return result;
         }
 
-        public static List<Panel> SnapByPlanes(this IEnumerable<Panel> panels, IEnumerable<double> elevations, double maxDistance, double tolerance = Core.Tolerance.Distance)
+        public static List<Panel> SnapByPlanes(this IEnumerable<Panel> panels, IEnumerable<double> elevations, double maxDistance, double tolerance = Tolerance.Distance)
         {
             if(panels == null)
             {

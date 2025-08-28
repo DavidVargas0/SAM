@@ -6,7 +6,7 @@ namespace SAM
 {
     public static partial class Query
     {
-        public static List<IPartition> SplitByInternalEdges(this IPartition partition, double tolerance = Core.Tolerance.Distance)
+        public static List<IPartition> SplitByInternalEdges(this IPartition partition, double tolerance = Tolerance.Distance)
         {
             Face3D face3D = partition?.Face3D;
             if (face3D == null)
