@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace  .Analytical
+namespace SAM.Analytical
 {
     /// <summary>
     /// Analytical ActivityLevel according to VDI 2078 2015.

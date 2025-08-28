@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SAM SAM.Units
+namespace SAM.Units
 {
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
     public class Abbreviation : Attribute
