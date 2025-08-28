@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
+// using SAM.Core;
 
-namespace  SAM.Geometry.Object.Spatial
+namespace SAM 
+ // namespace  SAM.Geometry.Object.Spatial
 {
     public class Geometry3DObjectCollection : SAMGeometry3DObjectCollection, ITaggable
     {

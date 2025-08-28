@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public class Polycurve2D : SAMGeometry, ICurve2D, ICurvable2D, IReversible
     {

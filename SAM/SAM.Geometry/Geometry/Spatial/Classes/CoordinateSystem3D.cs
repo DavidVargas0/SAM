@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
+// using SAM.Core;
 
-namespace  SAM.Geometry.Spatial
+namespace SAM 
+ // namespace  SAM.Geometry.Spatial
 {
     public class CoordinateSystem3D : IJSAMObject
     {

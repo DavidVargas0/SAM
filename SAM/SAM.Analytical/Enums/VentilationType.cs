@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     [Description("Ventilation Type.")]
     public enum VentilationType

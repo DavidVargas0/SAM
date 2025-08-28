@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel;
-using SAM.Core;
-using SAM.Core.Attributes;
+// using SAM.Core;
+// using SAM.Core.Attributes;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     [AssociatedTypes(typeof(AnalyticalModel)), Description("AnalyticalModel Parameter")]
     public enum AnalyticalModelParameter

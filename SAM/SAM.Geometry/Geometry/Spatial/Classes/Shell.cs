@@ -1,10 +1,11 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Geometry.Planar;
+// using SAM.Geometry.Planar;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Geometry.Spatial
+namespace SAM 
+ // namespace  SAM.Geometry.Spatial
 {
     public class Shell : SAMGeometry, IBoundable3D
     {

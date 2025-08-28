@@ -1,4 +1,5 @@
-﻿namespace  SAM.Weather
+﻿namespace SAM 
+ // namespace  SAM.Weather
 {
     /// <summary>
     /// The Query class provides static methods to query and manipulate WeatherData objects.

@@ -1,4 +1,5 @@
-﻿namespace  SAM.Core
+﻿namespace SAM 
+ // namespace  SAM.Core
 {
     /// <summary>
     /// Represents a static class that defines various levels of rounding precision for distances and angles.

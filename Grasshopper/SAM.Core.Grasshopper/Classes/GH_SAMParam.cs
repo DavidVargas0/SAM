@@ -1,6 +1,7 @@
 ﻿using Grasshopper.Kernel;
 
-namespace SAM SAM.Core.Grasshopper
+namespace SAM
+// namespace SAM.Core.Grasshopper
 {
     public struct GH_SAMParam
     {

@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public class IntegerId : ParameterizedSAMObject, IId
     {

@@ -2,7 +2,8 @@
 using System.Drawing;
 using System.Linq;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public static partial class Modify
     {

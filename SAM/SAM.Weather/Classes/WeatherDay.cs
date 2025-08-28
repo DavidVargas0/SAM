@@ -1,9 +1,10 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
+// using SAM.Core;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Weather
+namespace SAM 
+ // namespace  SAM.Weather
 {
     /// <summary>
     /// Represents a single day's weather data.

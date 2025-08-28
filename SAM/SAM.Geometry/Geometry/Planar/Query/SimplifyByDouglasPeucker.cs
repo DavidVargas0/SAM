@@ -1,8 +1,9 @@
 ﻿using NetTopologySuite.Geometries;
 using NetTopologySuite.Simplify;
-using SAM.Core;
+// using SAM.Core;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public static partial class Query
     {

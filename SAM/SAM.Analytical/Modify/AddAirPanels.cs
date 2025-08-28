@@ -1,11 +1,12 @@
-﻿using SAM.Core;
-using SAM.Geometry.Spatial;
+﻿// // using SAM.Core;
+// // using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SAM.Analytical
+namespace SAM
+// namespace SAM.Analytical
 {
     public static partial class Modify
     {
@@ -34,7 +35,7 @@ namespace SAM.Analytical
             return result;
         }
 
-        public static List<Panel> AddAirPanels(this AdjacencyCluster adjacencyCluster, Plane plane, IEnumerable<Space> spaces = null, double silverSpacing = Core.Tolerance.MacroDistance, double tolerance_Angle = Core.Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
+        public static List<Panel> AddAirPanels(this AdjacencyCluster adjacencyCluster, Plane plane, IEnumerable<Space> spaces = null, double silverSpacing = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Core.Tolerance.Distance, double tolerance_Snap = Core.Tolerance.MacroDistance)
         {
             if (adjacencyCluster == null || plane == null)
             {

@@ -1,7 +1,8 @@
 ﻿using NetTopologySuite.Geometries;
-using SAM.Geometry.Planar;
+// using SAM.Geometry.Planar;
 
-namespace  SAM.Geometry.Spatial
+namespace SAM 
+ // namespace  SAM.Geometry.Spatial
 {
     public static partial class Convert
     {

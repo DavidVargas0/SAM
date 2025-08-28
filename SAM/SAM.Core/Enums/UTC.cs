@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     /// <summary>
     /// Coordinated Universal Time (UTC) Time Zones

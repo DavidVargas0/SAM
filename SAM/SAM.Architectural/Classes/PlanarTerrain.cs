@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
 
-using SAM.Geometry.Spatial;
+// using SAM.Geometry.Spatial;
 
-namespace  SAM.Architectural
+namespace SAM 
+ // namespace  SAM.Architectural
 {
     public class PlanarTerrain : Terrain
     {

@@ -4,7 +4,8 @@ using Rhino.Geometry;
 using System;
 using System.Collections.Generic;
 
-namespace  SAM.Analytical.Rhino
+namespace SAM 
+ // namespace  SAM.Analytical.Rhino
 {
     public static partial class Modify
     {

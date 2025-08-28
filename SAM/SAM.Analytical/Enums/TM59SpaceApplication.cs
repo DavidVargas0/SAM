@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     /// <summary>
     /// TM59 Space Application

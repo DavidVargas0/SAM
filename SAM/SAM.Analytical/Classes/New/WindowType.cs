@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Architectural;
+// using SAM.Architectural;
 using System.Collections.Generic;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public class WindowType : OpeningType
     {

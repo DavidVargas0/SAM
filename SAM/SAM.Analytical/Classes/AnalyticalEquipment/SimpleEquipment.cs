@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
+// using SAM.Core;
 using System;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     /// <summary>
     /// Represents an simple equipment object in the analytical domain

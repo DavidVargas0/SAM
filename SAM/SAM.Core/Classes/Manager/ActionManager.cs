@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SAM.Core
+namespace SAM
+// namespace SAM.Core
 {
     public class ActionManager
     {

@@ -3,7 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     /// <summary>
     /// Segment2D

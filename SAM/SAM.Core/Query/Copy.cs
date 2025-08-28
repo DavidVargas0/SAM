@@ -2,7 +2,8 @@
 using System.Diagnostics;
 using System;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public static partial class Query
     {

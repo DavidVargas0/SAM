@@ -1,5 +1,6 @@
 ﻿
-namespace  SAM.Geometry.Object
+namespace SAM 
+ // namespace  SAM.Geometry.Object
 {
     public static partial class Query
     {

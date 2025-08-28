@@ -1,6 +1,7 @@
 ﻿
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Create
     {

@@ -3,16 +3,17 @@ using Grasshopper.Kernel.Types;
 using Rhino;
 using Rhino.DocObjects;
 using Rhino.Geometry;
-using SAM.Analytical.Grasshopper.Properties;
-using SAM.Core.Grasshopper;
-using SAM.Geometry.Spatial;
+// using SAM.Analytical.Grasshopper.Properties;
+// using SAM.Core.Grasshopper;
+// using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace  SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace  SAM.Analytical.Grasshopper
 {
     public class GooAdjacencyCluster : GooJSAMObject<AdjacencyCluster>, IGH_PreviewData, IGH_BakeAwareData
     {

@@ -1,6 +1,7 @@
-﻿using SAM.Core;
+﻿// using SAM.Core;
 
-namespace   SAM.Weather
+namespace SAM 
+ // namespace   SAM.Weather
 {
     public static partial class Query
     {

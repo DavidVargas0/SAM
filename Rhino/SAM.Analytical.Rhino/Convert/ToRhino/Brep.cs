@@ -1,4 +1,5 @@
-﻿namespace  SAM.Analytical.Rhino
+﻿namespace SAM 
+ // namespace  SAM.Analytical.Rhino
 {
     public static partial class Convert
     {

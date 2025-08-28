@@ -4,7 +4,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public class Polygon2D : SAMGeometry, IClosed2D, ISegmentable2D, IEnumerable<Point2D>, IReversible, IMovable2D<Polygon2D>
     {

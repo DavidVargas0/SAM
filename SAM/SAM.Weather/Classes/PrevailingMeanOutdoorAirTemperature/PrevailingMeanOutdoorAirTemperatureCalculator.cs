@@ -1,8 +1,9 @@
-﻿using SAM.Core;
+﻿// using SAM.Core;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace   SAM.Weather
+namespace SAM 
+ // namespace   SAM.Weather
 {
     /// <summary>
     /// The prevailing mean outdoor air temperature (Tpma(out)) according with the ASHRAE 55 (2013) methods

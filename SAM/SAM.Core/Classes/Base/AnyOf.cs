@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public class AnyOf
     {

@@ -1,4 +1,5 @@
-﻿namespace  SAM.Geometry
+﻿namespace SAM 
+ // namespace  SAM.Geometry
 {
     public interface ISAMGeometry : Core.IJSAMObject
     {

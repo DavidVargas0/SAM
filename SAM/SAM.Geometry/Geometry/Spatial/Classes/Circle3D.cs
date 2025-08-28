@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 
-namespace  SAM.Geometry.Spatial
+namespace SAM 
+ // namespace  SAM.Geometry.Spatial
 {
     public class Circle3D : SAMGeometry, IClosedPlanar3D, IBoundable3D
     {

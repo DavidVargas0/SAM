@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Geometry.Spatial;
+// using SAM.Geometry.Spatial;
 using System;
 
-namespace  SAM.Geometry.Object.Spatial
+namespace SAM 
+ // namespace  SAM.Geometry.Object.Spatial
 {
     public class LinkedFace3D : Core.IJSAMObject, IFace3DObject
     {

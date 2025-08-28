@@ -3,14 +3,15 @@ using Grasshopper.Kernel.Types;
 using Rhino;
 using Rhino.DocObjects;
 using Rhino.Geometry;
-using SAM.Analytical.Grasshopper.Properties;
-using SAM.Core.Grasshopper;
+// using SAM.Analytical.Grasshopper.Properties;
+// using SAM.Core.Grasshopper;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace   SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace   SAM.Analytical.Grasshopper
 {
     public class GooAnalyticalModel : GooJSAMObject<AnalyticalModel>, IGH_PreviewData, IGH_BakeAwareData
     {

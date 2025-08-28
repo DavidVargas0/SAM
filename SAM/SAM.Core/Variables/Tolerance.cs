@@ -1,4 +1,5 @@
-﻿namespace  SAM.Core
+﻿namespace SAM 
+ // namespace  SAM.Core
 {
     /// <summary>
     /// This class provides methods for calculating tolerance values.

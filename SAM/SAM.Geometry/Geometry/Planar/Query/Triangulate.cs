@@ -3,9 +3,10 @@ using NetTopologySuite.Triangulate;
 using NetTopologySuite.Geometries;
 using System.Linq;
 using System;
-using SAM.Core;
+// using SAM.Core;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public static partial class Query
     {

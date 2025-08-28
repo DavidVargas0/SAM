@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public class Group : SAMObject
     {

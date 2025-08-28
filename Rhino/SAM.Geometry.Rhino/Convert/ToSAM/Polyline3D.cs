@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 
-namespace  SAM.Geometry.Rhino
+namespace SAM 
+ // namespace  SAM.Geometry.Rhino
 {
     public static partial class Convert
     {

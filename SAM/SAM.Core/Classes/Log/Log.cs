@@ -3,7 +3,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public class Log : SAMObject, IEnumerable<LogRecord>, IJSAMObject
     {

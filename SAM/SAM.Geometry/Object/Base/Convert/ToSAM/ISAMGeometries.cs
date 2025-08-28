@@ -1,7 +1,8 @@
-﻿using SAM.Geometry.Object.Planar;
+﻿// using SAM.Geometry.Object.Planar;
 using System.Collections.Generic;
 
-namespace  SAM.Geometry.Object
+namespace SAM 
+ // namespace  SAM.Geometry.Object
 {
     public static partial class Convert
     {

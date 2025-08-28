@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Math;
+// using SAM.Math;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public class Transform2D : ITransform2D
     {

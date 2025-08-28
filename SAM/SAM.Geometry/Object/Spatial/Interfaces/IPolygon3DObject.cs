@@ -1,6 +1,7 @@
-﻿using SAM.Geometry.Spatial;
+﻿// using SAM.Geometry.Spatial;
 
-namespace  SAM.Geometry.Object.Spatial
+namespace SAM 
+ // namespace  SAM.Geometry.Object.Spatial
 {
     public interface IPolygon3DObject : ISAMGeometry3DObject
     {

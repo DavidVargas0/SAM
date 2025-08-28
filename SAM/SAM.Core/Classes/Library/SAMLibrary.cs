@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public abstract class SAMLibrary<T>: SAMObject, ISAMLibrary where T: IJSAMObject
     {

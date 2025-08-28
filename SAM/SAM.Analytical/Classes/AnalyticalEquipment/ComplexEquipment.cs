@@ -1,9 +1,10 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
+// using SAM.Core;
 using System;
 using System.Collections.Generic;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     /// <summary>
     /// Represents an heat humidifier unit unit object in the analytical domain

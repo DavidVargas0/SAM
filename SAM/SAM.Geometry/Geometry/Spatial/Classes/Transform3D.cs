@@ -1,9 +1,10 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
-using SAM.Math;
+// using SAM.Core;
+// using SAM.Math;
 using System.Collections.Generic;
 
-namespace  SAM.Geometry.Spatial
+namespace SAM 
+ // namespace  SAM.Geometry.Spatial
 {
     public class Transform3D : IJSAMObject
     {

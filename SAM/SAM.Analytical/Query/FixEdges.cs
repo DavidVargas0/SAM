@@ -1,9 +1,10 @@
-﻿using SAM.Geometry.Spatial;
+﻿// using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Query
     {

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 
-namespace  SAM.Units
+namespace SAM 
+ // namespace  SAM.Units
 {
     [Description("UnitType")]
     public enum UnitType

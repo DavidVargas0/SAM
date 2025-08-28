@@ -4,7 +4,8 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public static partial class Query
     {

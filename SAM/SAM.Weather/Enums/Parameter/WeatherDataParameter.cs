@@ -1,7 +1,8 @@
-﻿using SAM.Core.Attributes;
+﻿// using SAM.Core.Attributes;
 using System.ComponentModel;
 
-namespace  SAM.Weather
+namespace SAM 
+ // namespace  SAM.Weather
 {
     /// <summary>
     /// Enum for Weather Data Parameters

@@ -1,8 +1,9 @@
 ﻿using Grasshopper.Kernel;
 using Rhino.Geometry;
-using SAM.Geometry.Spatial;
+// using SAM.Geometry.Spatial;
 
-namespace  SAM.Geometry.Grasshopper
+namespace SAM 
+ // namespace  SAM.Geometry.Grasshopper
 {
     /// <summary>
     /// Provides methods to modify geometric objects.

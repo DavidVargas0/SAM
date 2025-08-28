@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace  SAM.Weather
+namespace SAM 
+ // namespace  SAM.Weather
 {
     public class SimpleArithmeticMeanCalculationMethod : IPrevailingMeanOutdoorAirTemperatureCalculationMethod
     {

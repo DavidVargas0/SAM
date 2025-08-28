@@ -1,7 +1,8 @@
-﻿using SAM.Core;
+﻿// using SAM.Core;
 using System.Collections.Generic;
 
-namespace  SAM.Math
+namespace SAM 
+ // namespace  SAM.Math
 {
     public interface IEquation : IJSAMObject
     {

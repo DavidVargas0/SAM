@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
-namespace  SAM.Geometry
+namespace SAM 
+ // namespace  SAM.Geometry
 {
     public static partial class Create
     {

@@ -3,7 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace   SAM.Math
+namespace SAM 
+ // namespace   SAM.Math
 {
     public class Matrix : Core.IJSAMObject
     {

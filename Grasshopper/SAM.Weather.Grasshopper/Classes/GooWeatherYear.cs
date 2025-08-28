@@ -1,15 +1,16 @@
 ﻿using Grasshopper.Kernel;
 using Grasshopper.Kernel.Types;
 using Rhino.Geometry;
-using SAM.Weather.Grasshopper.Properties;
-using SAM.Core.Grasshopper;
+// using SAM.Weather.Grasshopper.Properties;
+// using SAM.Core.Grasshopper;
 using System;
 using System.Collections.Generic;
 
 //using System.Windows.Forms;
 using System.Linq;
 
-namespace   SAM.Weather.Grasshopper
+namespace SAM 
+ // namespace   SAM.Weather.Grasshopper
 {
     public class GooWeatherYear : GooJSAMObject<WeatherYear>
     {

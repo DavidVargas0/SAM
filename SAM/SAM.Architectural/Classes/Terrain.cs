@@ -1,9 +1,10 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Geometry.Object.Spatial;
-using SAM.Geometry.Spatial;
+// using SAM.Geometry.Object.Spatial;
+// using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 
-namespace  SAM.Architectural
+namespace SAM 
+ // namespace  SAM.Architectural
 {
     public abstract class Terrain : Core.SAMObject, ITerrain, IArchitecturalObject
     {

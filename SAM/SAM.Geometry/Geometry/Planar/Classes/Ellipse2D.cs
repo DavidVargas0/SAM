@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public class Ellipse2D : SAMGeometry, IClosed2D, IBoundable2D
     {

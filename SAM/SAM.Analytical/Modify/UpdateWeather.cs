@@ -1,8 +1,9 @@
-﻿using SAM.Core;
-using SAM.Weather;
+﻿// using SAM.Core;
+// using SAM.Weather;
 using System.Collections.Generic;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Modify
     {

@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
 
-using SAM.Core;
+// using SAM.Core;
 
-namespace  SAM.Architectural
+namespace SAM 
+ // namespace  SAM.Architectural
 {
     public class Level : SAMObject, IArchitecturalObject
     {

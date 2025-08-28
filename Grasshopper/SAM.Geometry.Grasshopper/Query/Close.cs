@@ -1,6 +1,7 @@
 ﻿using Rhino.Geometry;
 
-namespace  SAM.Geometry.Grasshopper
+namespace SAM 
+ // namespace  SAM.Geometry.Grasshopper
 {
     public static partial class Query
     {

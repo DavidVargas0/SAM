@@ -1,9 +1,10 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
+// using SAM.Core;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public class NCMNameCollection : IEnumerable<NCMName>, IJSAMObject
     {

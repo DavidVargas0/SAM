@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     [Description("Base SAM File Types.")]
     public enum SAMFileType

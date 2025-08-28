@@ -1,11 +1,12 @@
 ﻿using Grasshopper.Kernel;
 using Grasshopper.Kernel.Types;
-using SAM.Analytical.Grasshopper.Properties;
-using SAM.Core.Grasshopper;
+// using SAM.Analytical.Grasshopper.Properties;
+// using SAM.Core.Grasshopper;
 using System;
 using System.Collections.Generic;
 
-namespace   SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace   SAM.Analytical.Grasshopper
 {
     [Obsolete("Obsolete since 2021.11.24")]
     public class GooHostPartitionType : GooJSAMObject<HostPartitionType>

@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace  SAM.Math
+namespace SAM 
+ // namespace  SAM.Math
 {
     public static partial class Create
     {

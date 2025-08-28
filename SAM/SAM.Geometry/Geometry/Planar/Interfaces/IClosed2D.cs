@@ -1,4 +1,5 @@
-﻿namespace  SAM.Geometry.Planar
+﻿namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public interface IClosed2D : ISAMGeometry2D, IBoundable2D
     {

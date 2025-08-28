@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     /// <summary>
     /// https://www.edsl.net/htmlhelp/Building_Simulator/ [Radiant Property Parameters, Calculation of View Coefficients]

@@ -3,7 +3,8 @@ using Grasshopper.Kernel.Data;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace  SAM.Analytical.Grasshopper
 {
     public static partial class Query
     {

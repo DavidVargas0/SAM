@@ -1,9 +1,10 @@
-﻿using SAM.Geometry.Planar;
-using SAM.Geometry.Spatial;
+﻿// using SAM.Geometry.Planar;
+// using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Geometry.Rhino
+namespace SAM 
+ // namespace  SAM.Geometry.Rhino
 {
     public static partial class Convert
     {

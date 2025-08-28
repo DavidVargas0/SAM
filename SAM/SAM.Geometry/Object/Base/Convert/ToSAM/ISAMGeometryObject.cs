@@ -1,7 +1,8 @@
-﻿using SAM.Geometry.Object.Spatial;
-using SAM.Geometry.Spatial;
+﻿// using SAM.Geometry.Object.Spatial;
+// using SAM.Geometry.Spatial;
 
-namespace  SAM.Geometry.Object
+namespace SAM 
+ // namespace  SAM.Geometry.Object
 {
     public static partial class Convert
     {

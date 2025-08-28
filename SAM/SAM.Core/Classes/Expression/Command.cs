@@ -15,7 +15,8 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public class Command : IJSAMObject
     {

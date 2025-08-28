@@ -1,9 +1,10 @@
 ﻿using Newtonsoft.Json.Linq;
 
-using SAM.Geometry.Spatial;
+// using SAM.Geometry.Spatial;
 using System;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public class AirPartition : BuildingElement<BuildingElementType>, IPartition
     {

@@ -2,10 +2,11 @@
 using Grasshopper.Kernel;
 using Grasshopper.Kernel.Types;
 using Newtonsoft.Json.Linq;
-using SAM.Core.Grasshopper.Properties;
+// using SAM.Core.Grasshopper.Properties;
 using System;
 
-namespace   SAM.Core.Grasshopper
+namespace SAM 
+ // namespace   SAM.Core.Grasshopper
 {
     public class GooObject : GH_Goo<object>
     {
@@ -86,7 +87,8 @@ namespace   SAM.Core.Grasshopper
                     value += string.Format(" [{0}]", ((ISAMObject)Value).Name);
             }
 
-            //if (Value is IEnumerable && !Value.GetType().Namespace.StartsWith("SAM.") && !(Value is string))
+            //if (Value is IEnumerable && !Value.GetType().namespace SAM 
+ // namespace.StartsWith("SAM.") && !(Value is string))
             //{
             //    List<string> values = new List<string>();
             //    foreach (object @object in (IEnumerable)Value)

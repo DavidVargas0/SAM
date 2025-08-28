@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
-using SAM.Geometry.Spatial;
+// using SAM.Core;
+// using SAM.Geometry.Spatial;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public class SpaceAreaFilter : NumberFilter, IAdjacencyClusterFilter
     {

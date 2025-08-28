@@ -2,7 +2,8 @@
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Modify
     {

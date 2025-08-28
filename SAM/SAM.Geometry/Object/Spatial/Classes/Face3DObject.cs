@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
-using SAM.Geometry.Spatial;
+// using SAM.Core;
+// using SAM.Geometry.Spatial;
 
-namespace  SAM.Geometry.Object.Spatial
+namespace SAM 
+ // namespace  SAM.Geometry.Object.Spatial
 {
     public class Face3DObject : Face3D, IFace3DObject, ITaggable
     {

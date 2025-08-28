@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
-using SAM.Geometry.Planar;
+// using SAM.Core;
+// using SAM.Geometry.Planar;
 
-namespace  SAM.Geometry.Object.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Object.Planar
 {
     public class BoundingBox2DObject : BoundingBox2D, IBoundingBox2DObject, ITaggable
     {

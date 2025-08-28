@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace  SAM.Geometry.Object.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Object.Planar
 {
     public class SAMGeometry2DObjectCollection : IEnumerable<ISAMGeometry2DObject>, ISAMGeometry2DObject
     {

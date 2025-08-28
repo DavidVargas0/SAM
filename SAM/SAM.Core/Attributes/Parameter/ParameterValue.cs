@@ -1,6 +1,7 @@
 ﻿using System;
 
-namespace  SAM.Core.Attributes
+namespace SAM 
+ // namespace  SAM.Core.Attributes
 {
 
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]

@@ -1,10 +1,11 @@
 ﻿using Newtonsoft.Json.Linq;
 
-using SAM.Core;
-using SAM.Geometry.Object.Spatial;
-using SAM.Geometry.Spatial;
+// using SAM.Core;
+// using SAM.Geometry.Object.Spatial;
+// using SAM.Geometry.Spatial;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public abstract class BuildingElement<T> : SAMInstance<T>, IAnalyticalObject, IFace3DObject where T: BuildingElementType
     {

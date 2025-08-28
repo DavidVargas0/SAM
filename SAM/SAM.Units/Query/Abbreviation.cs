@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Reflection;
 
-namespace SAM SAM.Units
+namespace SAM
+// namespace SAM.Units
 {
     public static partial class Query
     {

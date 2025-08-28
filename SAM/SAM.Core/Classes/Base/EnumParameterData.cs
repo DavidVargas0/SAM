@@ -1,7 +1,8 @@
-﻿using SAM.Core.Attributes;
+﻿// using SAM.Core.Attributes;
 using System;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public class EnumParameterData : IParameterData
     {

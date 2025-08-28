@@ -1,8 +1,9 @@
-﻿using SAM.Math;
+﻿// using SAM.Math;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public static partial class Create
     {

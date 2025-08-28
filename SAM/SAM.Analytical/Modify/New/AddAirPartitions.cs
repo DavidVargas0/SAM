@@ -1,19 +1,20 @@
-﻿using SAM.Core;
-using SAM.Geometry.Object.Spatial;
-using SAM.Geometry.Planar;
-using SAM.Geometry.Spatial;
+﻿// using SAM.Core;
+// using SAM.Geometry.Object.Spatial;
+// using SAM.Geometry.Planar;
+// using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SAM.Analytical
+namespace SAM
+// namespace SAM.Analytical
 {
     public static partial class Modify
     {
         public static List<AirPartition> AddAirPartitions(this BuildingModel buildingModel, IEnumerable<Plane> planes, IEnumerable<Space> spaces = null, double silverSpacing = Tolerance.MacroDistance, double tolerance_Angle = Tolerance.Angle, double tolerance_Distance = Tolerance.Distance, double tolerance_Snap = Tolerance.MacroDistance)
         {
-            if(planes == null)
+            if (planes == null)
             {
                 return null;
             }
@@ -29,9 +30,9 @@ namespace SAM.Analytical
                 List<AirPartition> airPartitions = AddAirPartitions(buildingModel, plane, spaces, silverSpacing, tolerance_Angle, tolerance_Distance, tolerance_Snap);
                 if (airPartitions != null && airPartitions.Count > 0)
                 {
-                    foreach(AirPartition airPartition in airPartitions)
+                    foreach (AirPartition airPartition in airPartitions)
                     {
-                        if(airPartition == null)
+                        if (airPartition == null)
                         {
                             continue;
                         }
@@ -39,7 +40,6 @@ namespace SAM.Analytical
                         result[airPartition.Guid] = airPartition;
                     }
                 }
-
             }
 
             return result?.Values.ToList();
@@ -197,7 +197,6 @@ namespace SAM.Analytical
 
                     tuples_New[i].Item2.Add(new Tuple<Space, List<IPartition>>(space_New, partitions_New));
                 }
-
             });
 
             foreach (Tuple<Space, List<Tuple<Space, List<IPartition>>>> tuple in tuples_New)
@@ -229,7 +228,6 @@ namespace SAM.Analytical
             }
 
             return partitions_Air.FindAll(x => buildingModel.Contains(x));
-
         }
     }
 }

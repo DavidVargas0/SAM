@@ -1,6 +1,7 @@
-﻿using SAM.Geometry.Planar;
+﻿// using SAM.Geometry.Planar;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Create
     {

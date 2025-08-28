@@ -1,6 +1,7 @@
 ﻿using System;
 
-namespace  SAM.Core.Attributes
+namespace SAM 
+ // namespace  SAM.Core.Attributes
 {
     public class ParameterProperties : Attribute
     {

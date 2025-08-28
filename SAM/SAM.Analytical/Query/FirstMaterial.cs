@@ -1,7 +1,8 @@
-﻿using SAM.Core;
-using SAM.Geometry.Spatial;
+﻿// using SAM.Core;
+// using SAM.Geometry.Spatial;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Query
     {

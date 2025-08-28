@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel;
-using SAM.Core.Attributes;
+// using SAM.Core.Attributes;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     [AssociatedTypes(typeof(CoolingSystemType)), Description("Cooling System Type Parameter")]
     public enum CoolingSystemTypeParameter

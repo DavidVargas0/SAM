@@ -1,8 +1,9 @@
-﻿using SAM.Geometry.Spatial;
-using SAM.Math;
+﻿// using SAM.Geometry.Spatial;
+// using SAM.Math;
 using System.Collections.Generic;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public static partial class Query
     {

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     internal class ConvexHullComparer : IComparer<Point2D>
     {

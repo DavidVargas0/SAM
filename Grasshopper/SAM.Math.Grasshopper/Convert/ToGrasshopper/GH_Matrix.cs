@@ -1,6 +1,7 @@
 ﻿using Grasshopper.Kernel.Types;
 
-namespace  SAM.Math.Grasshopper
+namespace SAM 
+ // namespace  SAM.Math.Grasshopper
 {
     public static partial class Convert
     {

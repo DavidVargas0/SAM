@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {   
     public abstract class RelationModel<T>
     {

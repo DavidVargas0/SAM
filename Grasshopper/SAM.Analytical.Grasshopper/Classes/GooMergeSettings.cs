@@ -1,14 +1,15 @@
 ﻿using Grasshopper.Kernel;
 using Grasshopper.Kernel.Types;
-using SAM.Analytical.Grasshopper.Properties;
-using SAM.Core.Grasshopper;
+// using SAM.Analytical.Grasshopper.Properties;
+// using SAM.Core.Grasshopper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 // using   system.windows.forms;
 
-namespace   SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace   SAM.Analytical.Grasshopper
 {
     public class GooMergeSettings : GooJSAMObject<MergeSettings>
     {

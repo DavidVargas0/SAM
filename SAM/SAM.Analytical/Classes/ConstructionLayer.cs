@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Architectural;
+// using SAM.Architectural;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public class ConstructionLayer : MaterialLayer, IAnalyticalObject
     {

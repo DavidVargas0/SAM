@@ -1,10 +1,11 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
+// using SAM.Core;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace   SAM.Math
+namespace SAM 
+ // namespace   SAM.Math
 {
 
     /// <summary>

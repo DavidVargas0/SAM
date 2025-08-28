@@ -1,4 +1,5 @@
-﻿namespace   SAM.Weather
+﻿namespace SAM 
+ // namespace   SAM.Weather
 {
     /// <summary>
     /// Contains the partial class Query for the WeatherData type.

@@ -5,14 +5,15 @@ using Rhino.Commands;
 using Rhino.Display;
 using Rhino.DocObjects;
 using Rhino.Geometry;
-using SAM.Analytical.Grasshopper.Properties;
-using SAM.Core.Grasshopper;
-using SAM.Geometry.Grasshopper;
-using SAM.Geometry.Spatial;
+// using SAM.Analytical.Grasshopper.Properties;
+// using SAM.Core.Grasshopper;
+// using SAM.Geometry.Grasshopper;
+// using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 
-namespace   SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace   SAM.Analytical.Grasshopper
 {
     
     [Obsolete("Obsolete since 2021.11.24")]

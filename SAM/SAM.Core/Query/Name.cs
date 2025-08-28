@@ -1,10 +1,11 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core.Attributes;
+// using SAM.Core.Attributes;
 using System;
 using System.Linq;
 using System.Reflection;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public static partial class Query
     {

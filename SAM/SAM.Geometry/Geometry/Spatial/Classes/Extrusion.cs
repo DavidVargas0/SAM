@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace  SAM.Geometry.Spatial
+namespace SAM 
+ // namespace  SAM.Geometry.Spatial
 {
     public class Extrusion : SAMGeometry, IBoundable3D
     {

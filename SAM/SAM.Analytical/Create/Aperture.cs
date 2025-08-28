@@ -1,7 +1,8 @@
-﻿using SAM.Geometry.Spatial;
+﻿// using SAM.Geometry.Spatial;
 using System;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Create
     {

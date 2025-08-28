@@ -1,14 +1,15 @@
 ﻿using Grasshopper.Kernel;
 using Grasshopper.Kernel.Types;
 using Rhino.Geometry;
-using SAM.Core.Grasshopper.Properties;
+// using SAM.Core.Grasshopper.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 // using    System.Windows.Forms;
 
-namespace   SAM.Core.Grasshopper
+namespace SAM 
+ // namespace   SAM.Core.Grasshopper
 {
     public class GooRelationCluster : GooJSAMObject<IRelationCluster>
     {

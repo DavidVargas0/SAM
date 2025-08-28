@@ -1,10 +1,11 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core.Attributes;
+// using SAM.Core.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public class TypeMap : SAMObject, IJSAMObject
     {

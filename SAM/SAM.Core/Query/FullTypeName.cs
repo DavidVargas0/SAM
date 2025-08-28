@@ -2,7 +2,8 @@
 using System;
 using System.Collections.Generic;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public static partial class Query
     {
@@ -31,7 +32,8 @@ namespace  SAM.Core
                     foreach (Type type_Generic in types_Generic)
                         typeNames.Add(string.Format("[{0}]", FullTypeName(type_Generic)));
 
-                    return string.Format("{0}.{1}[{2}],{3}", type.Namespace, type.UnderlyingSystemType.Name, string.Join(",", typeNames), type.Assembly.GetName().Name);
+                    return string.Format("{0}.{1}[{2}],{3}", type.namespace SAM 
+ // namespace, type.UnderlyingSystemType.Name, string.Join(",", typeNames), type.Assembly.GetName().Name);
                 }
             }
 

@@ -5,19 +5,20 @@ using Rhino;
 using Rhino.Commands;
 using Rhino.DocObjects;
 using Rhino.Geometry;
-using SAM.Analytical.Grasshopper.Properties;
-using SAM.Core.Grasshopper;
-using SAM.Geometry.Grasshopper;
-using SAM.Geometry.Spatial;
+// using SAM.Analytical.Grasshopper.Properties;
+// using SAM.Core.Grasshopper;
+// using SAM.Geometry.Grasshopper;
+// using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
 // using   system.windows.forms;
-using SAM.Geometry.Object.Spatial;
+// using SAM.Geometry.Object.Spatial;
 
-namespace   SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace   SAM.Analytical.Grasshopper
 {
     public class GooPanel : GooJSAMObject<IPanel>, IGH_PreviewData, IGH_BakeAwareData
     {

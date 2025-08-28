@@ -4,16 +4,17 @@ using Rhino;
 using Rhino.Commands;
 using Rhino.DocObjects;
 using Rhino.Geometry;
-using SAM.Analytical.Grasshopper.Properties;
-using SAM.Core.Grasshopper;
-using SAM.Geometry.Spatial;
+// using SAM.Analytical.Grasshopper.Properties;
+// using SAM.Core.Grasshopper;
+// using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 // using   system.windows.forms;
 
-namespace  SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace  SAM.Analytical.Grasshopper
 {
     public class GooSpace : GooJSAMObject<ISpace>, IGH_PreviewData, IGH_BakeAwareData
     {

@@ -1,8 +1,9 @@
-﻿using SAM.Core;
+﻿// using SAM.Core;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace  SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace  SAM.Analytical.Grasshopper
 {
     public static partial class Convert
     {

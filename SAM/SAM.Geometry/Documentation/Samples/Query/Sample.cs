@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using SAM.Geometry.Planar;
-using SAM.Geometry.Spatial;
+// using SAM.Geometry.Planar;
+// using SAM.Geometry.Spatial;
 using System;
 
-namespace  SAM.Geometry.Object.Spatial
+namespace SAM 
+ // namespace  SAM.Geometry.Object.Spatial
 {
     public static partial class Query
     {

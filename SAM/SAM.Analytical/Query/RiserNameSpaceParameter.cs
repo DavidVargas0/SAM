@@ -1,8 +1,10 @@
-﻿namespace  SAM.Analytical
+﻿namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Query
     {
-        public static SpaceParameter? RiserNameSpaceParameter(this MechanicalSystemCategory mechanicalSystemCategory)
+        public static SpaceParameter? Risernamespace SAM 
+ // namespaceParameter(this MechanicalSystemCategory mechanicalSystemCategory)
         {
             if(mechanicalSystemCategory == Analytical.MechanicalSystemCategory.Undefined || mechanicalSystemCategory == Analytical.MechanicalSystemCategory.Other)
             {
@@ -24,14 +26,16 @@
             return null;
         }
 
-        public static SpaceParameter? RiserNameSpaceParameter(this MechanicalSystem mechanicalSystem)
+        public static SpaceParameter? Risernamespace SAM 
+ // namespaceParameter(this MechanicalSystem mechanicalSystem)
         {
             if(mechanicalSystem == null)
             {
                 return null;
             }
 
-            return RiserNameSpaceParameter(mechanicalSystem.MechanicalSystemCategory());
+            return Risernamespace SAM 
+ // namespaceParameter(mechanicalSystem.MechanicalSystemCategory());
         }
     }
 }

@@ -1,7 +1,8 @@
 ﻿using Grasshopper.Kernel.Types;
 using System.Collections.Generic;
 
-namespace   SAM.Core.Grasshopper
+namespace SAM 
+ // namespace   SAM.Core.Grasshopper
 {
     public static partial class Query
     {

@@ -1,9 +1,10 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
+// using SAM.Core;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public abstract class SpaceMechanicalSystemFullNameFilter<T> : TextFilter, IAdjacencyClusterFilter where T : MechanicalSystem
     {       

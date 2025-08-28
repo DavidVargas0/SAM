@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace  SAM.Weather
+namespace SAM 
+ // namespace  SAM.Weather
 {
     /// <summary>
     /// Contains methods for querying WeatherData.

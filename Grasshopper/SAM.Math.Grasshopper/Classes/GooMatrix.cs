@@ -2,13 +2,14 @@
 using Grasshopper.Kernel;
 using Grasshopper.Kernel.Types;
 using Newtonsoft.Json.Linq;
-using SAM.Math.Grasshopper.Properties;
+// using SAM.Math.Grasshopper.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 //using System.Windows.Forms;
 
-namespace   SAM.Math.Grasshopper
+namespace SAM 
+ // namespace   SAM.Math.Grasshopper
 {
     public class GooMatrix : GH_Goo<Matrix>
     {

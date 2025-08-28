@@ -3,9 +3,10 @@
 //// using    System.Windows.Forms;
 using GH_IO.Serialization;
 using Grasshopper.Kernel;
-using SAM.Core.Grasshopper.Properties;
+// using SAM.Core.Grasshopper.Properties;
 
-namespace  SAM.Core.Grasshopper
+namespace SAM 
+ // namespace  SAM.Core.Grasshopper
 {
     public abstract class GH_SAMEnumComponent<T> : GH_SAMComponent where T : Enum
     {

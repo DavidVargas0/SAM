@@ -1,11 +1,12 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
-using SAM.Geometry.Planar;
+// using SAM.Core;
+// using SAM.Geometry.Planar;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public class Profile : SAMObject, IAnalyticalObject
     {

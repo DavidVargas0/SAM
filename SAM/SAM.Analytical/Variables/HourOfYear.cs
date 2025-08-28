@@ -1,4 +1,5 @@
-﻿namespace  SAM.Analytical
+﻿namespace SAM 
+ // namespace  SAM.Analytical
 {
     /// <summary>
     /// Represents a static class that defines various levels of rounding precision for distances and angles.

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 
-namespace  SAM.Geometry
+namespace SAM 
+ // namespace  SAM.Geometry
 {
     [Description("Alignment Point")]
     public enum AlignmentPoint

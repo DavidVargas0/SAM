@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
+// using SAM.Core;
 using System;
 
-namespace  SAM.Architectural
+namespace SAM 
+ // namespace  SAM.Architectural
 {
     public class MaterialLayer : IJSAMObject, IArchitecturalObject
     {

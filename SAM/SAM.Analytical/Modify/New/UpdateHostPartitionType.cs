@@ -1,11 +1,12 @@
-﻿using SAM.Core;
+﻿// using SAM.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-using SAM.Architectural;
+// using SAM.Architectural;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Modify
     {

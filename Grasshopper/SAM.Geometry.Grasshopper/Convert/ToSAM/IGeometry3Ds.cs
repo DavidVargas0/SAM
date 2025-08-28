@@ -1,9 +1,10 @@
 ﻿using Grasshopper.Kernel.Types;
-using SAM.Geometry.Spatial;
+// using SAM.Geometry.Spatial;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace  SAM.Geometry.Grasshopper
+namespace SAM 
+ // namespace  SAM.Geometry.Grasshopper
 {
     public static partial class Convert
     {

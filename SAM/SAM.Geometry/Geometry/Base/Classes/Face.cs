@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Geometry.Planar;
+// using SAM.Geometry.Planar;
 using System.Collections.Generic;
 
-namespace  SAM.Geometry
+namespace SAM 
+ // namespace  SAM.Geometry
 {
     public abstract class Face : SAMGeometry
     {

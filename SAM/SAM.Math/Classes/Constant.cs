@@ -1,4 +1,5 @@
-﻿namespace  SAM.Math
+﻿namespace SAM 
+ // namespace  SAM.Math
 {
     public static class Constant
     {

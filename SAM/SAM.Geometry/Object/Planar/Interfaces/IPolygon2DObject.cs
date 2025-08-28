@@ -1,6 +1,7 @@
-﻿using SAM.Geometry.Planar;
+﻿// using SAM.Geometry.Planar;
 
-namespace  SAM.Geometry.Object.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Object.Planar
 {
     public interface IPolygon2DObject : ISAMGeometry2DObject, IBoundable2DObject
     {

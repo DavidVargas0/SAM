@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
+// using SAM.Core;
 using System.Linq;
 
-namespace   SAM.Weather
+namespace SAM 
+ // namespace   SAM.Weather
 {
     /// <summary>
     /// This class represents the ground temperature of a given location. It implements the IWeatherObject interface.

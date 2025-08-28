@@ -1,4 +1,5 @@
-﻿namespace   SAM.Units
+﻿namespace SAM 
+ // namespace   SAM.Units
 {
     public static partial class Convert
     {

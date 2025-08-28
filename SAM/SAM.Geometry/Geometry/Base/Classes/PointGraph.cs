@@ -1,11 +1,12 @@
 ﻿using Newtonsoft.Json.Linq;
 using QuickGraph.Algorithms.Observers;
-using SAM.Core;
+// using SAM.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Geometry
+namespace SAM 
+ // namespace  SAM.Geometry
 {
     public abstract class PointGraph<X, T> : IJSAMObject where T : IJSAMObject where X : IPoint
     {

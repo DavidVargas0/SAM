@@ -3,16 +3,17 @@ using Grasshopper.Kernel;
 using Grasshopper.Kernel.Types;
 using Newtonsoft.Json.Linq;
 using Rhino.Geometry;
-using SAM.Geometry.Grasshopper.Properties;
-using SAM.Geometry.Spatial;
-using SAM.Math.Grasshopper;
+// using SAM.Geometry.Grasshopper.Properties;
+// using SAM.Geometry.Spatial;
+// using SAM.Math.Grasshopper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 //using System.Windows.Forms;
 
-namespace   SAM.Geometry.Grasshopper
+namespace SAM 
+ // namespace   SAM.Geometry.Grasshopper
 {
     public class GooTransform3D : GH_Goo<Transform3D>
     {

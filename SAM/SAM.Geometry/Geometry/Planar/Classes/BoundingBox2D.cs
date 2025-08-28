@@ -3,7 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public class BoundingBox2D : SAMGeometry, IClosed2D, ISegmentable2D, IBoundable2D
     {

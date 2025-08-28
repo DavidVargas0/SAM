@@ -1,6 +1,7 @@
 ﻿using System.IO.Compression;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     public static partial class Create
     {

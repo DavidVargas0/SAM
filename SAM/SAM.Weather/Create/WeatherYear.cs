@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Weather
+namespace SAM 
+ // namespace  SAM.Weather
 {
     /// <summary>
     /// Creates a new instance of the Create class.

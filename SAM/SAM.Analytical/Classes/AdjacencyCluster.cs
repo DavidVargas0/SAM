@@ -1,12 +1,13 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
-using SAM.Geometry.Spatial;
+// using SAM.Core;
+// using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public class AdjacencyCluster : SAMObjectRelationCluster<IJSAMObject>, IAnalyticalObject
     {        

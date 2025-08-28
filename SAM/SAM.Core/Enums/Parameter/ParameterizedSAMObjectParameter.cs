@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel;
-using SAM.Core.Attributes;
+// using SAM.Core.Attributes;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     [AssociatedTypes(typeof(IParameterizedSAMObject)), Description("ParameterizedSAMObject Parameter")]
     public enum ParameterizedSAMObjectParameter

@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     /// <summary>
     /// Represents an heat recovery unit unit object in the analytical domain

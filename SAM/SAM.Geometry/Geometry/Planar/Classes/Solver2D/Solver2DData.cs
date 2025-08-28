@@ -1,4 +1,5 @@
-﻿namespace  SAM.Geometry.Planar
+﻿namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public class Solver2DData
     {

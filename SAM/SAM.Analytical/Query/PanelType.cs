@@ -1,7 +1,8 @@
-﻿using SAM.Architectural;
+﻿// using SAM.Architectural;
 using System;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Query
     {

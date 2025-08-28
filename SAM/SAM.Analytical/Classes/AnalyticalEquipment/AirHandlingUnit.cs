@@ -2,7 +2,8 @@
 using System;
 using System.Collections.Generic;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     /// <summary>
     /// Represents an air handling unit object in the analytical domain

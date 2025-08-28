@@ -1,11 +1,12 @@
 ﻿using Grasshopper.Kernel.Types;
-using SAM.Geometry.Object.Spatial;
-using SAM.Geometry.Spatial;
+// using SAM.Geometry.Object.Spatial;
+// using SAM.Geometry.Spatial;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Geometry.Grasshopper
+namespace SAM 
+ // namespace  SAM.Geometry.Grasshopper
 {
     public static partial class Query
     {

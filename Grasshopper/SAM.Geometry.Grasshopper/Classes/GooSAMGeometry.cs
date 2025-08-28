@@ -5,18 +5,19 @@ using Newtonsoft.Json.Linq;
 using Rhino;
 using Rhino.DocObjects;
 using Rhino.Geometry;
-using SAM.Geometry.Grasshopper.Properties;
-using SAM.Geometry.Object.Planar;
-using SAM.Geometry.Object.Spatial;
-using SAM.Geometry.Planar;
-using SAM.Geometry.Spatial;
+// using SAM.Geometry.Grasshopper.Properties;
+// using SAM.Geometry.Object.Planar;
+// using SAM.Geometry.Object.Spatial;
+// using SAM.Geometry.Planar;
+// using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 //using System.Windows.Forms;
 
-namespace   SAM.Geometry.Grasshopper
+namespace SAM 
+ // namespace   SAM.Geometry.Grasshopper
 {
     public class GooSAMGeometry : GH_Goo<ISAMGeometry>, IGH_PreviewData, IGH_BakeAwareData
     {

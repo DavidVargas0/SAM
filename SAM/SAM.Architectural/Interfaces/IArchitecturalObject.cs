@@ -1,6 +1,7 @@
-﻿using SAM.Core;
+﻿// using SAM.Core;
 
-namespace  SAM.Architectural
+namespace SAM 
+ // namespace  SAM.Architectural
 {
     public interface IArchitecturalObject : IJSAMObject
     {

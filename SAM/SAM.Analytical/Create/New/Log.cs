@@ -1,10 +1,11 @@
-﻿using SAM.Architectural;
-using SAM.Core;
-using SAM.Geometry.Spatial;
+﻿// using SAM.Architectural;
+// using SAM.Core;
+// using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Create
     {

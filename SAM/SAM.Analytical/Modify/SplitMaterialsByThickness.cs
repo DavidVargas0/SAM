@@ -1,9 +1,10 @@
 ﻿using System.Linq;
 using System.Collections.Generic;
 using System;
-using SAM.Core;
+// using SAM.Core;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Modify
     {

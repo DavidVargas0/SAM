@@ -1,7 +1,8 @@
-﻿using SAM.Core;
+﻿// using SAM.Core;
 using System.Collections.Generic;
 
-namespace   SAM.Weather
+namespace SAM 
+ // namespace   SAM.Weather
 {
     /// <summary>
     /// This class provides methods for creating and executing queries.

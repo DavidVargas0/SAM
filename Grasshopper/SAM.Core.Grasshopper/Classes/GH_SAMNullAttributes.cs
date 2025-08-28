@@ -8,7 +8,8 @@ using System.Drawing;
 
 // using    System.Windows.Forms;
 
-namespace   SAM.Core.Grasshopper
+namespace SAM 
+ // namespace   SAM.Core.Grasshopper
 {
     public class GH_SAMNullAttributes
     {

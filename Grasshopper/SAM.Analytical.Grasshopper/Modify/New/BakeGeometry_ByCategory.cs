@@ -2,7 +2,8 @@
 using System;
 using System.Collections.Generic;
 
-namespace  SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace  SAM.Analytical.Grasshopper
 {
     public static partial class Modify
     {

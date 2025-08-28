@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public static partial class Create
     {
@@ -13,7 +14,8 @@ namespace  SAM.Analytical
 
             HashSet<string> riserNames = new HashSet<string>();
 
-            SpaceParameter? spaceParameter = Query.RiserNameSpaceParameter(mechanicalSystemCategory);
+            SpaceParameter? spaceParameter = Query.Risernamespace SAM 
+ // namespaceParameter(mechanicalSystemCategory);
             if (spaceParameter != null && spaceParameter.HasValue)
             {
                 List<Space> spaces = adjacencyCluster.GetSpaces();

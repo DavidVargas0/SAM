@@ -1,15 +1,16 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
-using SAM.Geometry.Spatial;
+// using SAM.Core;
+// using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-using SAM.Architectural;
+// using SAM.Architectural;
 using System.Threading.Tasks;
-using SAM.Geometry.Object.Spatial;
+// using SAM.Geometry.Object.Spatial;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public class BuildingModel : SAMModel, IAnalyticalObject
     {

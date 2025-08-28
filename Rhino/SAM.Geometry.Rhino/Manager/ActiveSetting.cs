@@ -1,20 +1,21 @@
 ﻿using Rhino.Geometry;
-using SAM.Core;
+
+// using SAM.Core;
 using System.Reflection;
 
-namespace SAM.Geometry.Rhino
+namespace SAM
+// namespace SAM.Geometry.Rhino
 {
     public static partial class ActiveSetting
     {
         public static class Name
         {
-
         }
 
         private static Setting setting = Load();
 
         private static MeshingParameters meshingParameters;
-        
+
         private static Setting Load()
         {
             Setting setting = ActiveManager.GetSetting(Assembly.GetExecutingAssembly());

@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace  SAM.Core
+namespace SAM 
+ // namespace  SAM.Core
 {
     /// <summary>
     /// Parh reference in format {ObjectReference_1}->{ObjectRefernce_2}->{ObjectReference_3}

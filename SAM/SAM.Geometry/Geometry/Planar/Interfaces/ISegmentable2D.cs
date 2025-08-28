@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 
-namespace  SAM.Geometry.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Planar
 {
     public interface ISegmentable2D : ICurvable2D
     {

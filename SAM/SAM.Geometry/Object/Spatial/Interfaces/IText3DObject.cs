@@ -1,5 +1,6 @@
 ﻿
-namespace  SAM.Geometry.Object.Spatial
+namespace SAM 
+ // namespace  SAM.Geometry.Object.Spatial
 {
     public interface IText3DObject : ISAMGeometry3DObject
     {

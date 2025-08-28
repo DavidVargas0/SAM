@@ -1,10 +1,11 @@
 ﻿using Newtonsoft.Json.Linq;
 
 using System.Collections.Generic;
-using SAM.Architectural;
+// using SAM.Architectural;
 using System.Linq;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public abstract class OpeningType : BuildingElementType
     {

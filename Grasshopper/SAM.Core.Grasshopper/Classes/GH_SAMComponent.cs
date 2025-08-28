@@ -2,7 +2,8 @@
 
 //// using    System.Windows.Forms;
 
-namespace   SAM.Core.Grasshopper
+namespace SAM 
+ // namespace   SAM.Core.Grasshopper
 {
     public abstract class GH_SAMComponent : GH_Component, IGH_SAMComponent
     {

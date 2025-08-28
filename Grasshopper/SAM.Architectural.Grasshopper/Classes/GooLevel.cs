@@ -2,15 +2,17 @@
 using Grasshopper.Kernel.Types;
 using Rhino.DocObjects;
 using Rhino.Geometry;
-using SAM.Architectural.Grasshopper.Properties;
-using SAM.Core.Grasshopper;
+
+// using SAM.Architectural.Grasshopper.Properties;
+// using SAM.Core.Grasshopper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 //using System.Windows.Forms;
 
-namespace SAM.Architectural.Grasshopper
+namespace SAM
+// namespace SAM.Architectural.Grasshopper
 {
     public class GooLevel : GooJSAMObject<Level>, IGH_PreviewData
     {

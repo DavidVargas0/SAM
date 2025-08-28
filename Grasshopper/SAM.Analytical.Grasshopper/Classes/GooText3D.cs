@@ -3,14 +3,15 @@ using Grasshopper.Kernel.Types;
 using Rhino;
 using Rhino.DocObjects;
 using Rhino.Geometry;
-using SAM.Analytical.Grasshopper.Properties;
+// using SAM.Analytical.Grasshopper.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 // using   system.windows.forms;
 
-namespace   SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace   SAM.Analytical.Grasshopper
 {
     public class GooText3D : GH_GeometricGoo<global::Rhino.Display.Text3d>, IGH_PreviewData, IGH_BakeAwareData
     {

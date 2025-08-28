@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Core.Attributes
+namespace SAM 
+ // namespace  SAM.Core.Attributes
 {
     public class SAMObjectParameterValue : NullableParameterValue
     {

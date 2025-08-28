@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
+// using SAM.Core;
 
-namespace  SAM.Math
+namespace SAM 
+ // namespace  SAM.Math
 {
 
     /// <summary>

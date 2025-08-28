@@ -1,11 +1,12 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
-using SAM.Geometry.Spatial;
-using SAM.Geometry.Planar;
+// using SAM.Core;
+// using SAM.Geometry.Spatial;
+// using SAM.Geometry.Planar;
 using System;
 using System.Collections.Generic;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public abstract class HostPartition<T> : BuildingElement<T>, IHostPartition where T: HostPartitionType
     {

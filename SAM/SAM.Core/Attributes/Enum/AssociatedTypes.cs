@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Linq;
 
-namespace   SAM.Core.Attributes
+namespace SAM 
+ // namespace   SAM.Core.Attributes
 {
     [AttributeUsage(AttributeTargets.Enum, AllowMultiple = false)]
 public class AssociatedTypes : Attribute, IEnumerable

@@ -1,6 +1,7 @@
 ﻿using System;
 
-namespace   SAM.Core.Grasshopper
+namespace SAM 
+ // namespace   SAM.Core.Grasshopper
 {
     public static partial class Query
     {

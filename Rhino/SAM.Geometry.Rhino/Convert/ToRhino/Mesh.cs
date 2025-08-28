@@ -1,7 +1,8 @@
 ﻿using Rhino.Geometry;
 using System.Collections.Generic;
 
-namespace  SAM.Geometry.Rhino
+namespace SAM 
+ // namespace  SAM.Geometry.Rhino
 {
     public static partial class Convert
     {

@@ -4,15 +4,16 @@ using Rhino;
 using Rhino.Display;
 using Rhino.DocObjects;
 using Rhino.Geometry;
-using SAM.Analytical.Grasshopper.Properties;
-using SAM.Core.Grasshopper;
+// using SAM.Analytical.Grasshopper.Properties;
+// using SAM.Core.Grasshopper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 // using   system.windows.forms;
 
-namespace   SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace   SAM.Analytical.Grasshopper
 {
     public class GooPlanarBoundary3D : GooJSAMObject<PlanarBoundary3D>, IGH_PreviewData, IGH_BakeAwareData
     {

@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
-using SAM.Core;
-using SAM.Geometry.Planar;
+// using SAM.Core;
+// using SAM.Geometry.Planar;
 
-namespace  SAM.Geometry.Object.Planar
+namespace SAM 
+ // namespace  SAM.Geometry.Object.Planar
 {
     public class Polyline2DObject : Polyline2D, IPolyline2DObject, ITaggable, IBoundable2DObject
     {

@@ -1,11 +1,12 @@
 ﻿using Rhino;
 using Rhino.DocObjects;
 using Rhino.Geometry;
-using SAM.Geometry.Spatial;
+// using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 
-namespace  SAM.Analytical.Rhino
+namespace SAM 
+ // namespace  SAM.Analytical.Rhino
 {
     public static partial class Modify
     {

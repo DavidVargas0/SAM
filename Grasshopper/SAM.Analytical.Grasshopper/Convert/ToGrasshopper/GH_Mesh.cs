@@ -1,7 +1,8 @@
 ﻿using Grasshopper.Kernel.Types;
 using Rhino.Geometry;
 
-namespace  SAM.Analytical.Grasshopper
+namespace SAM 
+ // namespace  SAM.Analytical.Grasshopper
 {
     public static partial class Convert
     {

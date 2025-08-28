@@ -3,7 +3,8 @@ using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
 using System.Security;
 
-namespace SAM.Core
+namespace SAM
+// namespace SAM.Core
 {
     public static partial class Query
     {

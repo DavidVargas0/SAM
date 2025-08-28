@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace  SAM.Math
+namespace SAM 
+ // namespace  SAM.Math
 {
     public static partial class Create
     {

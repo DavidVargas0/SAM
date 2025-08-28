@@ -2,7 +2,8 @@
 using System;
 using System.Collections.Generic;
 
-namespace  SAM.Analytical
+namespace SAM 
+ // namespace  SAM.Analytical
 {
     public class TM59Result : TMResult
     {
