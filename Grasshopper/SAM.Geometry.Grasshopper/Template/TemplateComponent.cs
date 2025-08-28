@@ -1,4 +1,4 @@
-﻿namespace SAM.Geometry.Grasshopper
+﻿namespace  SAM.Geometry.Grasshopper
 {
     //public class TemplateCompoment : GH_Component
     //{

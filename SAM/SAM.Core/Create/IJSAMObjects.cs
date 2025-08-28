@@ -3,7 +3,7 @@ using System.Collections.Generic; // Required for using List<>
 using System.Linq; // Required for using Enumerable.Repeat() and Enumerable.ToList()
 using System.Threading.Tasks; // Required for using Parallel.For()
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public static partial class Create
     {

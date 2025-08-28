@@ -5,7 +5,7 @@ using System.Linq;
 using System;
 using SAM.Core;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     public static partial class Query
     {

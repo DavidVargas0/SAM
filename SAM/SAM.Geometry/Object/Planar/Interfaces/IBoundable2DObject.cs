@@ -1,6 +1,6 @@
 ﻿using SAM.Geometry.Planar;
 
-namespace SAM.Geometry.Object.Planar
+namespace  SAM.Geometry.Object.Planar
 {
     public interface IBoundable2DObject : ISAMGeometry2DObject
     {

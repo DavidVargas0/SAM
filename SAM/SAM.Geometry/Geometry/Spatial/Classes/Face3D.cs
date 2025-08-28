@@ -3,7 +3,7 @@ using SAM.Geometry.Planar;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Geometry.Spatial
+namespace  SAM.Geometry.Spatial
 {
     public class Face3D : Face, IClosedPlanar3D, ISAMGeometry3D
     {

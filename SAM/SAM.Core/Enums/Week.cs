@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     [Description("The days of the week")]
     public enum Week

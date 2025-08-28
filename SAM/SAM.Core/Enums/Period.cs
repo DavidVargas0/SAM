@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     [Description("Period")]
     public enum Period

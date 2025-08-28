@@ -12,7 +12,7 @@ namespace SAM.Core.Grasshopper
             {
                 //param.Attributes = new GH_SAMNullAttributes();
                 IGH_Param newParam = GH_ComponentParamServer.CreateDuplicate(param);
-                //if(!newParam.GetType().Equals(param.GetType()))
+                //if (!newParam.GetType().Equals(param.GetType()))
                 //{
                 //    Type type = param.GetType();
                 //}

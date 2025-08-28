@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using SAM.Core.Attributes;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     [AssociatedTypes(typeof(Core.OpaqueMaterial)), Description("OpaqueMaterial Parameter")]
     public enum OpaqueMaterialParameter

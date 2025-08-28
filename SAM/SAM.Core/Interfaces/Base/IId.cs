@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public interface IId : IParameterizedSAMObject
     {

@@ -3,7 +3,7 @@ using SAM.Core;
 using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class BoundaryEdge3DLoop : SAMObject, IAnalyticalObject
     {

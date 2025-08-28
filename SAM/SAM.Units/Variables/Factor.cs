@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SAM.Units
+namespace   SAM.Units
 {
     public static class Factor
     {

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     public class Polyline2D : SAMGeometry, IBoundable2D, ISegmentable2D, IEnumerable<Segment2D>, IReversible, IMovable2D<Polyline2D>
     {

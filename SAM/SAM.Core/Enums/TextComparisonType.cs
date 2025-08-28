@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     [Description("Enumerator defining the way in which two strings are compared.")]
     public enum TextComparisonType

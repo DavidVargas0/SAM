@@ -1,7 +1,7 @@
 ﻿using Grasshopper.Kernel.Types;
 using System.Collections.Generic;
 
-namespace SAM.Geometry.Grasshopper
+namespace  SAM.Geometry.Grasshopper
 {
     public static partial class Convert
     {

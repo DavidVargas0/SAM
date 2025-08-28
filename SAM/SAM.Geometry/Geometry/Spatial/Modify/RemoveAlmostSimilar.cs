@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Geometry.Spatial
+namespace  SAM.Geometry.Spatial
 {
     public static partial class Modify
     {

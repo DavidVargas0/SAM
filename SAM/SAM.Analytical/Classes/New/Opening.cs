@@ -4,7 +4,7 @@ using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class Opening<T> : BuildingElement<T>, IOpening  where T : OpeningType
     {

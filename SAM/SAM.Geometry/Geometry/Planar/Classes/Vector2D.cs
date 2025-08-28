@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     public class Vector2D : SAMGeometry, ISAMGeometry2D, IReversible
     {

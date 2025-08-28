@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SAM.Core.Grasshopper
+namespace   SAM.Core.Grasshopper
 {
     [Flags]
     public enum ParamVisibility

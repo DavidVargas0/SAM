@@ -2,7 +2,7 @@
 using SAM.Core;
 using System;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     /// <summary>
     /// Represents an simple equipment object in the analytical domain

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO.Compression;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public class ZipArchiveInfo : IJSAMObject
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SAM.Units
+namespace  SAM.Units
 {
     public static partial class Query
     {

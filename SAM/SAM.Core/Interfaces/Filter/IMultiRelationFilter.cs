@@ -1,4 +1,4 @@
-﻿namespace SAM.Core
+﻿namespace  SAM.Core
 {
     public interface IMultiRelationFilter : IRelationFilter
     {

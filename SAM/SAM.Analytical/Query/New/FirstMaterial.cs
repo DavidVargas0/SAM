@@ -1,7 +1,7 @@
 ﻿using SAM.Core;
 using SAM.Geometry.Spatial;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public static partial class Query
     {

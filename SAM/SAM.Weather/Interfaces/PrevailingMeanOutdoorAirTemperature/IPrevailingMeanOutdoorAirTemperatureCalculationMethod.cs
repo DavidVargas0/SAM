@@ -1,6 +1,6 @@
 ﻿using SAM.Core;
 
-namespace SAM.Weather
+namespace  SAM.Weather
 {
     public interface IPrevailingMeanOutdoorAirTemperatureCalculationMethod : IJSAMObject
     {

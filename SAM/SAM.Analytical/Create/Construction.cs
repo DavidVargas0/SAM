@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public static partial class Create
     {

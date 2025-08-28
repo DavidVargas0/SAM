@@ -2,7 +2,7 @@
 using SAM.Core;
 using SAM.Geometry.Spatial;
 
-namespace SAM.Geometry.Object.Spatial
+namespace  SAM.Geometry.Object.Spatial
 {
     public class Mesh3DObject : Mesh3D, IMesh3DObject, ITaggable
     {

@@ -12,7 +12,7 @@ using System.Linq;
 
 //using System.Windows.Forms;
 
-namespace SAM.Geometry.Grasshopper
+namespace   SAM.Geometry.Grasshopper
 {
     public class GooTransform3D : GH_Goo<Transform3D>
     {

@@ -9,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Analytical.Grasshopper
+namespace   SAM.Analytical.Grasshopper
 {
     [Obsolete("Obsolete since 2021.11.24")]
     public class GooBuildingModel : GooJSAMObject<BuildingModel>, IGH_PreviewData, IGH_BakeAwareData

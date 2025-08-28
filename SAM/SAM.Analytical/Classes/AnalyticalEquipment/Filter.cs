@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     /// <summary>
     /// Represents an filter object in the analytical domain

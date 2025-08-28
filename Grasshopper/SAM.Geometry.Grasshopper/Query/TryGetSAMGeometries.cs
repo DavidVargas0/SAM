@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Geometry.Grasshopper
+namespace  SAM.Geometry.Grasshopper
 {
     public static partial class Query
     {

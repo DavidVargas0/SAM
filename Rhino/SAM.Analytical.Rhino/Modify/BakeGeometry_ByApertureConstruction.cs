@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace SAM.Analytical.Rhino
+namespace  SAM.Analytical.Rhino
 {
     public static partial class Modify
     {

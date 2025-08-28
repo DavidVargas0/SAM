@@ -2,7 +2,7 @@
 using NetTopologySuite.Triangulate;
 using NetTopologySuite.Geometries;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     public static partial class Query
     {

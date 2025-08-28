@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     /// <summary>
     /// Exposes objects, methods and properties to programming tools and other

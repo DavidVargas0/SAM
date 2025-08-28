@@ -1,6 +1,6 @@
 ﻿using Rhino.DocObjects;
 
-namespace SAM.Core.Rhino
+namespace  SAM.Core.Rhino
 {
     public static partial class Modify
     {

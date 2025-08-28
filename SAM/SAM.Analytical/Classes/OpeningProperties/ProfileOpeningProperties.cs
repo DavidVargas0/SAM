@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     /// <summary>
     /// Scheduled Opening Properties

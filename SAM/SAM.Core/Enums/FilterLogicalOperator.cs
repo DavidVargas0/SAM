@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     [Description("Filter Logical Operator")]
     public enum FilterLogicalOperator

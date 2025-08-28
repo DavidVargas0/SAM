@@ -1,4 +1,4 @@
-﻿namespace SAM.Weather
+﻿namespace   SAM.Weather
 {
     /// <summary>
     /// Provides additional methods for converting weather data between different formats.

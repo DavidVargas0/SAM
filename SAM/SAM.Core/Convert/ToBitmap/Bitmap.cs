@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.IO;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public static partial class Convert
     {

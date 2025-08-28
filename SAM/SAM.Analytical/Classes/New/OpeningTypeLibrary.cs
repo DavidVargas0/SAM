@@ -3,7 +3,7 @@ using SAM.Core;
 using System;
 using System.Collections.Generic;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class OpeningTypeLibrary : SAMLibrary<OpeningType>
     {

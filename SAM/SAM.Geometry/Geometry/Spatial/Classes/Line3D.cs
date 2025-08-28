@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace SAM.Geometry.Spatial
+namespace  SAM.Geometry.Spatial
 {
     public class Line3D : SAMGeometry, ISAMGeometry3D
     {

@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class TM59NaturalVentilationBedroomResult : TM59NaturalVentilationResult
     {

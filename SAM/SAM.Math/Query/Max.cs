@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace SAM.Math
+namespace   SAM.Math
 {
     public static partial class Query
     {

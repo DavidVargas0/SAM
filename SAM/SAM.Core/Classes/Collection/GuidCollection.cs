@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     /// <summary>
     /// A collection of Guids that inherits from SAMObject and implements the IEnumerable interface.

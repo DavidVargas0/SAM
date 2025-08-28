@@ -8,7 +8,7 @@ using System.Linq;
 
 //using ;
 
-namespace SAM.Analytical.Grasshopper
+namespace   SAM.Analytical.Grasshopper
 {
     public class GooConstructionManager : GooJSAMObject<ConstructionManager>
     {

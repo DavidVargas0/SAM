@@ -2,7 +2,7 @@
 using System.Data;
 using System.Linq;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public static partial class Query
     {

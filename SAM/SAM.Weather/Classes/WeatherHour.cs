@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
-namespace SAM.Weather
+namespace  SAM.Weather
 {
     /// <summary>
     /// Represents a single hour's weather data.

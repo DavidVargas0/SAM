@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     [Description("Page Size")]
     public enum PageSize

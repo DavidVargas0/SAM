@@ -7,7 +7,7 @@ using System.Linq;
 
 //using System.Windows.Forms;
 
-namespace SAM.Architectural.Grasshopper
+namespace   SAM.Architectural.Grasshopper
 {
     public class GooMaterialLayer : GH_Goo<MaterialLayer>
     {

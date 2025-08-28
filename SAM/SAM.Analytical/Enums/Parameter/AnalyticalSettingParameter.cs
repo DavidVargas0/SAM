@@ -2,7 +2,7 @@
 using SAM.Core;
 using SAM.Core.Attributes;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     [AssociatedTypes(typeof(Setting)), Description("Analytical Setting Parameter")]
     public enum AnalyticalSettingParameter

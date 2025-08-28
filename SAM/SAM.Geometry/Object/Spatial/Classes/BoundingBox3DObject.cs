@@ -2,7 +2,7 @@
 using SAM.Core;
 using SAM.Geometry.Spatial;
 
-namespace SAM.Geometry.Object.Spatial
+namespace  SAM.Geometry.Object.Spatial
 {
     public class BoundingBox3DObject : BoundingBox3D, IBoundingBox3DObject, ITaggable
     {

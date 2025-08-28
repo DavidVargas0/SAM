@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public static partial class Query
     {

@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public abstract class NumberFilter : Filter, INumberFilter
     {

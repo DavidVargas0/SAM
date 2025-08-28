@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     [Description("Lighting Photoelectric Controls")]
     public enum LightingPhotoelectricControls

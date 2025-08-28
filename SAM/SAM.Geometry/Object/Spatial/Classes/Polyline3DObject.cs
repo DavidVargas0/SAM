@@ -2,7 +2,7 @@
 using SAM.Core;
 using SAM.Geometry.Spatial;
 
-namespace SAM.Geometry.Object.Spatial
+namespace  SAM.Geometry.Object.Spatial
 {
     public class Polyline3DObject : Polyline3D, IPolyline3DObject, ITaggable
     {

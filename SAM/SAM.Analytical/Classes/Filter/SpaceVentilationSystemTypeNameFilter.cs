@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using SAM.Core;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class SpaceVentilationSystemTypeNameFilter : SpaceMechanicalSystemTypeNameFilter<VentilationSystem>
     {       

@@ -7,7 +7,7 @@ using System.Linq;
 
 // using    System.Windows.Forms;
 
-namespace SAM.Core.Grasshopper
+namespace   SAM.Core.Grasshopper
 {
     public class GooSystem : GooJSAMObject<ISystem>
     {

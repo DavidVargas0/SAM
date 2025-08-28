@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public abstract class EnumFilter<T> : Filter, IEnumFilter where T: Enum
     {

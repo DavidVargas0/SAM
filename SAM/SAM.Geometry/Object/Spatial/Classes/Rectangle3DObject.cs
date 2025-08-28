@@ -2,7 +2,7 @@
 using SAM.Core;
 using SAM.Geometry.Spatial;
 
-namespace SAM.Geometry.Object.Spatial
+namespace  SAM.Geometry.Object.Spatial
 {
     public class Rectangle3DObject : Rectangle3D, IRectangle3DObject, ITaggable
     {

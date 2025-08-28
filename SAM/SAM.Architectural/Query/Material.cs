@@ -1,6 +1,6 @@
 ﻿using SAM.Core;
 
-namespace SAM.Architectural
+namespace  SAM.Architectural
 {
     public static partial class Query
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     [Description("Lighting Occupancy Controls")]
     public enum LightingOccupancyControls

@@ -1,4 +1,4 @@
-﻿namespace SAM.Core.Grasshopper
+﻿namespace   SAM.Core.Grasshopper
 {
     public static partial class Query
     {

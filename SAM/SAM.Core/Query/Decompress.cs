@@ -4,7 +4,7 @@ using System.IO;
 using System.IO.Compression;
 using System.Text;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public static partial class Query
     {

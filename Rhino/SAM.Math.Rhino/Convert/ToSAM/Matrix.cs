@@ -1,4 +1,4 @@
-﻿namespace SAM.Math.Rhino
+﻿namespace  SAM.Math.Rhino
 {
     public static partial class Convert
     {

@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public abstract class SAMInstance<T> : SAMObject, ISAMInstance where T: SAMType
     {

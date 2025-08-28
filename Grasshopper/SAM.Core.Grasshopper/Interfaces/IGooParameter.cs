@@ -1,6 +1,6 @@
 ﻿using Grasshopper.Kernel.Types;
 
-namespace SAM.Core.Grasshopper
+namespace  SAM.Core.Grasshopper
 {
     public interface IGooParameter: IGH_Goo
     {

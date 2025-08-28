@@ -2,7 +2,7 @@
 using SAM.Core;
 using SAM.Geometry.Spatial;
 
-namespace SAM.Geometry.Object.Spatial
+namespace  SAM.Geometry.Object.Spatial
 {
     public class Triangle3DObject : Triangle3D, ITriangle3DObject, ITaggable
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using SAM.Core.Attributes;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     [AssociatedTypes(typeof(AdjacencyClusterSimulationResult)), Description("Analytical AdjacencyCluster Simulation Result Parameter")]
     public enum AdjacencyClusterSimulationResultParameter

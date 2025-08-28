@@ -1,4 +1,4 @@
-﻿namespace SAM.Geometry.Object.Spatial
+﻿namespace  SAM.Geometry.Object.Spatial
 {
     public static partial class Create
     {

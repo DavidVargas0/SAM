@@ -6,7 +6,7 @@ using SAM.Geometry.Object.Spatial;
 using SAM.Geometry.Planar;
 using SAM.Geometry.Spatial;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public static partial class Query
     {

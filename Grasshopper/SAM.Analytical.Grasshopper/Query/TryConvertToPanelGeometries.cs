@@ -3,7 +3,7 @@ using SAM.Geometry.Grasshopper;
 using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 
-namespace SAM.Analytical.Grasshopper
+namespace  SAM.Analytical.Grasshopper
 {
     public static partial class Query
     {

@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     /// <summary>
     /// Property reference in format {TypeName}::[{Reference}]::"{PropertyName}"

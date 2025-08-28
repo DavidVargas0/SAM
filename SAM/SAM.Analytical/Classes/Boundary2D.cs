@@ -4,7 +4,7 @@ using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     /// <summary>
     /// Boundary2D - list of BoundaryEdges2DLoops on a given plane and may include internal edges (as list of Edges2DLoops)

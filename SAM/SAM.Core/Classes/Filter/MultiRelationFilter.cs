@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public abstract class MultiRelationFilter<T> : Filter, IMultiRelationFilter where T : IJSAMObject
     {

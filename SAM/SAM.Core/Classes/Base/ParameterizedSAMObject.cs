@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public class ParameterizedSAMObject : IParameterizedSAMObject
     {

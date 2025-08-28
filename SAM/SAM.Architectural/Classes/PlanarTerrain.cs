@@ -2,7 +2,7 @@
 
 using SAM.Geometry.Spatial;
 
-namespace SAM.Architectural
+namespace  SAM.Architectural
 {
     public class PlanarTerrain : Terrain
     {

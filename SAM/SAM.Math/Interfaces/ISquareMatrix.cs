@@ -1,4 +1,4 @@
-﻿namespace SAM.Math
+﻿namespace  SAM.Math
 {
     public interface ISquareMatrix
     {

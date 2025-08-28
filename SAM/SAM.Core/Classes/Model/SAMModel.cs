@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public class SAMModel : SAMObject
     {

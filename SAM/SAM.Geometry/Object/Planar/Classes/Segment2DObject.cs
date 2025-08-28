@@ -2,7 +2,7 @@
 using SAM.Core;
 using SAM.Geometry.Planar;
 
-namespace SAM.Geometry.Object.Planar
+namespace  SAM.Geometry.Object.Planar
 {
     public class Segment2DObject : Segment2D, ISegment2DObject, ITaggable, IBoundable2DObject
     {

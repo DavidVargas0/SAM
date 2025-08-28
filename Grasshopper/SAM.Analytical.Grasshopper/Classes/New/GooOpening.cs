@@ -12,7 +12,7 @@ using SAM.Geometry.Spatial;
 using System;
 using System.Collections.Generic;
 
-namespace SAM.Analytical.Grasshopper
+namespace   SAM.Analytical.Grasshopper
 {
     
     [Obsolete("Obsolete since 2021.11.24")]

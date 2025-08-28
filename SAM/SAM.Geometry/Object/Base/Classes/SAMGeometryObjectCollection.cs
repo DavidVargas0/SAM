@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace SAM.Geometry.Object
+namespace  SAM.Geometry.Object
 {
     public class SAMGeometryObjectCollection : IEnumerable<ISAMGeometryObject>, ISAMGeometryObject
     {

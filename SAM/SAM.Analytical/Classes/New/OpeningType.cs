@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using SAM.Architectural;
 using System.Linq;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public abstract class OpeningType : BuildingElementType
     {

@@ -3,7 +3,7 @@ using SAM.Core;
 using System;
 using System.Collections.Generic;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     /// <summary>
     /// Represents an heat humidifier unit unit object in the analytical domain

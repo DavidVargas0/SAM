@@ -9,7 +9,7 @@ using SAM.Architectural;
 using System.Threading.Tasks;
 using SAM.Geometry.Object.Spatial;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class BuildingModel : SAMModel, IAnalyticalObject
     {

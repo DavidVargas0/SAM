@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     /// <summary>
     /// Planar Point

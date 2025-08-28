@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Weather
+namespace  SAM.Weather
 {
     /// <summary>
     /// Provides methods for converting weather data between different formats.

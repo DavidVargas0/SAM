@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using SAM.Architectural;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class RoofType : HostPartitionType
     {

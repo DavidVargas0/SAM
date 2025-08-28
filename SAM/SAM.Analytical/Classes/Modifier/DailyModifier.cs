@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class DailyModifier : IndexedSimpleModifier
     {

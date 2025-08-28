@@ -13,7 +13,7 @@ using System.Linq;
 
 // using   system.windows.forms;
 
-namespace SAM.Analytical.Grasshopper
+namespace  SAM.Analytical.Grasshopper
 {
     public class GooSpace : GooJSAMObject<ISpace>, IGH_PreviewData, IGH_BakeAwareData
     {

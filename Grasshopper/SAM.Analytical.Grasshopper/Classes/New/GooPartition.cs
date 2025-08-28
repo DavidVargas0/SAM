@@ -16,7 +16,7 @@ using System.Linq;
 // using   system.windows.forms;
 using SAM.Geometry.Object.Spatial;
 
-namespace SAM.Analytical.Grasshopper
+namespace   SAM.Analytical.Grasshopper
 {
     [Obsolete("Obsolete since 2021.11.24")]
     public class GooPartition : GooJSAMObject<IPartition>, IGH_PreviewData, IGH_BakeAwareData

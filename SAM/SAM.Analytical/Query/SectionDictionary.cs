@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public static partial class Query
     {

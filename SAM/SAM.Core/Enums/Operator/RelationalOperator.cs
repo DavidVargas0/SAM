@@ -1,7 +1,7 @@
 ﻿using SAM.Core.Attributes;
 using System.ComponentModel;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     [Description("Relational Operator")]
     public enum RelationalOperator

@@ -3,7 +3,7 @@
 
 using System;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public interface IComplexEquipment : IAnalyticalEquipment
     {

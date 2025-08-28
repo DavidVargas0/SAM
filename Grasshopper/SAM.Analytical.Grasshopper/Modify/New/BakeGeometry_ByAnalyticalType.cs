@@ -1,7 +1,7 @@
 ﻿using Rhino;
 using System;
 
-namespace SAM.Analytical.Grasshopper
+namespace  SAM.Analytical.Grasshopper
 {
     public static partial class Modify
     {

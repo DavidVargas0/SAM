@@ -3,7 +3,7 @@ using SAM.Core;
 using SAM.Math;
 using System.Collections.Generic;
 
-namespace SAM.Geometry.Spatial
+namespace  SAM.Geometry.Spatial
 {
     public class Transform3D : IJSAMObject
     {

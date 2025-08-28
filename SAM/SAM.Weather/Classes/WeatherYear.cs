@@ -3,7 +3,7 @@ using SAM.Core;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Weather
+namespace  SAM.Weather
 {
     /// <summary>
     /// Represents weather data for an entire year.

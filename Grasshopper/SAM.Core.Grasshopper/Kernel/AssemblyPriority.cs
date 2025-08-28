@@ -2,7 +2,7 @@
 using Grasshopper.Kernel;
 using SAM.Core.Grasshopper.Properties;
 
-namespace SAM.Core.Grasshopper
+namespace   SAM.Core.Grasshopper
 {
     public class AssemblyPriority : GH_AssemblyPriority
     {

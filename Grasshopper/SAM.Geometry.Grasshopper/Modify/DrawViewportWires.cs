@@ -5,7 +5,7 @@ using SAM.Geometry.Planar;
 using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 
-namespace SAM.Geometry.Grasshopper
+namespace  SAM.Geometry.Grasshopper
 {
     /// <summary>
     /// Provides methods to modify geometric objects.

@@ -1,4 +1,4 @@
-﻿namespace SAM.Analytical.Grasshopper
+﻿namespace  SAM.Analytical.Grasshopper
 {
     public enum PanelBakeMethod
     {

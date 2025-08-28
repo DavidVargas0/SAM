@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Geometry
+namespace  SAM.Geometry
 {
     [Description("Edge Orientation Method")]
     public enum EdgeOrientationMethod

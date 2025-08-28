@@ -1,6 +1,6 @@
 ﻿using SAM.Math;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     public static partial class Create
     {

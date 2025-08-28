@@ -1,7 +1,7 @@
 ﻿using SAM.Geometry.Planar;
 using System.Collections.Generic;
 
-namespace SAM.Geometry.Object.Planar
+namespace  SAM.Geometry.Object.Planar
 {
     public static partial class Create
     {

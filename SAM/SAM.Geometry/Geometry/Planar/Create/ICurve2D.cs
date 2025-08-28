@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     public static partial class Create
     {

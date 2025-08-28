@@ -1,7 +1,7 @@
 ﻿using SAM.Core.Attributes;
 using System.ComponentModel;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     [Description("Arithmetic Operator")]
     public enum ArithmeticOperator

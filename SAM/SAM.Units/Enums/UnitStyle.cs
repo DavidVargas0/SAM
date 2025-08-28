@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Units
+namespace  SAM.Units
 {
     public enum UnitStyle
     {

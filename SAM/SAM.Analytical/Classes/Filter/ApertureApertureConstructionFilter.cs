@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using SAM.Core;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     /// <summary>
     /// A filter that operates on a collection of ApertureConstruction objects related to an Aperture object.

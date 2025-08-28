@@ -1,6 +1,6 @@
 ﻿using SAM.Geometry.Spatial;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public static partial class Create
     {

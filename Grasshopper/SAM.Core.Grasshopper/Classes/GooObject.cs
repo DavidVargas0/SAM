@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 using SAM.Core.Grasshopper.Properties;
 using System;
 
-namespace SAM.Core.Grasshopper
+namespace   SAM.Core.Grasshopper
 {
     public class GooObject : GH_Goo<object>
     {

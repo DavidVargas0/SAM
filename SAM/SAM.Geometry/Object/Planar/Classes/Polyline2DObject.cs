@@ -2,7 +2,7 @@
 using SAM.Core;
 using SAM.Geometry.Planar;
 
-namespace SAM.Geometry.Object.Planar
+namespace  SAM.Geometry.Object.Planar
 {
     public class Polyline2DObject : Polyline2D, IPolyline2DObject, ITaggable, IBoundable2DObject
     {

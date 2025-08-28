@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System;
 using SAM.Core;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public static partial class Modify
     {

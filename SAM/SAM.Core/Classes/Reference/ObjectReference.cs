@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     /// <summary>
     /// Reference to the object format {TypeName}::[{Reference}] where TypeName - full typeName, Reference - reference to the object 

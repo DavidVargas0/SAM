@@ -17,7 +17,7 @@ using System.Linq;
 // using   system.windows.forms;
 using SAM.Geometry.Object.Spatial;
 
-namespace SAM.Analytical.Grasshopper
+namespace   SAM.Analytical.Grasshopper
 {
     public class GooPanel : GooJSAMObject<IPanel>, IGH_PreviewData, IGH_BakeAwareData
     {

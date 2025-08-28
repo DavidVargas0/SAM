@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace SAM.Math
+namespace  SAM.Math
 {
     public class Matrix2D : Matrix, ISquareMatrix
     {

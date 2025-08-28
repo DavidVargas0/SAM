@@ -2,7 +2,7 @@
 using System;
 using System.Drawing;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public class Tag : IJSAMObject
     {

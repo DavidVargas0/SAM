@@ -1,6 +1,6 @@
 ﻿ using System.ComponentModel;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     [Description("Analytical Profile Type.")]
     public enum ProfileType

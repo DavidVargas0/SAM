@@ -2,7 +2,7 @@
 using SAM.Core;
 using System.Collections.Generic;
 
-namespace SAM.Geometry.Spatial
+namespace  SAM.Geometry.Spatial
 {
     public class Point3DGraph<T> : PointGraph<Point3D, T> where T : IJSAMObject
     {

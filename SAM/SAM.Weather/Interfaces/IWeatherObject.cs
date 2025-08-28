@@ -1,6 +1,6 @@
 ﻿using SAM.Core;
 
-namespace SAM.Weather
+namespace  SAM.Weather
 {
     /// <summary>
     /// Interface for objects that represent weather data.

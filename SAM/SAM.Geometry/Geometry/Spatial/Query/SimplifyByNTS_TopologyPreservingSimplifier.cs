@@ -3,7 +3,7 @@ using NetTopologySuite.Simplify;
 using SAM.Core;
 using SAM.Geometry.Planar;
 
-namespace SAM.Geometry.Spatial
+namespace  SAM.Geometry.Spatial
 {
     public static partial class Query
     {

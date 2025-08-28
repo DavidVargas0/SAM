@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SAM.Geometry.Spatial
+namespace  SAM.Geometry.Spatial
 {
     public interface IIntersectionResult3D
     {

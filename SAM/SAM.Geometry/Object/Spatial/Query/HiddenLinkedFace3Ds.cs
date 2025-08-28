@@ -2,7 +2,7 @@
 using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 
-namespace SAM.Geometry.Object.Spatial
+namespace  SAM.Geometry.Object.Spatial
 {
     public static partial class Query
     {

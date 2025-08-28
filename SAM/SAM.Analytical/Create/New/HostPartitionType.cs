@@ -2,7 +2,7 @@
 
 using SAM.Architectural;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public static partial class Create
     {

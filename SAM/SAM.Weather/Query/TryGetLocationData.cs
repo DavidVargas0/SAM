@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Weather
+namespace  SAM.Weather
 {
     /// <summary>
     /// Provides functionality to query weather data.

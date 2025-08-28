@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SAM.Geometry.Grasshopper.Properties {
+namespace  SAM.Geometry.Grasshopper.Properties {
     using System;
     
     

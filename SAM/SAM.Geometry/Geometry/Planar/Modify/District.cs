@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     public static partial class Modify
     {

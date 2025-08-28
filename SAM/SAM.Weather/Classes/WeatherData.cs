@@ -3,7 +3,7 @@ using SAM.Core;
 using System;
 using System.Collections.Generic;
 
-namespace SAM.Weather
+namespace  SAM.Weather
 {
     /// <summary>
     /// This class represents the WeatherData object which implements the SAMObject and IWeatherObject interfaces. 

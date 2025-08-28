@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Geometry
+namespace  SAM.Geometry
 {
     [Description("Padding Enumerator.")]
     public enum Padding

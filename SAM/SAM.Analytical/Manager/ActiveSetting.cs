@@ -50,7 +50,6 @@ namespace SAM.Analytical
 
             result.SetValue(AnalyticalSettingParameter.DefaultMergeSettings, "SAM_MergeSettings.JSON");
 
-
             string path = null;
 
             path = Query.DefaultPath(result, AnalyticalSettingParameter.DefaultConstructionLibraryFileName);

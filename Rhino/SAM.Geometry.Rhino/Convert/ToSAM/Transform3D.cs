@@ -1,7 +1,7 @@
 ﻿using Rhino.Geometry;
 using SAM.Math;
 
-namespace SAM.Geometry.Rhino
+namespace  SAM.Geometry.Rhino
 {
     public static partial class Convert
     {

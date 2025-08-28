@@ -1,4 +1,4 @@
-﻿namespace SAM.Weather
+﻿namespace   SAM.Weather
 {
     /// <summary>
     /// This class provides methods for creating and executing queries against a database.

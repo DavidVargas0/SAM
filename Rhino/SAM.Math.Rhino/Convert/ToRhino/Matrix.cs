@@ -1,4 +1,4 @@
-﻿namespace SAM.Math.Rhino
+﻿namespace  SAM.Math.Rhino
 {
     /// <summary>
     /// Provides methods to convert between different matrix types.

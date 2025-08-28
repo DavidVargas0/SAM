@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Drawing;
 
-namespace SAM.Geometry.Object
+namespace   SAM.Geometry.Object
 {
     public abstract class Appearance :IAppearance
     {

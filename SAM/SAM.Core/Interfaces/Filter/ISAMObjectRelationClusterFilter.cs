@@ -1,5 +1,5 @@
 ﻿
-namespace SAM.Core
+namespace  SAM.Core
 {
     public interface ISAMObjectRelationClusterFilter : IFilter
     {

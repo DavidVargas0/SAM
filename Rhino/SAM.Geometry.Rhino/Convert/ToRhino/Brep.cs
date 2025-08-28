@@ -3,7 +3,7 @@ using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Geometry.Rhino
+namespace  SAM.Geometry.Rhino
 {
     public static partial class Convert
     {

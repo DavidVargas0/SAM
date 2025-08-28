@@ -3,7 +3,7 @@
 using SAM.Geometry.Spatial;
 using System;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class AirPartition : BuildingElement<BuildingElementType>, IPartition
     {

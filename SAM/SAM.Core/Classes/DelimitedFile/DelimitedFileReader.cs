@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public class DelimitedFileReader : StreamReader, IDelimitedFileReader
     {

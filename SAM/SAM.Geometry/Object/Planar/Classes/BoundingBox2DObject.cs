@@ -2,7 +2,7 @@
 using SAM.Core;
 using SAM.Geometry.Planar;
 
-namespace SAM.Geometry.Object.Planar
+namespace  SAM.Geometry.Object.Planar
 {
     public class BoundingBox2DObject : BoundingBox2D, IBoundingBox2DObject, ITaggable
     {

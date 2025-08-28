@@ -67,7 +67,6 @@ namespace SAM.Core.Grasshopper
                 }
             }
 
-
             if (gH_SAMComponent_To is GH_SAMVariableOutputParameterComponent)
             {
                 GH_SAMVariableOutputParameterComponent gH_SAMVariableOutputParameterComponent = (GH_SAMVariableOutputParameterComponent)gH_SAMComponent_To;
@@ -93,7 +92,6 @@ namespace SAM.Core.Grasshopper
                             gH_ComponentParamServer.UnregisterInputParameter(gH_Params[i]);
                         }
                     }
-
                 }
             }
         }

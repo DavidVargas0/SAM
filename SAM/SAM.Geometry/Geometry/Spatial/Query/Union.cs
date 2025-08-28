@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using SAM.Geometry.Planar;
 
-namespace SAM.Geometry.Spatial
+namespace  SAM.Geometry.Spatial
 {
     public static partial class Query
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SAM.Weather
+namespace  SAM.Weather
 {
     public static partial class Query
     {   /// <summary>

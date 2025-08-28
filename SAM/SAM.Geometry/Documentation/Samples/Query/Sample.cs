@@ -4,7 +4,7 @@ using SAM.Geometry.Planar;
 using SAM.Geometry.Spatial;
 using System;
 
-namespace SAM.Geometry.Object.Spatial
+namespace  SAM.Geometry.Object.Spatial
 {
     public static partial class Query
     {

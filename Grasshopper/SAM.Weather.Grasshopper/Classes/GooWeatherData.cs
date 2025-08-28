@@ -9,7 +9,7 @@ using System.Collections.Generic;
 //using System.Windows.Forms;
 using System.Linq;
 
-namespace SAM.Weather.Grasshopper
+namespace SAM SAM.Weather.Grasshopper
 {
     public class GooWeatherData : GooJSAMObject<WeatherData>
     {

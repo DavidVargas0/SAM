@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public class Relation : IJSAMObject
     {

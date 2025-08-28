@@ -3,7 +3,7 @@ using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 using SAM.Geometry.Grasshopper;
 
-namespace SAM.Analytical.Grasshopper
+namespace  SAM.Analytical.Grasshopper
 {
     public static partial class Convert
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Weather
+namespace  SAM.Weather
 {
     /// <summary>
     /// Represents the types of weather data used in the SAM application.

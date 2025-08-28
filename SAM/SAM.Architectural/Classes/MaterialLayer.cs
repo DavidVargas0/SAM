@@ -2,7 +2,7 @@
 using SAM.Core;
 using System;
 
-namespace SAM.Architectural
+namespace  SAM.Architectural
 {
     public class MaterialLayer : IJSAMObject, IArchitecturalObject
     {

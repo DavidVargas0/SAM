@@ -2,7 +2,7 @@
 using SAM.Geometry.Planar;
 using System.Collections.Generic;
 
-namespace SAM.Geometry
+namespace  SAM.Geometry
 {
     public abstract class Face : SAMGeometry
     {

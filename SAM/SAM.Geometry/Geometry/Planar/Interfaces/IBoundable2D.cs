@@ -1,4 +1,4 @@
-﻿namespace SAM.Geometry.Planar
+﻿namespace  SAM.Geometry.Planar
 {
     public interface IBoundable2D : ISAMGeometry2D
     {

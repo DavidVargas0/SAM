@@ -3,7 +3,7 @@ using Rhino.Geometry.Collections;
 using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 
-namespace SAM.Geometry.Rhino
+namespace  SAM.Geometry.Rhino
 {
     public static partial class Create
     {

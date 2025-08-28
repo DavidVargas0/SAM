@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Geometry.Grasshopper
+namespace  SAM.Geometry.Grasshopper
 {
     [Description("Mesh Type")]
     public enum MeshType

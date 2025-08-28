@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class DesignDay : Weather.WeatherDay, IAnalyticalObject
     {

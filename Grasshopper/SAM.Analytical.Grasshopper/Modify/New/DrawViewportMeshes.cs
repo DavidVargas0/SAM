@@ -3,7 +3,7 @@ using Rhino.Geometry;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SAM.Analytical.Grasshopper
+namespace  SAM.Analytical.Grasshopper
 {
     public static partial class Modify
     {

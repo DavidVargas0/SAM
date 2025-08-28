@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Core.Grasshopper
+namespace  SAM.Core.Grasshopper
 {
     public abstract class GH_SAMVariableOutputParameterComponent : GH_SAMComponent, IGH_VariableParameterComponent
     {

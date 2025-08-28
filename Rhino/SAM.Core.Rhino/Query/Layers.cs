@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SAM.Core.Rhino
+namespace  SAM.Core.Rhino
 {
     public static partial class Query
     {

@@ -1,4 +1,4 @@
-﻿namespace SAM.Geometry
+﻿namespace  SAM.Geometry
 {
     public interface IMesh
     {

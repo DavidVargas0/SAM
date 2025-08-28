@@ -2,7 +2,7 @@
 
 using SAM.Core;
 
-namespace SAM.Architectural
+namespace  SAM.Architectural
 {
     public class Level : SAMObject, IArchitecturalObject
     {

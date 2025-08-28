@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public class TableModifier : SimpleModifier
     {

@@ -1,4 +1,4 @@
-﻿namespace SAM.Weather
+﻿namespace   SAM.Weather
 {
     public static partial class Query
     {

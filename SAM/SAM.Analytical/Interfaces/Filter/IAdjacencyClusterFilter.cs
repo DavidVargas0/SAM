@@ -1,5 +1,5 @@
 ﻿
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public interface IAdjacencyClusterFilter : Core.IFilter
     {

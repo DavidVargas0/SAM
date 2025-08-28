@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public interface ISimpleEquipment : IAnalyticalEquipment
     {

@@ -5,7 +5,7 @@ using GH_IO.Serialization;
 using Grasshopper.Kernel;
 using SAM.Core.Grasshopper.Properties;
 
-namespace SAM.Core.Grasshopper
+namespace  SAM.Core.Grasshopper
 {
     public abstract class GH_SAMEnumComponent<T> : GH_SAMComponent where T : Enum
     {

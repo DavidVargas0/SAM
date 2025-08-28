@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace SAM.Geometry.Object
+namespace  SAM.Geometry.Object
 {
     public static partial class Query
     {

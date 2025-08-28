@@ -2,7 +2,7 @@
 using SAM.Core;
 using System.Collections.Generic;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class PanelApertureCountFilter : NumberFilter
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using SAM.Core.Attributes;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     [AssociatedTypes(typeof(ZoneSimulationResult)), Description("Analytical Zone Simulation Result Parameter")]
     public enum ZoneSimulationResultParameter

@@ -2,7 +2,7 @@
 using SAM.Geometry.Spatial;
 using System.Collections.Generic;
 
-namespace SAM.Analytical.Rhino
+namespace  SAM.Analytical.Rhino
 {
     public static partial class Convert
     {

@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using SAM.Math;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public class PolynomialModifier : IndexedSimpleModifier
     {

@@ -3,7 +3,7 @@ using SAM.Core;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     public class TransformGroup2D : ITransform2D, IEnumerable<ITransform2D>
     {

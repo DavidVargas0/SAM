@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     /// <summary>
     /// A static class that contains methods to create 2D geometries.

@@ -103,12 +103,10 @@ namespace SAM.Core
             return manager.Write();
         }
 
-
         public static List<Type> GetParameterTypes()
         {
             if (associatedTypesDictionary == null)
                 associatedTypesDictionary = Query.AssociatedTypesDictionary();
-
 
             List<Type> result = new List<Type>();
             foreach (KeyValuePair<Type, AssociatedTypes> keyValuePair in associatedTypesDictionary)
@@ -186,7 +184,7 @@ namespace SAM.Core
             if (paths == null || paths.Length == 0)
                 return null;
 
-            foreach(string path in paths)
+            foreach (string path in paths)
             {
                 if (path == null)
                     continue;
@@ -228,7 +226,7 @@ namespace SAM.Core
                 return null;
 
             List<string> result = new List<string>();
-            foreach(string path in paths)
+            foreach (string path in paths)
             {
                 if (path == null)
                     continue;
@@ -259,7 +257,7 @@ namespace SAM.Core
                 return null;
 
             List<Type> result = new List<Type>();
-            foreach(KeyValuePair<Type, AssociatedTypes> keyValuePair in associatedTypesDictionary)
+            foreach (KeyValuePair<Type, AssociatedTypes> keyValuePair in associatedTypesDictionary)
             {
                 if (keyValuePair.Key == null || keyValuePair.Value == null)
                     continue;
@@ -285,7 +283,7 @@ namespace SAM.Core
             {
                 foreach (Enum @enum in Enum.GetValues(type_Temp))
                 {
-                    if(name == null)
+                    if (name == null)
                     {
                         result.Add(@enum);
                         continue;

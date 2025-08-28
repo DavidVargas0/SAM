@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public class SAMCollection<T> : Collection<T>, ISAMObject where T : IJSAMObject
     {

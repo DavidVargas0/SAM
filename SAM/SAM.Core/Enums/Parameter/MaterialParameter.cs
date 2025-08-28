@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using SAM.Core.Attributes;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     [AssociatedTypes(typeof(Material)), Description("Material Parameter")]
     public enum MaterialParameter

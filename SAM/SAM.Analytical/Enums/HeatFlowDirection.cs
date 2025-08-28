@@ -1,4 +1,4 @@
-﻿namespace SAM.Analytical
+﻿namespace  SAM.Analytical
 {
     public enum HeatFlowDirection
     {

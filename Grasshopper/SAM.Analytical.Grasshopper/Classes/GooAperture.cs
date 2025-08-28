@@ -13,7 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Analytical.Grasshopper
+namespace   SAM.Analytical.Grasshopper
 {
     public class GooAperture : GooJSAMObject<Aperture>, IGH_PreviewData, IGH_BakeAwareData
     {

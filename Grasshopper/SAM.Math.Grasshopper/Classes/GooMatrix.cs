@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 //using System.Windows.Forms;
 
-namespace SAM.Math.Grasshopper
+namespace   SAM.Math.Grasshopper
 {
     public class GooMatrix : GH_Goo<Matrix>
     {

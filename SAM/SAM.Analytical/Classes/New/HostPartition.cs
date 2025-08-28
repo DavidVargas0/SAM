@@ -5,7 +5,7 @@ using SAM.Geometry.Planar;
 using System;
 using System.Collections.Generic;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public abstract class HostPartition<T> : BuildingElement<T>, IHostPartition where T: HostPartitionType
     {

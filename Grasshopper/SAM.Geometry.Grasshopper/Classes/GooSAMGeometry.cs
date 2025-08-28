@@ -16,7 +16,7 @@ using System.Linq;
 
 //using System.Windows.Forms;
 
-namespace SAM.Geometry.Grasshopper
+namespace   SAM.Geometry.Grasshopper
 {
     public class GooSAMGeometry : GH_Goo<ISAMGeometry>, IGH_PreviewData, IGH_BakeAwareData
     {

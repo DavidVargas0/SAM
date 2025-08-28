@@ -2,7 +2,7 @@
 
 using System;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public abstract class FluidMaterial : Material
     {

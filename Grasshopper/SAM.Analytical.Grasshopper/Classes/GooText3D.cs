@@ -10,7 +10,7 @@ using System.Linq;
 
 // using   system.windows.forms;
 
-namespace SAM.Analytical.Grasshopper
+namespace   SAM.Analytical.Grasshopper
 {
     public class GooText3D : GH_GeometricGoo<global::Rhino.Display.Text3d>, IGH_PreviewData, IGH_BakeAwareData
     {

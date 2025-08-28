@@ -1,4 +1,4 @@
-﻿namespace SAM.Geometry.Spatial
+﻿namespace  SAM.Geometry.Spatial
 {
     public interface ISAMGeometry3D : ISAMGeometry
     {

@@ -1,7 +1,7 @@
 ﻿using Rhino.DocObjects;
 using Rhino.DocObjects.Tables;
 
-namespace SAM.Core.Rhino
+namespace  SAM.Core.Rhino
 {
     public static partial class Modify
     {

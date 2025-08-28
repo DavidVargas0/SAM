@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SAM.Analytical
+namespace  .Analytical
 {
     /// <summary>
     /// Analytical ActivityLevel according to VDI 2078 2015.
@@ -12,7 +12,7 @@ namespace SAM.Analytical
         /// Undefined ActivityLevel
         /// </summary>
         [Description("Undefined")] Undefined,
-        
+
         /// <summary>
         /// Sitting, relaxed 100W/person in total
         /// </summary>

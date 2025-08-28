@@ -2,7 +2,7 @@
 using SAM.Architectural;
 using System.Collections.Generic;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class WindowType : OpeningType
     {

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     public class Mesh2D : SAMGeometry, IMesh, ISAMGeometry2D, IBoundable2D
     {

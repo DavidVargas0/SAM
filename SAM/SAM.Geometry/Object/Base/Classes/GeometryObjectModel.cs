@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SAM.Geometry.Object
+namespace  SAM.Geometry.Object
 {
     public class GeometryObjectModel : Core.SAMModel
     {

@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json.Linq;
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public class CoolingSystem : MechanicalSystem
     {

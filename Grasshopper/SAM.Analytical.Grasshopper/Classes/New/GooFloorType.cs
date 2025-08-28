@@ -5,7 +5,7 @@ using SAM.Core.Grasshopper;
 using System;
 using System.Collections.Generic;
 
-namespace SAM.Analytical.Grasshopper
+namespace   SAM.Analytical.Grasshopper
 {
     [Obsolete("Obsolete since 2021.11.24")]
     public class GooFloorType : GooJSAMObject<FloorType>

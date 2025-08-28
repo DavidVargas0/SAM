@@ -6,14 +6,14 @@ namespace SAM.Core
 {
     public class ActionManager
     {
-        List<Action> actions = new List<Action>();
+        private List<Action> actions = new List<Action>();
 
         public event EventHandler RunStarted;
+
         public event EventHandler RunEnded;
 
         public ActionManager()
         {
-
         }
 
         public ActionManager(IEnumerable<Action> actions)
@@ -28,7 +28,7 @@ namespace SAM.Core
                 return;
             }
 
-            if(actions == null)
+            if (actions == null)
             {
                 actions = new List<Action>();
             }
@@ -43,7 +43,7 @@ namespace SAM.Core
                 return;
             }
 
-            if(this.actions == null)
+            if (this.actions == null)
             {
                 this.actions = new List<Action>();
             }
@@ -72,6 +72,5 @@ namespace SAM.Core
 
             RunEnded?.Invoke(this, new EventArgs());
         }
-
     }
 }

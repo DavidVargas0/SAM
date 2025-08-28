@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     public class SAMGeometry2DGroup : ISAMGeometry2D, IEnumerable<ISAMGeometry2D>
     {

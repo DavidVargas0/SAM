@@ -3,7 +3,7 @@ using SAM.Core;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Weather
+namespace  SAM.Weather
 {
     /// <summary>
     /// Represents a single day's weather data.

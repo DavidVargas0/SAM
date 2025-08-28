@@ -2,7 +2,7 @@
 using SAM.Math;
 using System;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     public class Line2D : SAMGeometry, ISAMGeometry2D
     {

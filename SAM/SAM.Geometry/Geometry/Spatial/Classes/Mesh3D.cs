@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Geometry.Spatial
+namespace  SAM.Geometry.Spatial
 {
     public class Mesh3D : SAMGeometry, IMesh, ISAMGeometry3D, IBoundable3D
     {

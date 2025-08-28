@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Core.Grasshopper
+namespace  SAM.Core.Grasshopper
 {
     public static partial class Modify
     {

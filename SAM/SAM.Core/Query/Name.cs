@@ -4,7 +4,7 @@ using System;
 using System.Linq;
 using System.Reflection;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public static partial class Query
     {

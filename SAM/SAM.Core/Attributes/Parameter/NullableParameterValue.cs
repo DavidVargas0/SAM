@@ -1,4 +1,4 @@
-﻿namespace SAM.Core.Attributes
+﻿namespace  SAM.Core.Attributes
 {
     public abstract class NullableParameterValue : ParameterValue
     {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Xml.Linq;
 
-namespace SAM.Core
+namespace  SAM.Core
 {
     public static partial class Modify
     {

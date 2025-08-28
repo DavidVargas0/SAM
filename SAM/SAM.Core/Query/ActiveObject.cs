@@ -57,6 +57,5 @@ namespace SAM.Core
         [SuppressUnmanagedCodeSecurity]
         [SecurityCritical]  // auto-generated
         private static extern void GetActiveObject(ref Guid rclsid, IntPtr reserved, [MarshalAs(UnmanagedType.Interface)] out object ppunk);
-
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using SAM.Core;
 
-namespace SAM.Geometry
+namespace  SAM.Geometry
 {
     public class PointGraphEdge<X, T> : QuickGraph.IEdge<X>, IJSAMObject where T : IJSAMObject where X : IPoint
     {

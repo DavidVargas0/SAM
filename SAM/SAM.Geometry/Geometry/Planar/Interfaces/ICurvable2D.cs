@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SAM.Geometry.Planar
+namespace  SAM.Geometry.Planar
 {
     public interface ICurvable2D : IBoundable2D
     {

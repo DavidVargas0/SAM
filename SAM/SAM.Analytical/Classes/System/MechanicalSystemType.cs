@@ -2,7 +2,7 @@
 using SAM.Core;
 using System;
 
-namespace SAM.Analytical
+namespace  SAM.Analytical
 {
     public abstract class MechanicalSystemType : SAMType, ISystemType, IAnalyticalObject
     {

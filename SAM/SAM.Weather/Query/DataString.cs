@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SAM.Weather
+namespace   SAM.Weather
 {
     public static partial class Query
     {

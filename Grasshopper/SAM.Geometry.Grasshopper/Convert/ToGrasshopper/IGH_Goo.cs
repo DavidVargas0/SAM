@@ -2,7 +2,7 @@
 
 using SAM.Geometry.Spatial;
 
-namespace SAM.Geometry.Grasshopper
+namespace  SAM.Geometry.Grasshopper
 {
     public static partial class Convert
     {
